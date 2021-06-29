@@ -104,6 +104,13 @@ input, textarea, button, button:active, button:focus {
     opacity: 1;
     visibility: visible;
     animation-delay: 1s; } }
+@keyframes updown {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(3px); }
+  100% {
+    transform: translateY(0); } }
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box; }
@@ -172,12 +179,13 @@ input:focus {
   .header-home .navigation {
     display: none;
     position: absolute;
-    top: 101%;
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 30px 0;
     background: #fff;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.05);
+    border-top: 2px solid #F0F2F5; }
     .header-home .navigation .nav-block {
       display: flex;
       justify-content: space-between; }
@@ -238,6 +246,8 @@ input:focus {
     background: rgba(0, 0, 0, 0.18); }
   .btn-category:focus {
     outline: none; }
+  .btn-category.active {
+    background: #D8DADF; }
   .btn-category svg {
     width: 17px;
     margin-right: 7px; }
@@ -525,9 +535,10 @@ input:focus {
       color: #fff; }
 
 .heading-title {
-  font-size: 23px;
   line-height: 27px;
-  font-weight: 500; }
+  font-size: 20px;
+  font-family: Segoe UI;
+  font-weight: 700; }
 
 .main {
   padding-top: 96px; }
@@ -810,9 +821,17 @@ input:focus {
   margin: 0 auto;
   border: none;
   transition: all 0.3s ease;
-  padding: 10px 60px; }
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: none; }
+  .view-more i {
+    color: #8D939D;
+    animation: updown 1s infinite; }
   .view-more:hover {
-    text-decoration: underline; }
+    background: #e4e6eb;
+    transition: all 0.3s ease; }
+  .view-more:focus {
+    outline: none; }
 
 .txt-sl-category {
   font-weight: 500; }
@@ -973,19 +992,20 @@ input:focus {
   .post-interactive ul li {
     width: 20%;
     padding: 0 4px; }
-    .post-interactive ul li a {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .post-interactive ul li:last-child {
-      margin-right: 0; }
+    .post-interactive ul li span {
+      transition: all 0.2s ease;
+      transform: translateY(0) scale(1);
+      display: block; }
+      .post-interactive ul li span:hover {
+        transform: translateY(-3px) scale(1.2);
+        transition: all 0.2s ease; }
 
 .sort-cmt {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #CED0D4;
   font-size: 15px;
-  padding: 0 16px; }
+  margin: 0 16px; }
   .sort-cmt button {
     padding: 6px 5px;
     color: #65676B;
@@ -999,10 +1019,19 @@ input:focus {
   .sort-cmt .dropdown-menu {
     box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
     right: 0;
-    left: auto;
+    left: auto !important;
     border: none;
     padding: 8px;
-    border-radius: 6px; }
+    border-radius: 6px;
+    width: 260px; }
+    .sort-cmt .dropdown-menu:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0d8";
+      position: absolute;
+      color: #fff;
+      top: -13px;
+      right: 70px; }
     .sort-cmt .dropdown-menu .dropdown-item {
       padding: 6px 8px;
       font-size: 15px;

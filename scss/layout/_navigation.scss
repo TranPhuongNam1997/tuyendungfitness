@@ -41,12 +41,13 @@
   .navigation{
     display: none;
     position: absolute;
-    top: 101%;
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 30px 0;
     background: #fff;
     box-shadow: 0 6px 8px rgba(0, 0, 0,0.05);
+    border-top: 2px solid #F0F2F5;
     .nav-block{
       display: flex;
       justify-content: space-between;
@@ -126,6 +127,9 @@
   &:focus{
     outline: none;
 
+  }
+  &.active{
+    background: #D8DADF;
   }
   svg{
     width: 17px;

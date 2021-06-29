@@ -58,10 +58,24 @@ $(document).ready(function (event) {
             x.type = "password";
         }
     });
+    // begin click outside
 
-    $('.btn-category').click(function () {
+    $('.btn-category').click(function (event) {
        $('.navigation').slideToggle(300,'swing');
+       $(this).toggleClass('active');
+        event.stopPropagation();
     });
+    const $menu = $('.header-home');
+    $(document).mouseup(e => {
+        if (!$menu.is(e.target)
+            && $menu.has(e.target).length === 0)
+        {
+            $('.btn-category').removeClass('active');
+            $('.navigation').slideUp(300,'swing');
+        }
+    });
+    // end click outside
+
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();

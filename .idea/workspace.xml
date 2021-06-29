@@ -2,31 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fceb0f4-c4a8-4cb6-b8df-87eff2f3365d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chinh-sua-trang-ca-nhan-profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chi-tiet-bai-tiet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trang-ca-nhan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chi-tiet-bai-tiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/chi-tiet-bai-tiet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dang-bai.html" beforeDir="false" afterPath="$PROJECT_DIR$/dang-bai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doi-mat-khau.html" beforeDir="false" afterPath="$PROJECT_DIR$/doi-mat-khau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/base/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_animation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trang-ca-nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-ca-nhan.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,19 +50,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -82,23 +65,23 @@
       <workItem from="1624788996589" duration="1387000" />
       <workItem from="1624846105928" duration="26586000" />
       <workItem from="1624933017196" duration="26006000" />
+      <workItem from="1624980832840" duration="4363000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

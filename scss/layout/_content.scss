@@ -279,9 +279,10 @@
 
 //Change password-------------------
 .heading-title {
-  font-size: 23px;
   line-height: 27px;
-  font-weight: 500;
+  font-size: 20px;
+  font-family: Segoe UI;
+  font-weight: 700;
 }
 
 //style home-------------------------
@@ -621,10 +622,22 @@
 	margin: 0 auto;
 	border: none;
 	transition: all 0.3s ease;
-	padding: 10px 60px;
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: none;
+
+  i{
+    color: #8D939D;
+    animation: updown 1s infinite;
+  }
 	&:hover{
-		text-decoration: underline;
-	}
+      background: #e4e6eb;
+      transition: all 0.3s ease;
+
+    }
+  &:focus{
+    outline: none;
+  }
 }
 .txt-sl-category{
 	font-weight: 500;
@@ -831,14 +844,24 @@
         li{
             width: 20%;
             padding: 0 4px;
-            a{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            //a{
+            //    display: flex;
+            //    align-items: center;
+            //    justify-content: center;
+            //}
+            //&:last-child{
+            //    margin-right: 0;
+            //}
+          span{
+            transition: all 0.2s ease;
+            transform: translateY(0) scale(1);
+            display: block;
+            &:hover{
+              transform: translateY(-3px) scale(1.2);
+              transition: all 0.2s ease;
+
             }
-            &:last-child{
-                margin-right: 0;
-            }
+          }
         }
     }
 }
@@ -847,7 +870,7 @@
     justify-content: space-between;
     border-top: 1px solid #CED0D4;
     font-size: 15px;
-    padding: 0 16px;
+    margin: 0 16px;
     button{
         padding: 6px 5px;
         color: #65676B;
@@ -863,10 +886,20 @@
     .dropdown-menu{
         box-shadow: 0 12px 28px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.1),inset 0 0 0 1px rgba(255,255,255,0.5);
         right: 0;
-        left: auto;
+        left: auto!important;
         border: none;
         padding: 8px;
         border-radius: 6px;
+        width: 260px;
+        &:after{
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f0d8";
+          position: absolute;
+          color: #fff;
+          top: -13px;
+          right: 70px;
+        }
         .dropdown-item{
             padding: 6px 8px;
             font-size: 15px;
