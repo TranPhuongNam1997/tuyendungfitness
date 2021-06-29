@@ -79,11 +79,124 @@ body {
       font-size: 13.5px;
       line-height: 16px; } }
 
+#wrapper {
+  background: #f0f2f5;
+  min-height: 100vh;
+  height: 100%; }
+
+input:focus {
+  outline: none !important; }
+
 .container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px; }
+
+.container-login {
+  max-width: 396px;
+  width: 100%;
+  margin: 0 auto; }
+
+.logo-login {
+  width: 198px; }
+
+.bg-white {
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 28px; }
+
+.field-ip {
+  padding: 6px 0; }
+  .field-ip input {
+    display: block;
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 100%;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    border-radius: 6px; }
+    .field-ip input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #9094A9; }
+    .field-ip input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #9094A9; }
+    .field-ip input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #9094A9; }
+    .field-ip input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #9094A9; }
+    .field-ip input:focus {
+      border-color: #1877f2;
+      box-shadow: 0 0 0 2px #e7f3ff;
+      caret-color: #1877f2;
+      outline: none !important; }
+      .field-ip input:focus::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #BEC3CC; }
+      .field-ip input:focus::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #BEC3CC; }
+      .field-ip input:focus:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #BEC3CC; }
+      .field-ip input:focus:-moz-placeholder {
+        /* Firefox 18- */
+        color: #BEC3CC; }
+
+.btn-login {
+  margin-top: 6px;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease; }
+  .btn-login:hover {
+    background-color: #166fe5;
+    transition: all 0.3s ease; }
+
+.line-login {
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 0;
+  text-align: center; }
+
+.btn-register {
+  padding-top: 6px;
+  display: flex;
+  justify-content: center; }
+  .btn-register a {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease; }
+    .btn-register a:hover {
+      background-color: #36a420;
+      transition: all 0.3s ease; }
+
+.flex-login {
+  padding-top: 20vh; }
 
 #back-to-top {
   position: fixed;
