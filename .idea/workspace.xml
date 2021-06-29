@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fceb0f4-c4a8-4cb6-b8df-87eff2f3365d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dang-bai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doi-mat-khau.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon-favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tim-kiem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chinh-sua-trang-ca-nhan-profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chi-tiet-bai-tiet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trang-ca-nhan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dang-bai.html" beforeDir="false" afterPath="$PROJECT_DIR$/dang-bai.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/abstracts/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/base/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_animation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +81,7 @@
       <workItem from="1624787678394" duration="1166000" />
       <workItem from="1624788996589" duration="1387000" />
       <workItem from="1624846105928" duration="26586000" />
+      <workItem from="1624933017196" duration="26006000" />
     </task>
     <servers />
   </component>

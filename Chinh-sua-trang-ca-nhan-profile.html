@@ -46,7 +46,8 @@
                     <button class="btn-category" type="button">
                         <svg viewBox="0 0 28 28" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 em6zcovv" height="28"
                              width="28">
-                            <path fill="#3576F1" d="M23.5 4a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0 18a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0-9a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19z"></path>
+                            <path fill="#3576F1"
+                                  d="M23.5 4a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0 18a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19zm0-9a1.5 1.5 0 110 3h-19a1.5 1.5 0 110-3h19z"></path>
                         </svg>
                         <span>Danh mục</span>
                     </button>
@@ -57,8 +58,10 @@
                         </label>
                     </a>
                     <a href="#" class="link-login">Đăng nhập</a>
+
                 </div>
             </div>
+
         </div>
         <!-- begin navigation-->
         <div class="navigation">
@@ -104,64 +107,49 @@
     <!--begin main-->
     <main class="main">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="post-list">
-                        <div class="post-item">
-                            <div class="post-item-flex">
-                                <a href="#" class="box-img"><img src="img/avt-post.jpg" alt="img"></a>
-                                <div>
-                                    <a href="#" class="name-post">Trần Nam</a>
-                                    <div class="post-time">1 giờ trước <i class="hu5pjgll m6k467ps"></i></div>
+            <div class="row align-items-center flex-column">
+                <div class="col-lg-6">
+                    <div class="post-upload mb-5">
+                        <h3 class="title-post">Chinh sửa Trang cá nhân</h3>
+                        <div class="post-upload-box">
+                            <div class="font-weight-bold">Ảnh đại diện</div>
+                            <div class="avatar-upload">
+                                <div class="avatar-edit">
+                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg"/>
+                                    <label for="imageUpload"></label>
+                                </div>
+                                <div class="avatar-preview">
+                                    <div id="imagePreview"
+                                         style="background-image: url('https://scontent.fhan5-2.fna.fbcdn.net/v/t1.6435-9/109116642_278706606677722_7309285219947855714_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=dV2by5ahqQQAX_cZsWB&_nc_ht=scontent.fhan5-2.fna&oh=15fafd432a1a375010a9447b460b316d&oe=60DFB4DC');">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="post-status">
-                                Tà xùa ngày trở lại
+                            <div class="field-ip">
+                                <input type="text" placeholder="Họ tên...">
                             </div>
-                            <div class="post-img">
-                                <a href="#">
-                                    <img src="img/post-img.jpg" alt="img" class="w-100">
-                                </a>
+                            <div class="field-ip">
+                                <select required>
+                                    <option disabled value="" selected>Giới tính</option>
+                                    <option value="1">Nam</option>
+                                    <option value="2">Nữ</option>
+                                    <option value="3">Khác</option>
+                                </select>
                             </div>
-                            <div class="count-cmt">
-                                <a href="#">
-                                    <i></i>123 bình luận
-                                </a>
+
+                            <div class="field-ip">
+                                <textarea placeholder="Tiểu sử ngắn"></textarea>
                             </div>
-                        </div>
-                        <div class="post-item">
-                            <div class="post-item-flex">
-                                <a href="#" class="box-img"><img src="img/avt-post.jpg" alt="img"></a>
-                                <div>
-                                    <a href="#" class="name-post">Trần Nam</a>
-                                    <div class="post-time">1 giờ trước <i class="hu5pjgll m6k467ps"></i></div>
-                                </div>
-                            </div>
-                            <div class="post-status">
-                                Tà xùa ngày trở lại
-                            </div>
-                            <div class="post-img">
-                                <a href="#">
-                                    <img src="img/post-img.jpg" alt="img" class="w-100">
-                                </a>
-                            </div>
-                            <div class="count-cmt">
-                                <a href="#">
-                                    <i></i>123 bình luận
-                                </a>
+
+                            <div class="text-center mt-3 mb-3">
+                                <button class="btn-lightblue">Chỉnh sửa thông tin giới thiệu</button>
                             </div>
                         </div>
-                        <div class="text-center mt-3 mb-4">
-                            <button class="view-more">Xem thêm <i class="fa fa-angle-down"></i></button>
-                        </div>
+
 
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="box-post-right">
-                        <div class="box-post-title">Bài viết gần đây của bạn.</div>
-                        <div class="mt-2">Vui lòng bấm <a href="#" class="link-post-login">Đăng nhập</a> để xem nội dung này</div>
-                    </div>
+
                 </div>
             </div>
 
@@ -179,11 +167,11 @@
 
 <script type="text/javascript" src="libs/js/jquery.min.js"></script>
 <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="libs/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+<!--<script type="text/javascript" src="libs/js/swiper.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>-->
+<!--<script>-->
+<!--    new WOW().init();-->
+<!--</script>-->
 <script type="text/javascript" src="libs/js/script.js"></script>
 </body>
 </html>
