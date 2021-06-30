@@ -423,12 +423,38 @@
           &:hover{
               .post-interactive{
                   animation: ani-show 0.2s forwards;
-                  animation-delay: 0.7s;
+                  //animation-delay: 0.7s;
                   ul{
+                      //li{
+                      //    animation: translate-top 0.2s forwards;
+                      //    animation-timing-function: linear;
+                      //    animation-delay: 0.7s;
+                      //}
                       li{
-                          animation: translate-top 0.2s forwards;
-                          animation-timing-function: linear;
-                          animation-delay: 0.7s;
+                          &:nth-child(1){
+                              -webkit-animation-duration: .7333s;
+                              -webkit-animation-name: head-1-anim
+                          }
+                          &:nth-child(2){
+                              -webkit-animation-duration: .9833s;
+                              -webkit-animation-name: head-2-anim
+                          }
+                          &:nth-child(3){
+                              -webkit-animation-duration: 1.0833s;
+                              -webkit-animation-name: head-3-anim
+                          }
+                          &:nth-child(4){
+                              -webkit-animation-duration: .9333s;
+                              -webkit-animation-name: head-4-anim
+                          }
+                          &:nth-child(5){
+                              -webkit-animation-duration: 1.2167s;
+                              -webkit-animation-name: head-5-anim
+                          }
+                          &:nth-child(6){
+                              -webkit-animation-duration: 1.2833s;
+                              -webkit-animation-name: head-6-anim
+                          }
                       }
                   }
               }
@@ -852,10 +878,19 @@
             //&:last-child{
             //    margin-right: 0;
             //}
+
           span{
             transition: all 0.2s ease;
             transform: translateY(0) scale(1);
             display: block;
+              //animation-timing-function: ease-in-out;
+              //animation-name: qyfscavd-B;
+              //animation-duration: .2s;
+              //animation-fill-mode: forwards;
+              //animation-iteration-count: 1;
+              //touch-action: manipulation;
+
+
             &:hover{
               transform: translateY(-3px) scale(1.2);
               transition: all 0.2s ease;

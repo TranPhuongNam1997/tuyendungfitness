@@ -60,7 +60,7 @@ $(document).ready(function (event) {
     });
     // begin click outside
 
-    $('.btn-category').click(function (event) {
+    $(".btn-category").click(function (event) {
        $('.navigation').slideToggle(300,'swing');
        $(this).toggleClass('active');
         event.stopPropagation();
@@ -80,15 +80,27 @@ $(document).ready(function (event) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function(e) {
-                $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-                $('#imagePreview').hide();
-                $('#imagePreview').fadeIn(650);
-            }
+                $('#imagePreview').css('background-image', 'url('+e.target.result +')').hide().fadeIn(650);
+            };
             reader.readAsDataURL(input.files[0]);
         }
     }
     $("#imageUpload").change(function() {
         readURL(this);
     });
+    $('#text-cmt').keyup(function (e) {
+
+       if(e.target.value && e.target.value.length > 0){
+            $('.fly-cmt svg path').attr('fill','#4782FD');
+       }
+       else {
+           $('.fly-cmt svg path').attr('fill','#616770');
+           // alert('a')
+
+       }
+
+    });
+
+
 
 });
