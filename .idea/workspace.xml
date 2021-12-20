@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/css/swiper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/css/viewbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/js/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/js/wow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/abstracts/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/abstracts/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/base/_animation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/base/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/base/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/components/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/components/_slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/layout/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/layout/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/layout/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/layout/_sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22X6NUUGyGpT6zWZUKzrDE1LEsO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="" />
+      <created>1639971544242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639971544242</updated>
+      <workItem from="1639971545638" duration="21094000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2638" y="216" key="#SCSS" timestamp="1639981210685">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2638" y="216" key="#SCSS/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1639981210685" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639993687179">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1639993687179" />
+  </component>
+</project>
