@@ -69,6 +69,41 @@ input, textarea, button, button:active, button:focus {
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url("../fonts/SVN-GothamBold.eot");
+  src: url("../fonts/SVN-GothamBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-GothamBold.woff2") format("woff2"), url("../fonts/SVN-GothamBold.woff") format("woff"), url("../fonts/SVN-GothamBold.ttf") format("truetype"), url("../fonts/SVN-GothamBold.svg#SVN-GothamBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SVN-Gotham Book';
+  src: url("../fonts/SVN-GothamBook.eot");
+  src: url("../fonts/SVN-GothamBook.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-GothamBook.woff2") format("woff2"), url("../fonts/SVN-GothamBook.woff") format("woff"), url("../fonts/SVN-GothamBook.ttf") format("truetype"), url("../fonts/SVN-GothamBook.svg#SVN-GothamBook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url("../fonts/SVN-Gotham.eot");
+  src: url("../fonts/SVN-Gotham.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-Gotham.woff2") format("woff2"), url("../fonts/SVN-Gotham.woff") format("woff"), url("../fonts/SVN-Gotham.ttf") format("truetype"), url("../fonts/SVN-Gotham.svg#SVN-Gotham") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SVN-Gotham Ultra';
+  src: url("../fonts/SVN-GothamUltra.eot");
+  src: url("../fonts/SVN-GothamUltra.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-GothamUltra.woff2") format("woff2"), url("../fonts/SVN-GothamUltra.woff") format("woff"), url("../fonts/SVN-GothamUltra.ttf") format("truetype"), url("../fonts/SVN-GothamUltra.svg#SVN-GothamUltra") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url("../fonts/SVN-GothamLight.eot");
+  src: url("../fonts/SVN-GothamLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SVN-GothamLight.woff2") format("woff2"), url("../fonts/SVN-GothamLight.woff") format("woff"), url("../fonts/SVN-GothamLight.ttf") format("truetype"), url("../fonts/SVN-GothamLight.svg#SVN-GothamLight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
 @-webkit-keyframes hvr-icon-wobble-vertical {
   16.65% {
     -webkit-transform: translateY(6px);
@@ -1411,7 +1446,7 @@ input:focus {
 
 .sc-contact {
   padding: 83px 0 94px;
-  background: url("../img/bg-contact.png") no-repeat center, url("../img/bg-contact-opacity.svg") no-repeat 100% 10%;
+  background: url("../img/bg-contact-opacity.png") no-repeat left center, url("../img/bg-contact.png") no-repeat center;
   background-size: cover;
   color: #fff;
   position: relative; }
@@ -1485,7 +1520,10 @@ input:focus {
   display: none; }
 
 .sc-news {
-  padding: 55px 0 92px; }
+  padding: 55px 0 92px;
+  font-family: 'SVN-Gotham'; }
+  .sc-news .title-sc {
+    margin-bottom: 49px; }
 
 .box-news {
   border-radius: 8px; }
@@ -1530,13 +1568,18 @@ input:focus {
     font-size: 18px;
     line-height: 24px;
     color: #393939;
-    margin-bottom: 20px;
-    overflow: hidden;
-    /* -webkit-box-orient: vertical; */
-    white-space: normal;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    display: -webkit-box; }
+    margin-bottom: 20px; }
+    .info-news .title-news a {
+      overflow: hidden;
+      /* -webkit-box-orient: vertical; */
+      white-space: normal;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      transition: all 0.2s ease-in-out; }
+      .info-news .title-news a:hover {
+        color: #FF5C1D;
+        transition: all 0.2s ease-in-out; }
   .info-news .sub-news {
     color: #313435;
     font-size: 16px;
@@ -1547,6 +1590,68 @@ input:focus {
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     display: -webkit-box; }
+
+.list-news li {
+  display: flex;
+  margin-bottom: 24px; }
+  .list-news li .img-news-list {
+    display: block;
+    width: 124px;
+    margin-right: 20px; }
+    .list-news li .img-news-list img {
+      width: 100%; }
+  .list-news li .news-list-right {
+    width: calc(100% - 144px); }
+    .list-news li .news-list-right img {
+      width: 11px; }
+    .list-news li .news-list-right span {
+      font-size: 13px;
+      line-height: 17px; }
+    .list-news li .news-list-right .divider-line {
+      margin: 0 8px 0 11px; }
+    .list-news li .news-list-right .kind-news {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px; }
+    .list-news li .news-list-right .title-sidebar {
+      font-size: 14px;
+      line-height: 18px;
+      color: #313435; }
+      .list-news li .news-list-right .title-sidebar a {
+        transition: all 0.2s ease-in-out; }
+        .list-news li .news-list-right .title-sidebar a:hover {
+          color: #FF5C1D;
+          transition: all 0.2s ease-in-out; }
+
+.bg-violet {
+  background: #FBFAFF;
+  border-radius: 8px;
+  padding: 24px 16px 55px;
+  position: relative; }
+
+.viewmore {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 200px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF5C1D;
+  height: 51px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px 0 8px 0; }
+  .viewmore:hover {
+    color: #fff;
+    background: #fd7a47;
+    transition: all 0.2s ease-in-out; }
+  .viewmore img {
+    margin-left: 13px; }
 
 #back-to-top {
   position: fixed;

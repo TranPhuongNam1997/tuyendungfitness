@@ -93,3 +93,69 @@
   font-display: swap;
 }
 
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../fonts/SVN-GothamBold.eot');
+  src: url('../fonts/SVN-GothamBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SVN-GothamBold.woff2') format('woff2'),
+  url('../fonts/SVN-GothamBold.woff') format('woff'),
+  url('../fonts/SVN-GothamBold.ttf') format('truetype'),
+  url('../fonts/SVN-GothamBold.svg#SVN-GothamBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Book';
+  src: url('../fonts/SVN-GothamBook.eot');
+  src: url('../fonts/SVN-GothamBook.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SVN-GothamBook.woff2') format('woff2'),
+  url('../fonts/SVN-GothamBook.woff') format('woff'),
+  url('../fonts/SVN-GothamBook.ttf') format('truetype'),
+  url('../fonts/SVN-GothamBook.svg#SVN-GothamBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../fonts/SVN-Gotham.eot');
+  src: url('../fonts/SVN-Gotham.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SVN-Gotham.woff2') format('woff2'),
+  url('../fonts/SVN-Gotham.woff') format('woff'),
+  url('../fonts/SVN-Gotham.ttf') format('truetype'),
+  url('../fonts/SVN-Gotham.svg#SVN-Gotham') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham Ultra';
+  src: url('../fonts/SVN-GothamUltra.eot');
+  src: url('../fonts/SVN-GothamUltra.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SVN-GothamUltra.woff2') format('woff2'),
+  url('../fonts/SVN-GothamUltra.woff') format('woff'),
+  url('../fonts/SVN-GothamUltra.ttf') format('truetype'),
+  url('../fonts/SVN-GothamUltra.svg#SVN-GothamUltra') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('../fonts/SVN-GothamLight.eot');
+  src: url('../fonts/SVN-GothamLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SVN-GothamLight.woff2') format('woff2'),
+  url('../fonts/SVN-GothamLight.woff') format('woff'),
+  url('../fonts/SVN-GothamLight.ttf') format('truetype'),
+  url('../fonts/SVN-GothamLight.svg#SVN-GothamLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
