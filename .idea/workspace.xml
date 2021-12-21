@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +39,7 @@
       <updated>1639971544242</updated>
       <workItem from="1639971545638" duration="21094000" />
       <workItem from="1640007832750" duration="5129000" />
+      <workItem from="1640050737722" duration="5556000" />
     </task>
     <servers />
   </component>
