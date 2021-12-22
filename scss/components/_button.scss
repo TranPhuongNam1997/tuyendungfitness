@@ -31,3 +31,35 @@ button:focus{
     border-radius: 50%;
     animation: ripple-animation 2s;
 }
+
+
+.btn-search-candi{
+    background: #FF5C1D;
+    border-radius: 8px 0 8px 0;
+    height: 54px;
+    border: none;
+    padding: 0 31px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color: #fff;
+        background: #fd7a47;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.btn-search{
+    background: #FF5C1D;
+    border-radius: 8px 0 8px 0;
+    height: 84px;
+    width: 69px;
+    border: none;
+    img{
+
+    }
+}
+

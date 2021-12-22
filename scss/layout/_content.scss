@@ -8,7 +8,7 @@
 .title-sc{
     font-weight: 600;
     font-size: 35px;
-    line-height: 43px;
+    line-height: 39px;
     span{
         color: #FF5C1D;
     }
@@ -101,22 +101,42 @@
 
 .sc-jobforyou{
     background: #FBFAFF;
-    padding: 55px 0 126px;
+    padding: 55px 0 100px;
     .title-sc{
-        margin-bottom: 45px;
+        margin-bottom: 49px;
     }
 
 }
+.link-viewall{
+    color: #666666;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    span{
+        margin-right: 8px;
+    }
+    &:hover{
+        color: #FF5C1D;
+        transition: all 0.2s ease-in-out;
+    }
+}
 .list-job{
+    margin-bottom: 8px;
     .item-job{
+        position: relative;
+        display: block;
         margin-bottom: 16px;
-        padding: 18px 32px 12px 42px;
+        padding: 15px 32px 8px 21px;
         border-radius: 8px 0 8px 0 ;
         background: #FBFAFF;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-between;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
         transition: all 0.2s ease-in-out;
+
+        span{
+            display: block;
+        }
         &:hover{
             background: #fff;
             transition: all 0.2s ease-in-out;
@@ -131,12 +151,12 @@
     display: flex;
 }
 .logo-job{
-    margin-right: 29px;
+    margin-right: 15px;
     a{
         position: relative;
         display: block;
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
         &:before{
             @include resize-before(100%);
 
@@ -147,17 +167,35 @@
         }
     }
 }
+.tag-new{
+    color: #FF5C1D;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    border-radius: 3px 0 3px 0;
+    background: #FFE3D8;
+    margin-right: 5px;
+    padding: 3px 5px;
+    display: inline-block;
+}
 .info-job{
     .title-jobforyou{
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 7px;
         color: #161616;
         a{
+            display: flex;
+            align-items: center;
             &:hover{
                 color: #161616;
-                text-decoration: underline;
+                span{
+                    text-decoration: underline;
+                }
+                .tag-new{
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -166,11 +204,13 @@
         margin-bottom: 24px;
     }
     .info-bot{
+        display: flex;
         > span{
             display: inline-flex;
             align-items: center;
-            margin-bottom: 12px;
-            margin-right: 54px;
+            margin-bottom: 8px;
+            margin-right: 26px;
+
             &:last-child{
                 margin-right: 0px;
             }
@@ -180,34 +220,57 @@
             .nb-money{
                 color: #3299DC;
                 font-weight: 600;
-                font-size: 18px;
-                line-height: 22px;
                 margin-bottom: 0;
             }
         }
     }
 }
+.flag{
+    position: absolute;
+    top: 11px;
+    right: 14px;
+    &:before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 14px;
+        height: 18px;
+        background: url("../img/flag.svg") no-repeat center center;
+        background-size: cover;
+    }
+    &.active{
+        &:before{
+            background: url("../img/flagactive.svg") no-repeat center center;
+        }
+    }
+}
 .btn-recruitment{
+    position: absolute;
+    bottom: 23px;
+    right: 14px;
     padding: 10px 21px 11px;
     font-weight: 600;
-    color: #FF5C1D;
+    color: #fff;
     display: inline-flex;
     border-radius: 8px 0 8px 0;
     transition: all 0.2s ease-in-out;
-    background: transparent;
-    border: 1px solid #FFE3D8;
+
+    background: #FF5C1D;
     &:hover{
-        color: #FFFFFF;
-        background: #FF5C1D;
+        color: #fff;
+
+        background: #fd7a47;
         transition: all 0.2s ease-in-out;
     }
 }
 
 
 .item-job-hot{
+    position: relative;
     background: #FBFAFF;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    padding: 30px 24px 26px;
+    padding: 12px 23px 33px 23px;
     border-radius: 8px 0 8px 0;
     margin-bottom: 16px;
     transition: all 0.2s ease-in-out;
@@ -218,31 +281,33 @@
             color: #FF5C1D;
         }
     }
-    .logo-job{
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 27px;
-        a{
-            margin: 0 auto;
-            width: 49px;
-            height: 49px;
-        }
-    }
+    //.logo-job{
+    //    text-align: center;
+    //    margin-right: 0;
+    //    margin-bottom: 27px;
+    //    a{
+    //        margin: 0 auto;
+    //        width: 49px;
+    //        height: 49px;
+    //    }
+    //}
     .sub-hot{
         color: #666666;
         line-height: 19px;
         margin-bottom: 13px;
     }
     .title-jobforyou{
-        margin-bottom: 4px;
+        margin-bottom: 8px;
     }
     .name-company{
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
     .info-bot{
+        display: block;
         >span{
+            display: block;
             margin-right: 0;
-            margin-bottom: 13px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -258,6 +323,7 @@
 }
 
 .recruitment{
+    margin-top: 82px;
     .swiper-pagination{
         left: 50%;
         transform: translateX(-50%);
@@ -277,14 +343,36 @@
         }
     }
 }
+.block-job-hot{
+    padding: 2px;
+    overflow-y: auto;
+    min-height: 300px;
+    margin-bottom: 20px;
+    &::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #ddd;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #C8C8C8;
+        border-radius: 10px;
+   }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
 
 //end style section job for you
 
 .sc-looking-candidates{
-    padding: 78px 0 101px;
+    padding: 137px 0 101px;
     background: url("../img/bg-looking.png") no-repeat top right;
     .title-sc{
-        margin-bottom: 45px;
+        margin-top: 38px;
+        margin-bottom: 57px;
         width: 60%;
     }
 }
@@ -453,6 +541,11 @@
             box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
             border-bottom-right-radius: 25px;
             border: none;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                background: #fd7a47;
+                transition: all 0.2s ease-in-out;
+            }
         }
     }
 }
@@ -470,7 +563,6 @@
 
 .sc-news{
     padding: 55px 0 92px;
-    font-family: 'SVN-Gotham';
     .title-sc{
         margin-bottom: 49px;
     }
@@ -492,6 +584,9 @@
             object-fit: cover;
         }
     }
+}
+.br-8{
+    border-radius: 8px;
 }
 .time-news{
     display: flex;

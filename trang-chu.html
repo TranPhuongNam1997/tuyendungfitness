@@ -9,6 +9,7 @@
 
     <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/multiple-select.css">
     <link rel="stylesheet" href="libs/css/all.css">
     <link rel="stylesheet" href="libs/css/swiper.css">
     <link rel="stylesheet" href="libs/css/animate.css">
@@ -16,6 +17,141 @@
 </head>
 <body>
 <div id="wrapper">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="flex-head">
+                    <div class="info-contact">
+                        <div class="txt-contact">
+                            <img src="img/icon-sms.svg" alt="img">tuyendungfitness@gmail.com
+                        </div>
+                        <div class="txt-contact">
+                            <img src="img/icon-call.svg" alt="img">0981.980.980 - 0877.786.666
+                        </div>
+                    </div>
+                    <div class="block-user">
+                        <div class="notify">
+                            <div class="icon-notify">
+                                <img src="img/icon-notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="info-user">
+                            <a href="#" class="avt-user">
+                                <img src="img/avtpng.png" alt="img">
+                            </a>
+                            <div>
+                                <h3 class="name-user">
+                                    <a href="#">
+                                        Minh Lan<span class="icon-drop"><img src="img/icon-angledown.svg" alt="img"></span>
+                                    </a>
+                                </h3>
+                                <div class="name-position">Nhà tuyển dụng</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--    end header-top-->
+        <div class="bg-black">
+            <div class="img-girl">
+                <img src="img/girl.png" alt="img">
+                <div class="wave-line">
+                    <div class="wave-line-one"></div>
+                    <div class="wave-line-one wave-line-two"></div>
+                    <div class="wave-line-one wave-line-three"></div>
+                </div>
+                <div class="wave-dark">
+                    <div class="wave-line-one"></div>
+                    <div class="wave-line-one wave-line-two"></div>
+                    <div class="wave-line-one wave-line-three"></div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="container">
+                    <div class="box-nav">
+                        <div class="navi-left">
+                            <h1 class="logo"><a href="#"><img src="img/icon-logo.svg" alt="img"></a></h1>
+                            <div class="nav">
+                                <ul>
+                                    <li class="active"><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Việc làm <i class="fa fa-angle-down"></i></a></li>
+                                    <li><a href="#">Việc làm PT</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-search-candi">tìm ứng viên</button>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="container">
+                    <h2 class="slogan">Việc làm <span>Fitness</span></h2>
+                    <div class="sub-banner">Nim mollit non deserunt ullamco</div>
+
+                    <div class="search-banner">
+                        <div class="list-search">
+                            <div class="item-search">
+                                <label>Từ khóa</label>
+                                <div class="field-search">
+                                    <input type="text" placeholder="Nghề nghiệp, công ty...">
+                                    <img src="img/icon-edit.svg" alt="img">
+                                </div>
+                            </div>
+                            <div class="item-search">
+                                <label>Từ khóa</label>
+                                <div class="field-search">
+                                    <select class="sl-multiple">
+                                        <option value="">IT Phần mềm</option>
+                                        <option value="">IT Phần cứng</option>
+                                    </select>
+                                    <img src="img/icon-edit.svg" alt="img">
+                                </div>
+                            </div>
+                            <div class="item-search">
+                                <label>Từ khóa</label>
+                                <div class="field-search">
+                                    <select  class="sl-multiple2">
+                                        <option value="">Hà Nội</option>
+                                        <option value="">TP HCM</option>
+                                        <option value="">Đà Nẵng</option>
+                                    </select>
+                                    <img src="img/icon-edit.svg" alt="img">
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="btn-search">
+                            <img src="img/icon-angle-right.svg" alt="img">
+                        </button>
+                    </div>
+                    <div class="popular-jobs">
+                        <span class="txt-popular">Việc làm phổ biến:</span>
+                        <ul class="list-popular-jobs">
+                            <li><a href="#">Nhân viên bán vé</a></li>
+                            <li><a href="#">PT</a></li>
+                            <li><a href="#">Lễ tân</a></li>
+                            <li><a href="#">Huấn luyện viên phòng Gym</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-cadidate">
+                        <img src="img/icon-cadi.svg" alt="img">
+                        <div>Nhà tuyển dụng tìm ứng viên</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </header>
+
+    <!-- end header-->
 
     <!--begin section-->
 
@@ -87,221 +223,474 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="title-sc">Việc làm dành cho bạn</div>
+                    <div class="title-sc">Việc làm mới nhất</div>
                     <div class="list-job">
-                        <div class="item-job">
-                            <div class="flex-left">
-                                <div class="logo-job">
-                                    <a href="">
-                                        <img src="img/icon-jobfoyou1.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-job">
-                                    <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên Cá Nhân</a></h3>
-                                    <div class="name-company">Công ty TNHH Z Management</div>
-                                    <div class="info-bot">
-                                        <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                        <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                        <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                        <div class="row row-8">
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
-                            </div>
-                        </div>
-                        <div class="item-job">
-                            <div class="flex-left">
-                                <div class="logo-job">
-                                    <a href="">
-                                        <img src="img/icon-jobfoyou1.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-job">
-                                    <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên Cá Nhân</a></h3>
-                                    <div class="name-company">Công ty TNHH Z Management</div>
-                                    <div class="info-bot">
-                                        <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                        <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                        <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
-                            </div>
-                        </div>
-                        <div class="item-job">
-                            <div class="flex-left">
-                                <div class="logo-job">
-                                    <a href="">
-                                        <img src="img/icon-jobfoyou1.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-job">
-                                    <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên Cá Nhân</a></h3>
-                                    <div class="name-company">Công ty TNHH Z Management</div>
-                                    <div class="info-bot">
-                                        <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                        <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                        <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
-                            </div>
-                        </div>
-                        <div class="item-job">
-                            <div class="flex-left">
-                                <div class="logo-job">
-                                    <a href="">
-                                        <img src="img/icon-jobfoyou1.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-job">
-                                    <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên Cá Nhân</a></h3>
-                                    <div class="name-company">Công ty TNHH Z Management</div>
-                                    <div class="info-bot">
-                                        <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                        <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                        <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
-                            </div>
-                        </div>
-                        <div class="item-job">
-                            <div class="flex-left">
-                                <div class="logo-job">
-                                    <a href="">
-                                        <img src="img/icon-jobfoyou1.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-job">
-                                    <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên Cá Nhân</a></h3>
-                                    <div class="name-company">Công ty TNHH Z Management</div>
-                                    <div class="info-bot">
-                                        <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                        <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                        <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
-                            </div>
-                        </div>
-                        <div class="item-job">
-                            <div class="flex-left">
-                                <div class="logo-job">
-                                    <a href="">
-                                        <img src="img/icon-jobfoyou1.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="info-job">
-                                    <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên Cá Nhân</a></h3>
-                                    <div class="name-company">Công ty TNHH Z Management</div>
-                                    <div class="info-bot">
-                                        <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                        <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                        <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 pd-8">
+                                <div class="item-job">
+                                    <div class="flag active"></div>
+                                    <div class="flex-left">
+                                        <div class="logo-job">
+                                            <a href="">
+                                                <img src="img/icon-jobfoyou1.svg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="info-job">
+                                            <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Mới</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                            <div class="name-company">Công ty TNHH Z Management</div>
+                                            <div class="info-bot">
+                                                <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                                <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                                <span><img src="img/icon-dolar.svg" alt=""><span class="nb-money">18-20tr</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+                    <a href="#" class="link-viewall"><span>Xem tất cả</span><img src="img/angle-right-light.svg" alt="img"> <img src="img/angle-right.svg" alt="img"></a>
                 </div>
                 <div class="col-lg-3">
-                    <div class="title-sc">Việc làm hot</div>
-                    <div class="list-job-hot">
-                        <div class="item-job-hot">
-                            <div class="logo-job">
-                                <a href="">
-                                    <img src="img/logo-jobhot.svg" alt="img">
-                                </a>
-                            </div>
-                            <div class="info-job">
-                                <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên PT</a></h3>
-                                <div class="name-company">Công ty TNHH Z Management</div>
-                                <div class="sub-hot">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                                    officia consequat duis enim velit mollit...
+                    <div class="title-sc">Việc làm gấp</div>
+                    <div class="block-job-hot">
+                        <div class="list-job-hot">
+                            <div class="item-job-hot">
+                                <div class="flag"></div>
+                                <div class="info-job">
+                                    <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Gấp</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                    <div class="name-company">Công ty TNHH Z Management</div>
+                                    <div class="sub-hot">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="info-bot">
+                                        <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                        <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                        <span><img src="img/icon-dolar.svg" alt=""><span
+                                                class="nb-money">20tr</span></span>
+                                    </div>
                                 </div>
-                                <div class="info-bot">
-                                    <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                    <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                    <span><img src="img/icon-dolar.svg" alt=""><span
-                                            class="nb-money">18-20tr</span></span>
-                                </div>
-                            </div>
-                            <div class="text-right">
                                 <a href="#" class="btn-recruitment">Ứng tuyển</a>
                             </div>
-                        </div>
-                        <div class="item-job-hot">
-                            <div class="logo-job">
-                                <a href="">
-                                    <img src="img/logo-jobhot.svg" alt="img">
-                                </a>
-                            </div>
-                            <div class="info-job">
-                                <h3 class="title-jobforyou"><a href="#">Huấn Luyện Viên PT</a></h3>
-                                <div class="name-company">Công ty TNHH Z Management</div>
-                                <div class="sub-hot">
-                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-                                    officia consequat duis enim velit mollit...
+                            <div class="item-job-hot">
+                                <div class="flag"></div>
+                                <div class="info-job">
+                                    <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Gấp</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                    <div class="name-company">Công ty TNHH Z Management</div>
+                                    <div class="sub-hot">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="info-bot">
+                                        <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                        <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                        <span><img src="img/icon-dolar.svg" alt=""><span
+                                                class="nb-money">20tr</span></span>
+                                    </div>
                                 </div>
-                                <div class="info-bot">
-                                    <span><img src="img/icon-location.svg" alt="">Hà Nội, Hoàn Kiếm, Hà Nội</span>
-                                    <span><img src="img/icon-time.svg" alt="">12/12/2021 - 1/1/2022</span>
-                                    <span><img src="img/icon-dolar.svg" alt=""><span
-                                            class="nb-money">18-20tr</span></span>
-                                </div>
-                            </div>
-                            <div class="text-right">
                                 <a href="#" class="btn-recruitment">Ứng tuyển</a>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <a href="#" class="viewall">Xem tất cả việc làm</a>
-                    </div>
-
-                    <div class="recruitment">
-                        <div class="swiper-container swiper-recruitment">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="img/img-td.png" alt="img" class="w-100">
+                            <div class="item-job-hot">
+                                <div class="flag"></div>
+                                <div class="info-job">
+                                    <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Gấp</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                    <div class="name-company">Công ty TNHH Z Management</div>
+                                    <div class="sub-hot">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="info-bot">
+                                        <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                        <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                        <span><img src="img/icon-dolar.svg" alt=""><span
+                                                class="nb-money">20tr</span></span>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="img/img-td.png" alt="img" class="w-100">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/img-td.png" alt="img" class="w-100">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/img-td.png" alt="img" class="w-100">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="img/img-td.png" alt="img" class="w-100">
-                                </div>
-
+                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
                             </div>
-                            <!-- Add Pagination -->
+                            <div class="item-job-hot">
+                                <div class="flag active"></div>
+                                <div class="info-job">
+                                    <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Gấp</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                    <div class="name-company">Công ty TNHH Z Management</div>
+                                    <div class="sub-hot">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="info-bot">
+                                        <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                        <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                        <span><img src="img/icon-dolar.svg" alt=""><span
+                                                class="nb-money">20tr</span></span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
+                            </div>
+                            <div class="item-job-hot">
+                                <div class="flag"></div>
+                                <div class="info-job">
+                                    <h3 class="title-jobforyou"><a href="#"><span class="tag-new">Gấp</span><span>Huấn Luyện Viên Cá Nhân</span></a></h3>
+                                    <div class="name-company">Công ty TNHH Z Management</div>
+                                    <div class="sub-hot">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                        officia consequat duis enim velit mollit...
+                                    </div>
+                                    <div class="info-bot">
+                                        <span><img src="img/icon-location.svg" alt="">Hà Nội</span>
+                                        <span><img src="img/icon-time.svg" alt="">1/1/2022</span>
+                                        <span><img src="img/icon-dolar.svg" alt=""><span
+                                                class="nb-money">20tr</span></span>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-recruitment">Ứng tuyển</a>
+                            </div>
+
+
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <a href="#" class="link-viewall justify-content-end"><span>Xem tất cả</span><img src="img/angle-right-light.svg" alt="img"> <img src="img/angle-right.svg" alt="img"></a>
                 </div>
+            </div>
+
+            <div class="recruitment">
+                <div class="swiper-container swiper-recruitment">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/img-td.png" alt="img" class="w-100 br-8">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img-td.png" alt="img" class="w-100 br-8">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img-td.png" alt="img" class="w-100 br-8">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img-td.png" alt="img" class="w-100 br-8">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/img-td.png" alt="img" class="w-100 br-8">
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -608,8 +997,8 @@
                         <li><a href="#"><img src="img/icon-yt.svg" alt="img"></a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h3 class="title-foot">Thông tin liên hệ</h3>
+                <div class="col-lg-4">
+                    <h4 class="title-foot">Thông tin liên hệ</h4>
                     <ul class="list-info-foot">
                         <li>
                             <img src="img/icon-map.svg" alt="img">Văn phòng đại diện: Số 304 Kim Mã, Ngọc Khánh, Ba Đình, Hà Nội
@@ -623,7 +1012,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <h3 class="title-foot">Nhóm việc làm</h3>
+                    <h4 class="title-foot">Nhóm việc làm</h4>
                     <ul class="list-info-foot">
                         <li><a href="#">Việc làm Fitness</a></li>
                         <li><a href="#">Việc làm lễ tân</a></li>
@@ -631,8 +1020,8 @@
                         <li><a href="#">Nhân viên phòng vé</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
-                    <h3 class="title-foot">Chính sách</h3>
+                <div class="col-lg-2">
+                    <h4 class="title-foot">Chính sách</h4>
                     <ul class="list-info-foot">
                         <li><a href="#">Báo giá dịch vụ</a></li>
                         <li><a href="#">Thỏa thuận sử dụng</a></li>
@@ -653,6 +1042,8 @@
 <a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
 
 <script type="text/javascript" src="libs/js/jquery.min.js"></script>
+<script type="text/javascript" src="libs/js/jquery.multiple.select.js"></script>
+
 <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="libs/js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -661,6 +1052,26 @@
 </script>
 <script type="text/javascript" src="libs/js/script.js"></script>
 <script>
+
+    $('.sl-multiple').multipleSelect({
+        width: '100%',
+        single: false,
+        filter: true,
+        placeholder: "Tất cả việc làm",
+    }).multipleSelect('refresh');
+    $('.sl-multiple2').multipleSelect({
+        width: '100%',
+        single: false,
+        filter: true,
+        placeholder: "Tất cả tỉnh thành",
+    }).multipleSelect('refresh');
+
+
+
+
+   let hehgtlistjob = $('.list-job').height();
+   $('.list-job-hot').css('max-height',hehgtlistjob - 16)
+
     $(function () {
         var swiper = new Swiper('.swiper-recruitment', {
             slidesPerView: 1,

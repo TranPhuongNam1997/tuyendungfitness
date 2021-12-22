@@ -1441,3 +1441,16 @@
         transform: translateY(.0001px) scale(1, 1)
     }
 }
+
+
+@keyframes wave-one {
+    0%{
+        transform: scale(0) rotateX(55deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) rotateX(55deg) ;
+        opacity: 0.8 ;
+
+    }
+}

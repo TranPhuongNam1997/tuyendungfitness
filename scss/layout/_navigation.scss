@@ -1,3 +1,54 @@
 // ======================================================
 // Layout :: Navigation
 // ======================================================
+
+.nav{
+    ul{
+
+        display: flex;
+        li{
+            position: relative;
+            margin-right: 49px;
+            transition: all 0.3s ease-in-out;
+            a{
+                display: block;
+                padding: 39px 5px;
+                position: relative;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                transition: all 0.2s ease-in-out;
+                color: #FFFFFF;
+
+                i{
+                    margin-left: 9px;
+                }
+            }
+            &:after{
+                content: '';
+                height: 2px;
+                background: #FF5C1D;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) scaleX(0);
+                bottom: 0;
+                transition: all 0.3s ease-in-out;
+                border-radius: 10px;
+            }
+            &:hover{
+                color: #FF5C1D;
+                transition: all 0.2s ease-in-out;
+            }
+            &:hover:after{
+                transform: translateX(-50%) scaleX(1);
+                transition: all 0.3s ease-in-out;
+            }
+            &.active{
+                &:after{
+
+                }
+            }
+        }
+    }
+}

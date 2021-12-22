@@ -1,0 +1,271 @@
+﻿.ms-parent {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100% !important;
+    vertical-align: super;
+    height: 31px;
+    
+}
+
+
+.ms-choice {
+    display: block;
+    width: 100%;
+    height: 31px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border: none;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 31px;
+    /*color: #444;*/
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    /*box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.15);*/
+    background: transparent url(../../img/icon-agd.svg) no-repeat center right 6px;
+}
+
+    .ms-choice.disabled {
+        background-image: none;
+        cursor: default;
+        background-color: #e8e8e8;
+        cursor: default;
+        border: none;
+        color: #575D63;
+    }
+
+        .ms-choice.disabled > div {
+            background: none;
+        }
+
+.ms-choice > span {
+    display: block;
+    color: #575D63;
+    left: 0;
+    overflow: hidden;
+    padding-left: 24px;
+    position: absolute;
+    right: 20px;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+}
+
+        .ms-choice > span.placeholder {
+            color: #575D63;
+        }
+
+    .ms-choice > div {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 20px;
+        height: 25px;
+        background: url('multiple-select.png') left top no-repeat;
+
+        /*add*/
+        display: none;
+    }
+
+        .ms-choice > div.open {
+            background: url('multiple-select.png') right top no-repeat;
+        }
+
+.ms-drop {
+    overflow: hidden;
+    display: none;
+    margin-top: -1px;
+    padding: 0;
+    position: absolute;
+    z-index: 5;
+    background: #2F2F2F;
+    /*color: #000;*/
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    border: none;
+}
+
+    .ms-drop.bottom {
+        top: 100%;
+        -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+        -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+        box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+    }
+
+    .ms-drop.top {
+        bottom: 100%;
+        -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+        -moz-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+        box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+    }
+
+.ms-search {
+    display: inline-block;
+    margin: 0;
+    min-height: 26px;
+    padding: 4px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 10000;
+}
+
+    .ms-search input {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 24px;
+        padding: 0 20px 0 5px;
+        margin: 0;
+        font-size: 1em;
+        border: 1px solid #dcdcdc;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: transparent url('multiple-select.png') no-repeat 100% -22px;
+        /*background: url('multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));*/
+        /*background: url('multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);*/
+        /*background: url('multiple-select.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);*/
+        /*background: url('multiple-select.png') no-repeat 100% -22px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);*/
+        /*background: url('multiple-select.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%);*/
+        /*background: url('multiple-select.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%);*/
+    }
+
+    .ms-search, .ms-search input {
+        -webkit-box-sizing: border-box;
+        -khtml-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+.ms-ul {
+    overflow: auto;
+
+}
+.ms-ul li{
+    color: #fff;
+}
+    .ms-ul::-webkit-scrollbar {
+        width: 8px;
+    }
+/* Track */
+    .ms-ul::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+/* Handle */
+    .ms-ul::-webkit-scrollbar-thumb {
+        background: rgba(155, 155, 155, 0.6705882352941176);
+        border-radius: 30px;
+    }
+
+    /* Handle on hover */
+        .ms-ul::-webkit-scrollbar-thumb:hover {
+            background: rgba(155, 155, 155, 0.6705882352941176);
+            border-radius: 30px;
+        }
+
+.ms-drop ul {
+    margin: 0;
+    float: left;
+    min-width: 100%;
+}
+
+    .ms-drop ul > li {
+        list-style: none;
+        display: list-item;
+        background-image: none;
+        position: static;
+    }
+
+        .ms-drop ul > li .disabled {
+            opacity: .35;
+            filter: Alpha(Opacity=35);
+        }
+
+        .ms-drop ul > li.multiple {
+            display: block;
+            float: left;
+        }
+
+        .ms-drop ul > li.group {
+            clear: both;
+        }
+
+        .ms-drop ul > li.multiple label {
+            width: 100%;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        .ms-drop ul > li label {
+            font-weight: normal;
+            display: block;
+            /*white-space: nowrap;*/
+            padding: 6px 4px;
+            float: none !important;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+            .ms-drop ul > li label.optgroup {
+                font-weight: bold;
+            }
+
+.ms-drop input[type="checkbox"] {
+    vertical-align: inherit;
+    height:12px !important;
+    width:unset !important;
+}
+
+li > li input[type="checkbox"]:focus {
+    background: #d8d8d8 !important;
+}
+
+.ms-drop input[type="radio"] {
+    opacity: 0;
+    height: 2px !important;
+    width: 2px !important;
+}
+
+li > li input[type="radio"]:focus {
+    background: #d8d8d8 !important;
+}
+
+.ms-drop .ms-no-results {
+    display: none;
+}
+
+
+.ms-drop.bottom li {
+    width: 100%;
+    margin-left: 0px;
+    text-align: left;
+}
+
+    .ms-drop.bottom li.selected {
+        background: #434343;
+    }
+
+    .ms-drop.bottom li:hover {
+        background: #434343;
+    }
+
+
+.testhover {
+    background: #d8d8d8 !important;
+}

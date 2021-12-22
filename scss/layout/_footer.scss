@@ -3,27 +3,94 @@
 // ======================================================
 
 #back-to-top{
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 31px;
-  height: 31px;
-  background: $c-bl;
-  color: #fff;
-  text-align: center;
-  line-height: 31px;
-  font-size: 18px;
-  font-weight: bold;
-  background-size: 100% 100%;
-  display: none;
-  z-index: 100;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  &:hover{
-    background: rgb(8, 51, 107);
-  }
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 31px;
+    height: 31px;
+    background: $c-bl;
+    color: #fff;
+    text-align: center;
+    line-height: 31px;
+    font-size: 18px;
+    font-weight: bold;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 100;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    &:hover{
+        background: rgb(8, 51, 107);
+    }
 }
 
+.footer{
+    color: #fff;
+    padding-top: 95px;
+    background: url("../img/bg-footer.png") no-repeat top center;
+    background-size: cover;
+    .logo-foot{
+        margin-bottom: 18px;
+    }
+    .sub-foot{
+        margin-top: 26px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 57px;
+    }
+    .list-connect{
+        display: flex;
+        li{
+            margin-right: 10px;
+            a{
+                img{
+                    transition: all 0.2s ease-in-out;
+                }
+                &:hover{
+                    img{
+                        transition: all 0.2s ease-in-out;
+                        transform: scale(1.1);
+                    }
+                }
+
+            }
+        }
+    }
+    .title-foot{
+        color: #FF5C1D;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 131.9%;
+        margin-bottom: 24px;
+    }
+    .list-info-foot{
+        li{
+            display: flex;
+            margin-bottom: 24px;
+            align-items: flex-start;
+            font-size: 15px;
+            line-height: 20px;
+            img{
+                margin-right: 7px;
+            }
+            a{
+                color: #fff;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.copy-right{
+    text-align: right;
+    border-top: 1px solid #272841;
+    padding: 15px 0;
+    color: #CDCDCD;
+    font-size: 14px;
+    line-height: 40px;
+}
