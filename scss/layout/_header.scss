@@ -39,6 +39,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background: #657495;
+            transition: all 0.2s ease-in-out;
+        }
         .icon-notify{
             position: relative;
             .dot{

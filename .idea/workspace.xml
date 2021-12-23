@@ -3,18 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icon-dolar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon-dolar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icon-location.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon-location.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icon-time.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon-time.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_animation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/abstracts/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
@@ -53,7 +47,8 @@
       <updated>1639971544242</updated>
       <workItem from="1639971545638" duration="21094000" />
       <workItem from="1640007832750" duration="5129000" />
-      <workItem from="1640050737722" duration="26513000" />
+      <workItem from="1640050737722" duration="27063000" />
+      <workItem from="1640239364068" duration="18654000" />
     </task>
     <servers />
   </component>

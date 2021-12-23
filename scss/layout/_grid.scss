@@ -2,13 +2,14 @@
 // Layout :: Grid
 // ======================================================
 
-.container{
-  max-width: 1223px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 14px;
+@media(min-width: 1200px){
+  .container{
+    max-width: 1223px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 14px;
+  }
 }
-
 
 .row-8{
   margin: 0 -8px;
