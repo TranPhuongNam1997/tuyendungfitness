@@ -28,12 +28,34 @@
 }
 
 .footer{
+    position: relative;
     color: #fff;
     padding-top: 95px;
-    background: url("../img/bg-footer.png") no-repeat top center;
+    //background: url("../img/bg-footer3.png") no-repeat top center, url("../img/bg-footer4.png") no-repeat top 265px center;
+
+    background: url("../img/bg-footer.png") no-repeat top right;
     background-size: cover;
+    @include laptop{
+        padding-top: 75px;
+    }
+    @include tablet-horizontal{
+        padding-top: 120px;
+    }
+    @include mobile{
+        background: url("../img/bg-foot-mb.png") no-repeat top right;
+        background-size: cover;
+        padding-top: 52px;
+    }
     .logo-foot{
         margin-bottom: 18px;
+        img{
+            @include tablet-horizontal{
+                width: 23%;
+            }
+            @include mobile{
+                width: 151px;
+            }
+        }
     }
     .sub-foot{
         margin-top: 26px;
@@ -43,11 +65,24 @@
         @include tablet-horizontal{
             font-size: 15px;
             line-height: 20px;
-            margin-bottom: 43px;
+            margin-bottom: 23px;
+        }
+        @include mobile-horizontal{
+            width: 82%;
+            margin-top: 31px;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 24px;
         }
     }
     .list-connect{
         display: flex;
+        @include tablet-horizontal{
+            margin-bottom: 30px;
+        }
+        @include mobile{
+            margin-bottom: 51px;
+        }
         li{
             margin-right: 10px;
             a{
@@ -70,6 +105,14 @@
         font-size: 20px;
         line-height: 131.9%;
         margin-bottom: 24px;
+        @include tablet-horizontal{
+            margin-bottom: 20px;
+        }
+        @include mobile{
+            font-size: 16px;
+            line-height: 131.9%;
+            margin-bottom: 16px;
+        }
     }
     .list-info-foot{
         li{
@@ -78,6 +121,17 @@
             align-items: flex-start;
             font-size: 15px;
             line-height: 20px;
+            @include tablet-horizontal{
+                margin-bottom: 18px;
+            }
+            @include mobile{
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 19px;
+                &:last-child{
+                    margin-bottom: 31px;
+                }
+            }
             img{
                 margin-right: 7px;
             }
@@ -85,6 +139,15 @@
                 color: #fff;
                 &:hover{
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+    .list-info-bot{
+        li{
+            @include mobile{
+                &:last-child{
+                    margin-bottom: 24px;
                 }
             }
         }
@@ -98,4 +161,14 @@
     color: #CDCDCD;
     font-size: 14px;
     line-height: 40px;
+    @include tablet-horizontal{
+        padding: 10px 0;
+    }
+    @include mobile{
+        text-align: center;
+        font-size: 10px;
+        line-height: 40px;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
 }

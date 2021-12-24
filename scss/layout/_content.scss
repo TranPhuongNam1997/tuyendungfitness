@@ -1092,6 +1092,10 @@
     @include tablet{
         padding: 35px 0 50px;
     }
+    @include mobile{
+        padding: 35px 0 74px;
+
+    }
 
     .title-sc{
         margin-bottom: 49px;
