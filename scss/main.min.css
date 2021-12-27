@@ -1241,12 +1241,11 @@ input:focus {
       color: #DADADA; }
 
 .bg-black {
-  min-height: calc(100vh - 62px);
   position: relative; }
   .bg-black .img-girl {
     position: absolute;
     right: 20px;
-    bottom: -94px; }
+    bottom: 6px; }
     .bg-black .img-girl .wave-line {
       position: absolute;
       left: -12%;

@@ -97,7 +97,6 @@
 }
 
 .bg-black{
-    min-height: calc(100vh - 62px);
     //background: #494B59;
     position: relative;
     //background: url("../img/bg-menu-banner.png") no-repeat center center;
@@ -106,7 +105,8 @@
 
         position: absolute;
         right: 20px;
-        bottom: -94px;
+        //bottom: -94px;
+        bottom: 6px;
         .wave-line{
             position: absolute;
             left: -12%;
