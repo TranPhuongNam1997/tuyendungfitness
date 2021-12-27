@@ -42,7 +42,7 @@
         padding: 150px 0 35px;
     }
     @include mobile-horizontal{
-        padding: 140px 0 25px;
+        padding: 70px 0 25px;
     }
     @include mobile{
         padding: 69px 0 29px;
@@ -657,6 +657,8 @@
     }
     @include mobile{
         padding: 48px 0 ;
+        background: url('../img/bg-looking.png') no-repeat bottom -70px right -15px;
+        background-size: 264px;
     }
     .title-sc{
         margin-top: 38px;
@@ -877,6 +879,8 @@
 
     @include mobile{
         padding: 43px 0 42px;
+        background: url("../img/ct-mb.svg") no-repeat left center, url("../img/bg-contact.png") no-repeat center;
+        background-size: cover;
     }
 }
 .head-contact{
@@ -989,10 +993,14 @@
     left: 0;
     bottom: -29px;
     width: 100%;
+    @include mobile{
+        bottom: -21px;
+    }
     .box-contact{
         position: relative;
         @include mobile{
             text-align: right;
+
 
         }
         input{
@@ -1113,6 +1121,10 @@
         bottom: 0;
         right: 0;
         transform: translateY(57%);
+        @include mobile{
+            transform: translateY(55%);
+            width: 218px;
+        }
     }
 }
 .box-news{

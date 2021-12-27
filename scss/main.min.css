@@ -1184,6 +1184,9 @@ input:focus {
 
 .header-top {
   background: rgba(32, 44, 67, 0.9); }
+  @media only screen and (max-width: 991px) {
+    .header-top {
+      display: none; } }
 
 .flex-head {
   padding: 12px 0 14px;
@@ -1279,6 +1282,12 @@ input:focus {
         bottom: -4px;
         transform: scale(1);
         max-width: 37%; } }
+    @media only screen and (max-width: 576px) {
+      .bg-black .img-girl {
+        right: 29px;
+        bottom: -42px;
+        transform: scale(1);
+        max-width: 50%; } }
     .bg-black .img-girl .wave-line {
       position: absolute;
       left: -12%;
@@ -1287,11 +1296,26 @@ input:focus {
       @media only screen and (max-width: 1439px) {
         .bg-black .img-girl .wave-line {
           bottom: 67px; } }
+      @media only screen and (max-width: 991px) {
+        .bg-black .img-girl .wave-line {
+          bottom: 59px;
+          left: -18%; } }
+      @media only screen and (max-width: 767px) {
+        .bg-black .img-girl .wave-line {
+          bottom: 34px;
+          left: -12%; } }
     .bg-black .img-girl .wave-dark {
       position: absolute;
       right: 46%;
       bottom: 62px;
       z-index: -1; }
+      @media only screen and (max-width: 767px) {
+        .bg-black .img-girl .wave-dark {
+          right: 43%;
+          bottom: 29px; } }
+      @media only screen and (max-width: 576px) {
+        .bg-black .img-girl .wave-dark {
+          right: 45%; } }
     .bg-black .img-girl .wave-line-one {
       width: 284px;
       height: 113px;
@@ -1309,6 +1333,10 @@ input:focus {
       @media only screen and (max-width: 1199px) {
         .bg-black .img-girl .wave-line-one {
           width: 138px; } }
+      @media only screen and (max-width: 767px) {
+        .bg-black .img-girl .wave-line-one {
+          width: 75px;
+          height: 52px; } }
       .bg-black .img-girl .wave-line-one.wave-line-two {
         animation-delay: 1s; }
       .bg-black .img-girl .wave-line-one.wave-line-three {
@@ -1325,6 +1353,16 @@ input:focus {
   @media only screen and (max-width: 1439px) {
     .navigation {
       padding: 10px 0 0px; } }
+  @media only screen and (max-width: 991px) {
+    .navigation {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background: #374156;
+      height: 62px;
+      padding-top: 0; } }
   .navigation:after {
     content: '';
     position: absolute;
@@ -1336,11 +1374,22 @@ input:focus {
   .navigation .logo {
     margin-right: 118px;
     margin-bottom: 0; }
+    @media only screen and (max-width: 991px) {
+      .navigation .logo {
+        margin-right: 0;
+        position: fixed;
+        top: 12px;
+        left: 15px; } }
     .navigation .logo a {
       display: block; }
       @media only screen and (max-width: 1439px) {
         .navigation .logo a {
           max-width: 139px; } }
+      @media only screen and (max-width: 991px) {
+        .navigation .logo a {
+          width: 76px; }
+          .navigation .logo a img {
+            display: block; } }
   .navigation .box-nav {
     display: flex;
     align-items: center;
@@ -1360,6 +1409,18 @@ input:focus {
     .banner {
       height: calc(100vh - 138px);
       padding: 40px 0 40px; } }
+  @media only screen and (max-width: 991px) {
+    .banner {
+      height: auto;
+      padding: 100px 0 97px; } }
+  @media only screen and (max-width: 767px) {
+    .banner {
+      padding: 48px 0 97px;
+      margin-top: 62px; } }
+  @media only screen and (max-width: 576px) {
+    .banner {
+      background: url("../img/banner-mb.png") no-repeat center center;
+      background-size: 100% 100%; } }
   .banner .slogan {
     font-weight: bold;
     font-size: 48px;
@@ -1373,6 +1434,20 @@ input:focus {
       .banner .slogan {
         font-size: 38px;
         line-height: 44px; } }
+    @media only screen and (max-width: 991px) {
+      .banner .slogan {
+        font-size: 30px;
+        line-height: 32px; } }
+    @media only screen and (max-width: 767px) {
+      .banner .slogan {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase; } }
+    @media only screen and (max-width: 576px) {
+      .banner .slogan {
+        font-size: 18px;
+        line-height: 20px; } }
   .banner .sub-banner {
     text-align: center;
     font-size: 18px;
@@ -1382,6 +1457,50 @@ input:focus {
     @media only screen and (max-width: 1439px) {
       .banner .sub-banner {
         margin-bottom: 50px; } }
+    @media only screen and (max-width: 991px) {
+      .banner .sub-banner {
+        margin-bottom: 35px; } }
+    @media only screen and (max-width: 767px) {
+      .banner .sub-banner {
+        font-size: 14px;
+        line-height: 17px; } }
+    @media only screen and (max-width: 576px) {
+      .banner .sub-banner {
+        font-size: 12px;
+        line-height: 15px; } }
+
+.search-mb {
+  position: relative;
+  display: none;
+  margin: 0 auto;
+  width: 274px; }
+  @media only screen and (max-width: 991px) {
+    .search-mb {
+      display: block; } }
+  .search-mb input {
+    width: 274px;
+    height: 40px;
+    padding-left: 36px;
+    padding-right: 45px;
+    border-radius: 8px 0 8px 0;
+    border: none;
+    background: #101115;
+    color: #fff; }
+    .search-mb input::placeholder {
+      color: #CDCDCD; }
+  .search-mb .icon-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px; }
+  .search-mb .btn-search-mb {
+    background: #FF5C1D;
+    border-radius: 0 0 8px 0;
+    width: 41px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    right: 0; }
 
 .search-banner {
   display: flex;
@@ -1391,6 +1510,13 @@ input:focus {
   @media only screen and (max-width: 1439px) {
     .search-banner {
       margin-bottom: 20px; } }
+  @media only screen and (max-width: 991px) {
+    .search-banner {
+      margin-bottom: 20px;
+      flex-direction: column; } }
+  @media only screen and (max-width: 767px) {
+    .search-banner {
+      display: none; } }
 
 .list-search {
   display: flex;
@@ -1402,6 +1528,12 @@ input:focus {
     backdrop-filter: blur(6px);
     border-radius: 8px 0 8px 0;
     padding: 16px; }
+    @media only screen and (max-width: 991px) {
+      .list-search .item-search {
+        margin-right: 10px;
+        margin-bottom: 20px; }
+        .list-search .item-search:last-child {
+          margin-right: 0; } }
     .list-search .item-search > label {
       text-transform: uppercase;
       color: #FFFFFF;
@@ -1439,6 +1571,9 @@ input:focus {
   @media only screen and (max-width: 1439px) {
     .popular-jobs {
       margin-bottom: 47px; } }
+  @media only screen and (max-width: 767px) {
+    .popular-jobs {
+      display: none; } }
   .popular-jobs .txt-popular {
     font-weight: 600;
     font-size: 16px;
@@ -1457,6 +1592,9 @@ input:focus {
 
 .search-cadidate {
   text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .search-cadidate {
+      display: none; } }
   .search-cadidate img {
     margin-bottom: 18px; }
   .search-cadidate div {
@@ -1466,8 +1604,85 @@ input:focus {
     text-align: center;
     color: #FFFFFF; }
 
+.link-user {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    .link-user {
+      display: block;
+      position: fixed;
+      right: 60px;
+      top: 22px; } }
+
+.menu-private {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    .menu-private {
+      display: block;
+      position: fixed;
+      right: 15px;
+      top: 23px; } }
+  .menu-private button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    outline: none; }
+
+.line-main {
+  background: #fff;
+  width: 18px;
+  height: 3px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 3px;
+  pointer-events: none;
+  transition: all 0.3s; }
+  .line-main:last-child {
+    margin-bottom: 0; }
+
+.change-icon-mb .line-1 {
+  transform: translateY(6px) translateX(0) rotate(45deg);
+  transition: all 0.3s; }
+.change-icon-mb .line-2 {
+  opacity: 0;
+  transition: all 0.3s; }
+.change-icon-mb .line-3 {
+  transform: translateY(-6px) translateX(0) rotate(-46deg);
+  transition: all 0.3s; }
+
+.overlay {
+  background: rgba(22, 73, 137, 0.3882352941);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8; }
+
+@media only screen and (max-width: 991px) {
+  .nav {
+    position: fixed;
+    width: 300px;
+    top: 62px;
+    height: 100%;
+    left: -300px;
+    transition: all 0.3s;
+    z-index: 9;
+    background: #222c3f;
+    border-top: 1px solid #797979; }
+    .nav.open-mb {
+      left: 0;
+      transition: all 0.3s; } }
+@media only screen and (max-width: 576px) {
+  .nav {
+    width: 100%;
+    left: -100%; } }
 .nav ul {
   display: flex; }
+  @media only screen and (max-width: 991px) {
+    .nav ul {
+      display: block;
+      width: 100%; } }
   .nav ul li {
     position: relative;
     margin-right: 49px;
@@ -1475,6 +1690,9 @@ input:focus {
     @media only screen and (max-width: 1199px) {
       .nav ul li {
         margin-right: 25px; } }
+    @media only screen and (max-width: 991px) {
+      .nav ul li {
+        margin-right: 0; } }
     .nav ul li a {
       display: block;
       padding: 38px 5px;
@@ -1487,6 +1705,13 @@ input:focus {
       @media only screen and (max-width: 1439px) {
         .nav ul li a {
           padding: 34px 5px 20px; } }
+      @media only screen and (max-width: 991px) {
+        .nav ul li a {
+          display: block;
+          padding: 20px 15px 20px; } }
+      @media only screen and (max-width: 767px) {
+        .nav ul li a {
+          font-size: 14px; } }
       .nav ul li a i {
         margin-left: 9px; }
     .nav ul li:after {
@@ -1500,6 +1725,9 @@ input:focus {
       bottom: 0;
       transition: all 0.3s ease-in-out;
       border-radius: 10px; }
+      @media only screen and (max-width: 991px) {
+        .nav ul li:after {
+          display: none; } }
     .nav ul li:hover {
       color: #FF5C1D;
       transition: all 0.2s ease-in-out; }
@@ -1546,7 +1774,7 @@ input:focus {
       padding: 150px 0 35px; } }
   @media only screen and (max-width: 767px) {
     .sc-outstanding {
-      padding: 140px 0 25px; } }
+      padding: 70px 0 25px; } }
   @media only screen and (max-width: 576px) {
     .sc-outstanding {
       padding: 69px 0 29px; } }
@@ -2063,7 +2291,9 @@ input:focus {
       padding: 35px 0 35px; } }
   @media only screen and (max-width: 576px) {
     .sc-looking-candidates {
-      padding: 48px 0; } }
+      padding: 48px 0;
+      background: url("../img/bg-looking.png") no-repeat bottom -70px right -15px;
+      background-size: 264px; } }
   .sc-looking-candidates .title-sc {
     margin-top: 38px;
     margin-bottom: 57px;
@@ -2257,7 +2487,9 @@ input:focus {
   position: relative; }
   @media only screen and (max-width: 576px) {
     .sc-contact {
-      padding: 43px 0 42px; } }
+      padding: 43px 0 42px;
+      background: url("../img/ct-mb.svg") no-repeat left center, url("../img/bg-contact.png") no-repeat center;
+      background-size: cover; } }
 
 .head-contact .title-contact {
   font-weight: 600;
@@ -2361,6 +2593,9 @@ input:focus {
   left: 0;
   bottom: -29px;
   width: 100%; }
+  @media only screen and (max-width: 576px) {
+    .contact-us {
+      bottom: -21px; } }
   .contact-us .box-contact {
     position: relative; }
     @media only screen and (max-width: 576px) {
@@ -2465,6 +2700,10 @@ input:focus {
     bottom: 0;
     right: 0;
     transform: translateY(57%); }
+    @media only screen and (max-width: 576px) {
+      .sc-news .bg-new {
+        transform: translateY(55%);
+        width: 218px; } }
 
 .box-news {
   border-radius: 8px; }
@@ -3513,9 +3752,8 @@ input:focus {
     .copy-right {
       text-align: center;
       font-size: 10px;
-      line-height: 40px;
-      padding-top: 0;
-      padding-bottom: 15px; } }
+      line-height: 17px;
+      padding: 15px 0; } }
 
 .btn-lightblue {
   color: #1877f2;
@@ -3559,6 +3797,9 @@ button:focus {
     .btn-search-candi {
       height: 41px;
       font-size: 14px; } }
+  @media only screen and (max-width: 991px) {
+    .btn-search-candi {
+      display: none; } }
   .btn-search-candi:hover {
     color: #fff;
     background: #fd7a47;
@@ -3570,5 +3811,9 @@ button:focus {
   height: 84px;
   width: 69px;
   border: none; }
+  @media only screen and (max-width: 991px) {
+    .btn-search {
+      height: 59px;
+      width: 90px; } }
 
 /*# sourceMappingURL=main.min.css.map */

@@ -3,15 +3,42 @@
 // ======================================================
 
 .nav{
+    @include tablet{
+        position: fixed;
+        width: 300px;
+        top: 62px;
+        height: 100%;
+        left: -300px;
+        transition: all 0.3s;
+        z-index: 9;
+        background: #222c3f;
+        border-top: 1px solid #797979;
+        &.open-mb{
+            left: 0;
+            transition: all 0.3s;
+        }
+
+    }
+    @include mobile{
+        width: 100%;
+        left: -100%;
+    }
     ul{
 
         display: flex;
+        @include tablet{
+            display: block;
+            width: 100%;
+        }
         li{
             position: relative;
             margin-right: 49px;
             transition: all 0.3s ease-in-out;
             @include tablet-horizontal{
                 margin-right: 25px;
+            }
+            @include tablet{
+                margin-right: 0;
             }
             a{
                 display: block;
@@ -24,6 +51,13 @@
                 color: #FFFFFF;
                 @include laptop{
                     padding: 34px 5px 20px;
+                }
+                @include tablet{
+                    display: block;
+                    padding: 20px 15px 20px;
+                }
+                @include mobile-horizontal{
+                    font-size: 14px;
                 }
 
                 i{
@@ -41,6 +75,9 @@
                 bottom: 0;
                 transition: all 0.3s ease-in-out;
                 border-radius: 10px;
+                @include tablet{
+                    display: none;
+                }
             }
             &:hover{
                 color: #FF5C1D;

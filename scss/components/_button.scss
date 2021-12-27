@@ -49,6 +49,9 @@ button:focus{
         height: 41px;
         font-size: 14px;
     }
+    @include tablet{
+        display: none;
+    }
     &:hover{
         color: #fff;
         background: #fd7a47;
@@ -62,6 +65,10 @@ button:focus{
     height: 84px;
     width: 69px;
     border: none;
+    @include tablet{
+        height: 59px;
+        width: 90px;
+    }
     img{
 
     }

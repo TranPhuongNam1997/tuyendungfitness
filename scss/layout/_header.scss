@@ -7,6 +7,9 @@
 }
 .header-top{
     background: rgba(32, 44, 67, 0.9);
+    @include tablet{
+        display: none;
+    }
 }
 .flex-head{
     padding: 12px 0 14px;
@@ -124,6 +127,12 @@
             transform: scale(1);
             max-width: 37%;
         }
+        @include mobile{
+            right: 29px;
+            bottom: -42px;
+            transform: scale(1);
+            max-width: 50%;
+        }
 
 
         .wave-line{
@@ -134,12 +143,27 @@
             @include laptop{
                 bottom: 67px;
             }
+            @include tablet{
+                bottom: 59px;
+                left: -18%;
+            }
+            @include mobile-horizontal{
+                bottom: 34px;
+                left: -12%;
+            }
         }
         .wave-dark{
             position: absolute;
             right: 46%;
             bottom: 62px;
             z-index: -1;
+            @include mobile-horizontal{
+                right: 43%;
+                bottom: 29px;
+            }
+            @include mobile{
+                right: 45%;
+            }
         }
         .wave-line-one{
             width: 284px;
@@ -157,6 +181,10 @@
             }
             @include tablet-horizontal{
                 width: 138px;
+            }
+            @include mobile-horizontal{
+                width: 75px;
+                height: 52px;
             }
             &.wave-line-two{
                 animation-delay: 1s;
@@ -182,6 +210,16 @@
     @include laptop{
         padding: 10px 0 0px;
     }
+    @include tablet{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background: #374156;
+        height: 62px;
+        padding-top: 0;
+    }
     &:after{
 
         content: '';
@@ -195,10 +233,22 @@
     .logo{
         margin-right: 118px;
         margin-bottom: 0;
+        @include tablet{
+            margin-right: 0;
+            position: fixed;
+            top: 12px;
+            left: 15px;
+        }
         a{
             display: block;
             @include laptop{
                 max-width: 139px;
+            }
+            @include tablet{
+                width: 76px;
+                img{
+                    display: block;
+                }
             }
         }
     }
@@ -226,6 +276,19 @@
         height: calc(100vh - 138px);
         padding: 40px 0 40px;
     }
+    @include tablet{
+        height: auto;
+        padding: 100px 0 97px;
+
+    }
+    @include mobile-horizontal{
+        padding: 48px 0 97px;
+        margin-top: 62px;
+    }
+    @include mobile{
+        background:  url("../img/banner-mb.png") no-repeat center center;
+        background-size: 100% 100%;
+    }
 
     .slogan{
         font-weight: bold;
@@ -241,6 +304,20 @@
             font-size: 38px;
             line-height: 44px;
         }
+        @include tablet{
+            font-size: 30px;
+            line-height: 32px;
+        }
+        @include mobile-horizontal{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+        @include mobile{
+            font-size: 18px;
+            line-height: 20px;
+        }
     }
     .sub-banner{
         text-align: center;
@@ -251,7 +328,60 @@
         @include laptop{
             margin-bottom: 50px;
         }
+        @include tablet{
+            margin-bottom: 35px;
+        }
+        @include mobile-horizontal{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        @include mobile{
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
+}
+
+.search-mb{
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    width: 274px;
+    @include tablet{
+        display: block;
+    }
+    input{
+        width: 274px;
+        height: 40px;
+        padding-left: 36px;
+        padding-right: 45px;
+        border-radius: 8px 0 8px 0;
+        border: none;
+        background: #101115;
+        color: #fff;
+        &::placeholder{
+            color: #CDCDCD;
+        }
+    }
+    .icon-search{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+    }
+    .btn-search-mb{
+        background: #FF5C1D;
+        border-radius: 0 0 8px 0;
+        width: 41px;
+        height: 40px;
+        border: none;
+        position: absolute;
+        right: 0;
+        img{
+
+        }
+    }
+
 }
 .search-banner{
     display: flex;
@@ -260,6 +390,13 @@
     margin-bottom: 32px;
     @include laptop{
         margin-bottom: 20px;
+    }
+    @include tablet{
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    @include mobile-horizontal{
+        display: none;
     }
 }
 .list-search{
@@ -272,6 +409,13 @@
         backdrop-filter: blur(6px);
         border-radius: 8px 0 8px 0;
         padding: 16px;
+        @include tablet{
+            margin-right: 10px;
+            margin-bottom: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
         >label{
             text-transform: uppercase;
             color: #FFFFFF;
@@ -321,6 +465,9 @@
     @include laptop{
         margin-bottom: 47px;
     }
+    @include mobile-horizontal{
+        display: none;
+    }
     .txt-popular{
         font-weight: 600;
         font-size: 16px;
@@ -344,6 +491,9 @@
 }
 .search-cadidate{
     text-align: center;
+    @include mobile-horizontal{
+        display: none;
+    }
     img{
         margin-bottom: 18px;
     }
@@ -357,3 +507,69 @@
     }
 }
 
+.link-user{
+    display: none;
+    @include tablet{
+        display: block;
+        position: fixed;
+        right: 60px;
+        top: 22px;
+    }
+}
+
+
+
+.menu-private{
+    display: none;
+    @include tablet{
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 23px;
+    }
+    button{
+        background: transparent;
+        border: none;
+        padding: 0;
+        outline: none;
+
+    }
+}
+.line-main{
+    background: #fff;
+    width: 18px;
+    height: 3px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 3px;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.change-icon-mb{
+    .line-1{
+        transform: translateY(6px) translateX(0) rotate(45deg);
+        transition: all 0.3s;
+    }
+    .line-2{
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .line-3{
+        transform: translateY(-6px) translateX(0) rotate(-46deg);
+        transition: all 0.3s;
+    }
+}
+
+.overlay {
+    background: rgba(22, 73, 137, 0.3882352941);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+}

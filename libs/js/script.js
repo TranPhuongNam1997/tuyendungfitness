@@ -23,6 +23,20 @@ $( document ).ready(function() {
     //
     // });
 
+    if(innerWidth < 992){
+        var overlay = $("<div class='overlay'></div>");
+        $("body").prepend(overlay);
+        $(".view-menu-mb").click(function () {
+            $(this).toggleClass("change-icon-mb");
+            overlay.toggle();
+            $(".nav").toggleClass("open-mb");
+        });
+        overlay.click(function () {
+            $(".view-menu-mb").trigger('click');
+        });
+    }
+
+
 
 });
 
