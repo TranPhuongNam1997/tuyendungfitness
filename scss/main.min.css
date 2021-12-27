@@ -1155,6 +1155,15 @@ input:focus {
 .row {
   margin: 0 -12px; }
 
+.mb-16 {
+  margin-bottom: 16px; }
+
+.mb-24 {
+  margin-bottom: 24px; }
+  @media only screen and (max-width: 576px) {
+    .mb-24 {
+      margin-bottom: 16px; } }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1223px;
@@ -1760,12 +1769,12 @@ input:focus {
   .list-job .item-job {
     position: relative;
     display: block;
-    margin-bottom: 16px;
     padding: 15px 32px 8px 21px;
     border-radius: 8px 0 8px 0;
     background: #FBFAFF;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    height: 100%; }
     @media only screen and (max-width: 1199px) {
       .list-job .item-job {
         padding: 15px 28px 8px 15px; } }
@@ -3000,7 +3009,8 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 16px; }
+  padding: 10px 16px;
+  margin-top: 29px; }
   @media only screen and (max-width: 991px) {
     .paging {
       margin-bottom: 30px; } }
