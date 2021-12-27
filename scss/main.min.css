@@ -1167,7 +1167,7 @@ input:focus {
 .pd-8 {
   padding: 0 8px; }
 
-.header {
+.header-top {
   background: rgba(32, 44, 67, 0.9); }
 
 .flex-head {
@@ -1241,7 +1241,7 @@ input:focus {
       color: #DADADA; }
 
 .bg-black {
-  background: #494B59;
+  min-height: calc(100vh - 62px);
   position: relative; }
   .bg-black .img-girl {
     position: absolute;
@@ -1273,9 +1273,21 @@ input:focus {
         animation-delay: 2s; }
 
 .navigation {
-  display: flex;
+  position: relative;
+  width: 100%;
+  top: 0;
   padding: 15px 0 0px;
-  background: rgba(29, 39, 58, 0.8); }
+  background: url("../img/bg-menu.png") no-repeat center center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: cover; }
+  .navigation:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 39, 58, 0.8); }
   .navigation .logo {
     margin-right: 118px;
     margin-bottom: 0; }
@@ -1284,13 +1296,18 @@ input:focus {
   .navigation .box-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative;
+    z-index: 9; }
   .navigation .navi-left {
     display: flex;
     align-items: flex-start; }
 
 .banner {
-  padding: 99px 0 108px; }
+  padding: 99px 0 108px;
+  background: url("../img/bg-banner.png") no-repeat bottom center;
+  background-size: cover;
+  height: calc(100vh - 173px); }
   .banner .slogan {
     font-weight: bold;
     font-size: 48px;
@@ -1392,7 +1409,7 @@ input:focus {
     transition: all 0.3s ease-in-out; }
     .nav ul li a {
       display: block;
-      padding: 39px 5px;
+      padding: 38px 5px;
       position: relative;
       font-weight: 600;
       font-size: 16px;
