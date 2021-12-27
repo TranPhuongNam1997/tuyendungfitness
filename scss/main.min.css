@@ -1167,6 +1167,12 @@ input:focus {
 .pd-8 {
   padding: 0 8px; }
 
+.row-9 {
+  margin: 0 -9px; }
+
+.pd-9 {
+  padding: 0 9px; }
+
 .header-top {
   background: rgba(32, 44, 67, 0.9); }
 
@@ -1175,6 +1181,9 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 1439px) {
+    .flex-head {
+      padding: 8px 0 10px; } }
 
 .info-contact {
   display: flex;
@@ -1246,11 +1255,29 @@ input:focus {
     position: absolute;
     right: 20px;
     bottom: 6px; }
+    @media (max-width: 1600px) {
+      .bg-black .img-girl {
+        right: 0;
+        bottom: -48px;
+        transform: scale(0.8); } }
+    @media (max-width: 1559px) {
+      .bg-black .img-girl {
+        right: -58px;
+        bottom: -48px; } }
+    @media only screen and (max-width: 1439px) {
+      .bg-black .img-girl {
+        right: 15px;
+        bottom: -4px;
+        transform: scale(1);
+        max-width: 37%; } }
     .bg-black .img-girl .wave-line {
       position: absolute;
       left: -12%;
       bottom: 85px;
       z-index: -1; }
+      @media only screen and (max-width: 1439px) {
+        .bg-black .img-girl .wave-line {
+          bottom: 67px; } }
     .bg-black .img-girl .wave-dark {
       position: absolute;
       right: 46%;
@@ -1266,6 +1293,13 @@ input:focus {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(0); }
+      @media only screen and (max-width: 1439px) {
+        .bg-black .img-girl .wave-line-one {
+          width: 189px;
+          height: 96px; } }
+      @media only screen and (max-width: 1199px) {
+        .bg-black .img-girl .wave-line-one {
+          width: 138px; } }
       .bg-black .img-girl .wave-line-one.wave-line-two {
         animation-delay: 1s; }
       .bg-black .img-girl .wave-line-one.wave-line-three {
@@ -1279,6 +1313,9 @@ input:focus {
   background: url("../img/bg-menu.png") no-repeat center center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-size: cover; }
+  @media only screen and (max-width: 1439px) {
+    .navigation {
+      padding: 10px 0 0px; } }
   .navigation:after {
     content: '';
     position: absolute;
@@ -1292,6 +1329,9 @@ input:focus {
     margin-bottom: 0; }
     .navigation .logo a {
       display: block; }
+      @media only screen and (max-width: 1439px) {
+        .navigation .logo a {
+          max-width: 139px; } }
   .navigation .box-nav {
     display: flex;
     align-items: center;
@@ -1307,6 +1347,10 @@ input:focus {
   background: url("../img/bg-banner.png") no-repeat bottom center;
   background-size: cover;
   height: calc(100vh - 173px); }
+  @media only screen and (max-width: 1439px) {
+    .banner {
+      height: calc(100vh - 138px);
+      padding: 40px 0 40px; } }
   .banner .slogan {
     font-weight: bold;
     font-size: 48px;
@@ -1316,18 +1360,28 @@ input:focus {
     text-align: center; }
     .banner .slogan span {
       color: #FF5C1D; }
+    @media only screen and (max-width: 1439px) {
+      .banner .slogan {
+        font-size: 38px;
+        line-height: 44px; } }
   .banner .sub-banner {
     text-align: center;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
     margin-bottom: 52px; }
+    @media only screen and (max-width: 1439px) {
+      .banner .sub-banner {
+        margin-bottom: 50px; } }
 
 .search-banner {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 32px; }
+  @media only screen and (max-width: 1439px) {
+    .search-banner {
+      margin-bottom: 20px; } }
 
 .list-search {
   display: flex;
@@ -1373,6 +1427,9 @@ input:focus {
   align-items: center;
   justify-content: center;
   margin-bottom: 80px; }
+  @media only screen and (max-width: 1439px) {
+    .popular-jobs {
+      margin-bottom: 47px; } }
   .popular-jobs .txt-popular {
     font-weight: 600;
     font-size: 16px;
@@ -1406,6 +1463,9 @@ input:focus {
     position: relative;
     margin-right: 49px;
     transition: all 0.3s ease-in-out; }
+    @media only screen and (max-width: 1199px) {
+      .nav ul li {
+        margin-right: 25px; } }
     .nav ul li a {
       display: block;
       padding: 38px 5px;
@@ -1415,6 +1475,9 @@ input:focus {
       line-height: 20px;
       transition: all 0.2s ease-in-out;
       color: #FFFFFF; }
+      @media only screen and (max-width: 1439px) {
+        .nav ul li a {
+          padding: 34px 5px 20px; } }
       .nav ul li a i {
         margin-left: 9px; }
     .nav ul li:after {
@@ -1716,7 +1779,7 @@ input:focus {
       background: #fff;
       transition: all 0.2s ease-in-out; }
       .list-job .item-job:hover .name-company {
-        color: #FF5C1D;
+        color: #333;
         transition: all 0.2s ease-in-out; }
 
 .flex-left {
@@ -1762,63 +1825,66 @@ input:focus {
   padding: 3px 5px;
   display: inline-block; }
 
-.info-job .title-jobforyou {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 7px;
-  color: #161616; }
-  @media only screen and (max-width: 1199px) {
-    .info-job .title-jobforyou {
-      font-size: 15px;
-      line-height: 19px; } }
-  @media only screen and (max-width: 576px) {
-    .info-job .title-jobforyou {
-      font-size: 14px;
-      line-height: 17px;
-      margin-bottom: 5px; } }
-  .info-job .title-jobforyou a {
-    display: flex;
-    align-items: center; }
-    .info-job .title-jobforyou a:hover {
-      color: #161616; }
-      .info-job .title-jobforyou a:hover span {
-        text-decoration: underline; }
-      .info-job .title-jobforyou a:hover .tag-new {
-        text-decoration: none; }
-.info-job .name-company {
-  color: #666666;
-  margin-bottom: 24px;
-  font-size: 13px; }
-  @media only screen and (max-width: 1199px) {
-    .info-job .name-company {
-      margin-bottom: 13px; } }
-.info-job .info-bot {
-  display: flex; }
-  .info-job .info-bot > span {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 8px;
-    margin-right: 26px; }
+.info-job {
+  width: 100%; }
+  .info-job .title-jobforyou {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    color: #161616; }
     @media only screen and (max-width: 1199px) {
-      .info-job .info-bot > span {
-        margin-right: 14px;
-        font-size: 13px; } }
-    .info-job .info-bot > span:last-child {
-      margin-right: 0px; }
-    .info-job .info-bot > span img {
-      margin-right: 5px; }
-    .info-job .info-bot > span .nb-money {
-      color: #3299DC;
-      font-weight: 600;
-      margin-bottom: 0; }
+      .info-job .title-jobforyou {
+        font-size: 15px;
+        line-height: 19px; } }
+    @media only screen and (max-width: 576px) {
+      .info-job .title-jobforyou {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 5px; } }
+    .info-job .title-jobforyou a {
+      display: flex;
+      align-items: center; }
+      .info-job .title-jobforyou a:hover {
+        color: #161616; }
+        .info-job .title-jobforyou a:hover span {
+          text-decoration: underline; }
+        .info-job .title-jobforyou a:hover .tag-new {
+          text-decoration: none; }
+  .info-job .name-company {
+    color: #333;
+    margin-bottom: 24px;
+    font-size: 13px; }
+    @media only screen and (max-width: 1199px) {
+      .info-job .name-company {
+        margin-bottom: 13px; } }
+  .info-job .info-bot {
+    display: flex; }
+    .info-job .info-bot > span {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 8px;
+      margin-right: 26px; }
+      @media only screen and (max-width: 1199px) {
+        .info-job .info-bot > span {
+          margin-right: 14px;
+          font-size: 13px; } }
+      .info-job .info-bot > span:last-child {
+        margin-right: 0px; }
+      .info-job .info-bot > span img {
+        margin-right: 5px; }
+      .info-job .info-bot > span .nb-money {
+        color: #3299DC;
+        font-weight: 600;
+        margin-bottom: 0; }
 
 .flag {
   position: absolute;
   top: 11px;
   right: 14px;
   width: 14px;
-  height: 18px; }
+  height: 18px;
+  cursor: pointer; }
   @media only screen and (max-width: 576px) {
     .flag {
       right: 13px; } }
@@ -1882,7 +1948,7 @@ input:focus {
     background: #fff;
     transition: all 0.2s ease-in-out; }
     .item-job-hot:hover .name-company {
-      color: #FF5C1D; }
+      color: #333; }
   .item-job-hot .sub-hot {
     color: #666666;
     line-height: 19px;
@@ -2812,6 +2878,497 @@ input:focus {
     .txt-suggest a:hover {
       text-decoration: underline; }
 
+.main {
+  padding: 73px 0; }
+  @media only screen and (max-width: 991px) {
+    .main {
+      padding: 50px 0; } }
+  @media only screen and (max-width: 767px) {
+    .main {
+      padding: 40px 0; } }
+  @media only screen and (max-width: 576px) {
+    .main {
+      padding: 30px 0; } }
+
+.bread-crumb {
+  margin-bottom: 33px; }
+  @media only screen and (max-width: 991px) {
+    .bread-crumb {
+      margin-bottom: 27px; } }
+  @media only screen and (max-width: 767px) {
+    .bread-crumb {
+      margin-bottom: 25px; } }
+  .bread-crumb a {
+    transition: all 0.2s ease-in-out; }
+  .bread-crumb a:hover {
+    color: #FF5C1D;
+    transition: all 0.2s ease-in-out; }
+  .bread-crumb span {
+    font-size: 16px;
+    line-height: 122%;
+    color: #161616; }
+    .bread-crumb span:last-child {
+      color: #666; }
+
+.job-fitness .item-job {
+  padding: 17px 32px 7px 26px; }
+  @media only screen and (max-width: 767px) {
+    .job-fitness .item-job {
+      padding: 15px 32px 7px 15px; } }
+  .job-fitness .item-job .logo-job {
+    margin-right: 27px; }
+    @media only screen and (max-width: 767px) {
+      .job-fitness .item-job .logo-job {
+        margin-right: 15px; } }
+    .job-fitness .item-job .logo-job a {
+      width: 60px;
+      height: 60px; }
+      @media only screen and (max-width: 767px) {
+        .job-fitness .item-job .logo-job a {
+          width: 50px;
+          height: 50px; } }
+      @media only screen and (max-width: 576px) {
+        .job-fitness .item-job .logo-job a {
+          width: 40px;
+          height: 40px; } }
+  @media only screen and (max-width: 576px) {
+    .job-fitness .item-job .info-bot {
+      display: block; } }
+  .job-fitness .item-job .info-bot > span {
+    margin-right: 126px; }
+    .job-fitness .item-job .info-bot > span:last-child {
+      margin-right: 0; }
+    @media only screen and (max-width: 1199px) {
+      .job-fitness .item-job .info-bot > span {
+        margin-right: 70px; } }
+    @media only screen and (max-width: 767px) {
+      .job-fitness .item-job .info-bot > span {
+        margin-right: 45px; } }
+    @media only screen and (max-width: 576px) {
+      .job-fitness .item-job .info-bot > span {
+        margin-right: 0;
+        display: block; }
+        .job-fitness .item-job .info-bot > span:last-child {
+          display: flex; } }
+  .job-fitness .item-job .btn-opportunities {
+    opacity: 0;
+    visibility: hidden; }
+    @media only screen and (max-width: 1199px) {
+      .job-fitness .item-job .btn-opportunities {
+        opacity: 1;
+        visibility: visible; } }
+  .job-fitness .item-job:hover .btn-opportunities {
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    visibility: visible; }
+
+.btn-opportunities {
+  background: #FF5C1D;
+  border-radius: 8px 0 8px 0;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  height: 40px;
+  width: 120px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out; }
+  @media only screen and (max-width: 767px) {
+    .btn-opportunities {
+      height: 35px;
+      width: 105px; } }
+  .btn-opportunities:hover {
+    color: #fff;
+    background: #fd7a47;
+    transition: all 0.2s ease-in-out; }
+
+.blockfit {
+  display: block;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 16px; }
+  .blockfit:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out; }
+
+.paging {
+  font-size: 16px;
+  background: #EEEEEE;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px; }
+  @media only screen and (max-width: 991px) {
+    .paging {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .paging {
+      font-size: 14px;
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 576px) {
+    .paging {
+      flex-direction: column;
+      margin-bottom: 20px; } }
+  .paging .view-row {
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 576px) {
+      .paging .view-row {
+        margin-bottom: 10px; } }
+    .paging .view-row select {
+      margin-left: 19px;
+      font-weight: 600;
+      line-height: 20px;
+      border: none;
+      background: transparent; }
+      @media only screen and (max-width: 767px) {
+        .paging .view-row select {
+          margin-left: 10px; } }
+
+.number-page button {
+  margin-left: 10px;
+  padding: 10px;
+  width: 42px;
+  height: 34px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  color: #242731; }
+  .number-page button:first-child {
+    margin-left: 0; }
+  .number-page button.active {
+    color: #3299DC; }
+  .number-page button:hover {
+    color: #3299DC; }
+  @media only screen and (max-width: 767px) {
+    .number-page button {
+      padding: 0;
+      width: 28px;
+      height: 32px; } }
+
+.similar-job .title-similar {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #161616;
+  margin-bottom: 32px; }
+  @media only screen and (max-width: 1199px) {
+    .similar-job .title-similar {
+      font-size: 28px;
+      line-height: 34px;
+      color: #161616;
+      margin-bottom: 28px; } }
+  @media only screen and (max-width: 991px) {
+    .similar-job .title-similar {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .similar-job .title-similar {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 18px; } }
+  @media only screen and (max-width: 576px) {
+    .similar-job .title-similar {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 15px; } }
+
+.box-violet {
+  background: #FBFAFF;
+  border-radius: 8px;
+  padding: 29px 40px 46px 24px; }
+  @media only screen and (max-width: 1199px) {
+    .box-violet {
+      padding: 29px 17px 46px 17px; } }
+  @media only screen and (max-width: 991px) {
+    .box-violet {
+      padding: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .box-violet {
+      padding: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .box-violet {
+      padding: 15px; } }
+
+.title-orange {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FF5C1D;
+  margin-bottom: 24px; }
+  @media only screen and (max-width: 1199px) {
+    .title-orange {
+      font-size: 18px;
+      margin-bottom: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .title-orange {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 15px; } }
+
+.list-description li {
+  position: relative;
+  font-size: 16px;
+  line-height: 122%;
+  color: #000000;
+  padding-left: 13px;
+  margin-bottom: 18px; }
+  @media only screen and (max-width: 767px) {
+    .list-description li {
+      margin-bottom: 15px; } }
+  @media only screen and (max-width: 576px) {
+    .list-description li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 19px; } }
+  .list-description li:last-child {
+    margin-bottom: 0; }
+  .list-description li:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    background: #666666;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%; }
+
+.line-gray {
+  height: 1px;
+  margin: 37px 0 44px;
+  background: #CDCDCD; }
+  @media only screen and (max-width: 991px) {
+    .line-gray {
+      margin: 32px 0; } }
+  @media only screen and (max-width: 767px) {
+    .line-gray {
+      margin: 25px 0; } }
+  @media only screen and (max-width: 576px) {
+    .line-gray {
+      margin: 20px 0; } }
+
+@media only screen and (max-width: 991px) {
+  .list-info-job {
+    display: flex;
+    flex-wrap: wrap; } }
+.list-info-job li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 1199px) {
+    .list-info-job li {
+      padding-left: 29px; } }
+  @media only screen and (max-width: 991px) {
+    .list-info-job li {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media only screen and (max-width: 576px) {
+    .list-info-job li {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 35px;
+      margin-bottom: 15px; }
+      .list-info-job li:last-child {
+        margin-bottom: 0; } }
+  .list-info-job li img {
+    position: absolute;
+    top: 4px;
+    left: 11px; }
+    @media only screen and (max-width: 1199px) {
+      .list-info-job li img {
+        left: 0; } }
+  .list-info-job li .info-right label {
+    font-size: 16px;
+    line-height: 122%;
+    margin-bottom: 3px;
+    color: #666666; }
+    @media only screen and (max-width: 576px) {
+      .list-info-job li .info-right label {
+        font-size: 14px;
+        line-height: 17px; } }
+  .list-info-job li .info-right .info-field {
+    font-weight: 600;
+    min-height: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333; }
+    @media only screen and (max-width: 576px) {
+      .list-info-job li .info-right .info-field {
+        min-height: auto;
+        font-size: 14px;
+        line-height: 20px; } }
+    .list-info-job li .info-right .info-field.info-highlight {
+      color: #3299DC; }
+
+.box-violet.box-violet-right {
+  padding: 29px 41px 17px 17px; }
+  @media only screen and (max-width: 1199px) {
+    .box-violet.box-violet-right {
+      padding: 29px 17px 17px 17px; } }
+  @media only screen and (max-width: 991px) {
+    .box-violet.box-violet-right {
+      padding: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .box-violet.box-violet-right {
+      padding: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .box-violet.box-violet-right {
+      padding: 15px; } }
+
+.box-violet-company {
+  padding: 38px 34px 46px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  @media only screen and (max-width: 1199px) {
+    .box-violet-company {
+      padding: 29px 17px 29px 17px; } }
+  @media only screen and (max-width: 991px) {
+    .box-violet-company {
+      padding: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .box-violet-company {
+      padding: 20px;
+      display: block; } }
+  @media only screen and (max-width: 576px) {
+    .box-violet-company {
+      padding: 15px; } }
+  .box-violet-company .title-orange {
+    margin-bottom: 32px; }
+    @media only screen and (max-width: 1199px) {
+      .box-violet-company .title-orange {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 576px) {
+      .box-violet-company .title-orange {
+        margin-bottom: 15px; } }
+  .box-violet-company .txt-company {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 131.9%;
+    margin-bottom: 6px;
+    color: #3299DC; }
+    @media only screen and (max-width: 1199px) {
+      .box-violet-company .txt-company {
+        font-size: 16px;
+        line-height: 131.9%; } }
+    @media only screen and (max-width: 576px) {
+      .box-violet-company .txt-company {
+        font-size: 14px; } }
+  .box-violet-company .address-company {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 131.9%;
+    margin-bottom: 14px; }
+    @media only screen and (max-width: 1199px) {
+      .box-violet-company .address-company {
+        font-size: 14px; } }
+  .box-violet-company .info-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px; }
+    .box-violet-company .info-contact span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 131.9%;
+      color: #666666;
+      min-width: 94px; }
+      @media only screen and (max-width: 576px) {
+        .box-violet-company .info-contact span {
+          font-size: 14px; } }
+      .box-violet-company .info-contact span:last-child {
+        font-size: 13px;
+        line-height: 16px;
+        color: #333333; }
+
+.frame-map {
+  width: 444px; }
+  @media only screen and (max-width: 767px) {
+    .frame-map {
+      width: 100%; } }
+
+.mb-23 {
+  margin-bottom: 23px; }
+  @media only screen and (max-width: 767px) {
+    .mb-23 {
+      margin-bottom: 20px; } }
+
+.link-contact {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #FF5C1D;
+  border-radius: 8px 0 8px 0;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 1199px) {
+    .link-contact {
+      font-size: 14px; } }
+  @media only screen and (max-width: 991px) {
+    .link-contact {
+      width: 300px;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 576px) {
+    .link-contact {
+      width: 259px;
+      height: 42px; } }
+  .link-contact:hover {
+    color: #fff;
+    background: #fd7a47;
+    transition: all 0.2s ease-in-out; }
+
+@media only screen and (max-width: 1199px) {
+  .info-left {
+    margin-right: 10px; } }
+@media only screen and (max-width: 767px) {
+  .info-left {
+    margin-right: 0;
+    margin-bottom: 20px; } }
+
+.detail-job {
+  margin-bottom: 32px; }
+  @media only screen and (max-width: 767px) {
+    .detail-job {
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 576px) {
+    .detail-job {
+      margin-bottom: 5px; } }
+
+.list-tag {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  border-top: 1px dashed #CDCDCD; }
+  .list-tag li {
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    color: #FF5C1D; }
+    .list-tag li img {
+      margin-right: 5px; }
+
+.list-candidate .item-job {
+  margin-bottom: 24px; }
+  .list-candidate .item-job .logo-job {
+    margin-right: 19px; }
+    .list-candidate .item-job .logo-job a {
+      width: 78px;
+      height: 78px; }
+  .list-candidate .item-job .info-bot > span {
+    margin-right: 42px; }
+    @media only screen and (max-width: 1199px) {
+      .list-candidate .item-job .info-bot > span {
+        margin-right: 21px; } }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;
@@ -2988,6 +3545,10 @@ button:focus {
   text-transform: uppercase;
   color: #FFFFFF;
   transition: all 0.2s ease-in-out; }
+  @media only screen and (max-width: 1439px) {
+    .btn-search-candi {
+      height: 41px;
+      font-size: 14px; } }
   .btn-search-candi:hover {
     color: #fff;
     background: #fd7a47;

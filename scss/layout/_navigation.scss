@@ -10,6 +10,9 @@
             position: relative;
             margin-right: 49px;
             transition: all 0.3s ease-in-out;
+            @include tablet-horizontal{
+                margin-right: 25px;
+            }
             a{
                 display: block;
                 padding: 38px 5px;
@@ -19,6 +22,9 @@
                 line-height: 20px;
                 transition: all 0.2s ease-in-out;
                 color: #FFFFFF;
+                @include laptop{
+                    padding: 34px 5px 20px;
+                }
 
                 i{
                     margin-left: 9px;

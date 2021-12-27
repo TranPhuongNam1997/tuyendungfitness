@@ -45,6 +45,10 @@ button:focus{
     text-transform: uppercase;
     color: #FFFFFF;
     transition: all 0.2s ease-in-out;
+    @include laptop{
+        height: 41px;
+        font-size: 14px;
+    }
     &:hover{
         color: #fff;
         background: #fd7a47;

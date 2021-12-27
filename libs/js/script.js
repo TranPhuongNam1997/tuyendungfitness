@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+
+    $(".flag").click(function () {
+        $(this).toggleClass('active')
+    });
+
+
     //nut scroll top
 
     // $("#back-to-top").click(function () {
@@ -16,6 +22,7 @@ $( document ).ready(function() {
     //     }
     //
     // });
+
 
 });
 

@@ -13,7 +13,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    @include laptop{
+        padding: 8px 0 10px;
+    }
 }
 
 .info-contact{
@@ -107,11 +109,31 @@
         right: 20px;
         //bottom: -94px;
         bottom: 6px;
+        @media (max-width: 1600px) {
+            right: 0;
+            bottom: -48px;
+            transform: scale(0.8);
+        }
+        @media (max-width: 1559px) {
+            right: -58px;
+            bottom: -48px;
+        }
+        @include laptop{
+            right: 15px;
+            bottom: -4px;
+            transform: scale(1);
+            max-width: 37%;
+        }
+
+
         .wave-line{
             position: absolute;
             left: -12%;
             bottom: 85px;
             z-index: -1;
+            @include laptop{
+                bottom: 67px;
+            }
         }
         .wave-dark{
             position: absolute;
@@ -129,6 +151,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50% ) scale(0);
+            @include laptop{
+                width: 189px;
+                height: 96px;
+            }
+            @include tablet-horizontal{
+                width: 138px;
+            }
             &.wave-line-two{
                 animation-delay: 1s;
             }
@@ -150,6 +179,9 @@
     background:  url("../img/bg-menu.png") no-repeat center center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-size: cover;
+    @include laptop{
+        padding: 10px 0 0px;
+    }
     &:after{
 
         content: '';
@@ -165,6 +197,9 @@
         margin-bottom: 0;
         a{
             display: block;
+            @include laptop{
+                max-width: 139px;
+            }
         }
     }
     .box-nav{
@@ -187,6 +222,10 @@
     background:  url("../img/bg-banner.png") no-repeat bottom center;
     background-size: cover;
     height: calc(100vh - 173px);
+    @include laptop{
+        height: calc(100vh - 138px);
+        padding: 40px 0 40px;
+    }
 
     .slogan{
         font-weight: bold;
@@ -198,6 +237,10 @@
         span{
             color: #FF5C1D;
         }
+        @include laptop{
+            font-size: 38px;
+            line-height: 44px;
+        }
     }
     .sub-banner{
         text-align: center;
@@ -205,6 +248,9 @@
         line-height: 22px;
         color: #FFFFFF;
         margin-bottom: 52px;
+        @include laptop{
+            margin-bottom: 50px;
+        }
     }
 }
 .search-banner{
@@ -212,6 +258,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
+    @include laptop{
+        margin-bottom: 20px;
+    }
 }
 .list-search{
     display: flex;
@@ -269,6 +318,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
+    @include laptop{
+        margin-bottom: 47px;
+    }
     .txt-popular{
         font-weight: 600;
         font-size: 16px;
