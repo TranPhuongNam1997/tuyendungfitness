@@ -17,7 +17,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <header class="header">
+    <header class="header header-list">
         <div class="header-top">
             <div class="container">
                 <div class="flex-head">
@@ -56,19 +56,6 @@
         </div>
         <!--    end header-top-->
         <div class="bg-black">
-            <div class="img-girl">
-                <img src="img/girl.png" alt="img">
-                <div class="wave-line">
-                    <div class="wave-line-one"></div>
-                    <div class="wave-line-one wave-line-two"></div>
-                    <div class="wave-line-one wave-line-three"></div>
-                </div>
-                <div class="wave-dark">
-                    <div class="wave-line-one"></div>
-                    <div class="wave-line-one wave-line-two"></div>
-                    <div class="wave-line-one wave-line-three"></div>
-                </div>
-            </div>
             <div class="navigation">
                 <div class="box-navigation">
                     <div class="container">
@@ -85,14 +72,26 @@
                                 </div>
                             </div>
                             <button type="button" class="btn-search-candi">tìm ứng viên</button>
+                            <a href="#" class="link-user"><img src="img/user.svg" alt="img"></a>
+                            <div class="menu-private">
+                                <button class="view-menu-mb">
+                                    <span class="line-main line-1"></span>
+                                    <span class="line-main line-2"></span>
+                                    <span class="line-main line-3"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="banner">
                 <div class="container">
-                    <h2 class="slogan">Việc làm <span>Fitness</span></h2>
-                    <div class="sub-banner">Nim mollit non deserunt ullamco</div>
+                    <h2 class="slogan">CƠ HỘI VIỆC LÀM</h2>
+                    <div class="search-mb">
+                        <input type="text" placeholder="Tìm kiếm cơ hội việc làm">
+                        <div class="icon-search"><img src="img/search.svg" alt="img"></div>
+                        <button class="btn-search-mb"><img src="img/filter.svg" alt="img"></button>
+                    </div>
 
                     <div class="search-banner">
                         <div class="list-search">
@@ -139,11 +138,6 @@
                             <li><a href="#">Huấn luyện viên phòng Gym</a></li>
                         </ul>
                     </div>
-                    <div class="search-cadidate">
-                        <img src="img/icon-cadi.svg" alt="img">
-                        <div>Nhà tuyển dụng tìm ứng viên</div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -475,5 +469,19 @@
     new WOW().init();
 </script>
 <script type="text/javascript" src="libs/js/script.js"></script>
+<script>
+    $('.sl-multiple').multipleSelect({
+        width: '100%',
+        single: false,
+        filter: true,
+        placeholder: "Tất cả việc làm",
+    }).multipleSelect('refresh');
+    $('.sl-multiple2').multipleSelect({
+        width: '100%',
+        single: false,
+        filter: true,
+        placeholder: "Tất cả tỉnh thành",
+    }).multipleSelect('refresh');
+</script>
 </body>
 </html>

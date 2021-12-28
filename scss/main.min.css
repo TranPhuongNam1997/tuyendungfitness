@@ -3782,6 +3782,12 @@ input:focus {
     .line-gray {
       margin: 20px 0; } }
 
+.img-detail {
+  margin-top: 24px; }
+  @media only screen and (max-width: 576px) {
+    .img-detail {
+      margin-top: 15px; } }
+
 @media only screen and (max-width: 991px) {
   .list-info-job {
     display: flex;

@@ -2140,6 +2140,12 @@
         margin: 20px 0;
     }
 }
+.img-detail{
+    margin-top: 24px;
+    @include mobile{
+        margin-top: 15px;
+    }
+}
 .list-info-job{
     @include tablet{
         display: flex;
