@@ -20,17 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nha-tuyen-dung-dang-ky.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trang-chu-notlogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chi-tiet-viec-lam.html" beforeDir="false" afterPath="$PROJECT_DIR$/chi-tiet-viec-lam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/danh-sach-viec-lam.html" beforeDir="false" afterPath="$PROJECT_DIR$/danh-sach-viec-lam.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register-canditdate.html" beforeDir="false" afterPath="$PROJECT_DIR$/register-canditdate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register-canditdate.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +112,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1640407197333" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639993687179">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1640686324959">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1639993687179" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1640686324959" />
     <state x="2602" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1640164033002">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

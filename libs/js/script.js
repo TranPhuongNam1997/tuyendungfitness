@@ -36,6 +36,19 @@ $( document ).ready(function() {
         });
     }
 
+    $(".show-pass .img-eyeslash").click(function () {
+        $(this).parent('.show-pass').prev('.txtpassword').prop("type", "text");
+        $(this).hide();
+        $(this).prev('.img-eye').show();
+
+    });
+    $(".show-pass .img-eye").click(function () {
+        $(this).parent('.show-pass').prev('.txtpassword').prop("type", "password")
+        $(this).next('.img-eyeslash').show();
+        $(this).hide();
+    });
+
+
 
 
 });

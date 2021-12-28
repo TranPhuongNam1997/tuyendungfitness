@@ -1360,20 +1360,22 @@
 
 .wrap-login{
     height: 100vh;
-    background: url('../img/banner-login-right.png') no-repeat right top, url('../img/banner-login-left.png') no-repeat left top;
-     background-size: 71% 100%;
-    @include tablet-horizontal{
-        background-size: 66% 100%;
-    }
+    background: url('../img/banner-login-right.png') no-repeat right top/63% 100%, url('../img/banner-login-left.png') no-repeat left top;
+     @media (max-width: 1366px) {
+         background: url('../img/banner-login-right.png') no-repeat right top/66% 100%, url('../img/banner-login-left.png') no-repeat left top;
+     }
     @include tablet{
-        background: transparent;
+        background: url('../img/banner-login-left.png') no-repeat left top;
+        height: auto;
+        min-height: 100vh;
+    }
+    @include mobile-horizontal{
+        background-size: cover;
     }
 }
 
 .block-login{
-    @include desktop{
-        max-width: 1233px;
-    }
+
     padding: 9vh 15px;
     width: 100%;
     margin: 0 auto;
@@ -1381,6 +1383,16 @@
     align-items: center;
     height: 100%;
     justify-content: space-between;
+    @include desktop{
+        max-width: 1233px;
+    }
+    @include tablet{
+        padding: 25px 15px;
+        display: block;
+    }
+    @include mobile-horizontal{
+        padding: 15px;
+    }
 }
 .flex-login-left{
     height: 100%;
@@ -1398,6 +1410,8 @@
     @include tablet{
         position: unset;
         padding-top: 0;
+        display: flex;
+        height: unset;
 
     }
 
@@ -1410,8 +1424,21 @@
     @include tablet-horizontal{
         margin-bottom: 45px;
     }
+    @include tablet{
+        margin-bottom: 25px;
+        height: 60px;
+    }
+    @include mobile-horizontal{
+        margin-bottom: 20px;
+    }
+    @include mobile{
+        margin-bottom: 15px;
+        height: 55px;
+    }
     img{
-
+        @include tablet{
+            height: 100%;
+        }
     }
 }
 .txt-register{
@@ -1423,6 +1450,11 @@
     @include tablet-horizontal{
         font-size: 18px;
         line-height: 22px;
+    }
+    @include mobile{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 9px;
     }
 
 }
@@ -1441,6 +1473,14 @@
         font-size: 27px;
         line-height: 41px;
     }
+    @include tablet{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    @include mobile{
+        font-size: 19px;
+        line-height: 27px;
+    }
 }
 
 .question-regis{
@@ -1451,6 +1491,12 @@
     @include tablet-horizontal{
         font-size: 14px;
         line-height: 18px;
+    }
+    @include tablet{
+        margin-bottom: 24px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
     }
     a{
         margin-left: 5px;
@@ -1478,6 +1524,11 @@
         height: 45px;
         font-size: 14px;
     }
+    @include tablet{
+        width: 240px;
+        height: 40px;
+        margin-bottom: 25px;
+    }
     &:hover{
         color: #fff;
         background: #FF5C1D;
@@ -1501,13 +1552,69 @@
     }
     @include tablet{
         position: unset;
+        transform: translateY(0);
+        max-width: 100%;
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px 25px;
+        //max-height: 432px;
+        overflow-y: auto;
+        max-height: calc(100vh - 354px);
     }
+    @include mobile-horizontal{
+        padding: 20px 20px;
 
-
-
+    }
+    @include mobile{
+        padding: 15px;
+        max-height: calc(100vh - 290px);
+    }
 }
+
+.box-register{
+    top: 0;
+    transform: translateY(0);
+    margin-top: 149px;
+    overflow-y: auto;
+    max-height: calc(100vh - 149px);
+    padding-bottom: 15px;
+
+    @media(max-width: 1366px){
+        margin-top: 90px;
+        max-height: calc(100vh - 90px);
+    }
+    @include tablet{
+        margin-top: 0;
+        //max-height: 432px;
+        max-height: calc(100vh - 354px);
+    }
+    @include mobile{
+        padding: 15px;
+        max-height: calc(100vh - 290px);
+    }
+    //@include mobile{
+    //    max-height: calc(100vh - 354px);
+    //
+    //}
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
 .form-login{
     padding: 0 12px;
+    @include tablet{
+        padding: 0;
+    }
 }
 .txt-info-ac{
     font-weight: 600;
@@ -1515,6 +1622,28 @@
     line-height: 20px;
     color: #FF5C1D;
     margin-bottom: 25px;
+    @include tablet{
+        margin-bottom: 15px;
+    }
+    @include mobile{
+        margin-bottom: 10px;
+    }
+}
+.group-field{
+    margin-bottom: 32px;
+    @include tablet{
+        margin-bottom: 25px;
+
+    }
+    @include mobile-horizontal{
+        margin-bottom: 20px;
+        &.group-field2{
+            margin-bottom: 0;
+        }
+    }
+    @include mobile{
+        margin-bottom: 17px;
+    }
 }
 
 .field-login{
@@ -1522,12 +1651,24 @@
     @include laptop{
         margin-bottom: 18px;
     }
+    @include tablet{
+        margin-bottom: 13px;
+    }
+    @include mobile{
+        margin-bottom: 11px;
+    }
     label{
         margin-bottom: 12px;
         font-weight: 500;
         display: block;
         @include laptop{
             margin-bottom: 9px;
+        }
+        @include tablet{
+            margin-bottom: 6px;
+        }
+        @include mobile{
+            font-size: 13px;
         }
     }
     input{
@@ -1542,14 +1683,52 @@
         border: none;
         width: 100%;
         padding: 0 15px;
-        @include laptop{
-            height: 45px;
-
+        &:focus{
+            border: 1px solid #ff5c17;
         }
         &::placeholder{
             color: #CDCDCD;
         }
+        @include laptop{
+            height: 45px;
+        }
+        @include tablet{
+            height: 40px;
+        }
+        @include mobile{
+            height: 35px;
+            border-radius: 5px;
+        }
+    }
+    select{
+        background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 19px right 15px;
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #333;
+        border: none;
+        width: 100%;
+        padding: 0 15px;
+        -webkit-appearance: none;
+        &:focus,&:focus-within,&:focus-visible{
+            border: 1px solid #ff5c17;
+        }
+        @include laptop{
+            height: 45px;
+        }
+        @include tablet{
+            height: 40px;
+            background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 15px right 15px;
 
+        }
+        @include mobile{
+            border-radius: 5px;
+            height: 35px;
+            background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 14px right 15px;
+        }
     }
 }
 .cl-red{
@@ -1574,8 +1753,13 @@
         transform: translateY(-50%);
         border: none;
         background: transparent;
+        .img-eye{
+            display: none;
+        }
+        .img-eyeslash{
+            display: block;
+        }
     }
-
 }
 .btn-registor{
     margin-top: 30px;
@@ -1592,6 +1776,17 @@
     margin-bottom: 16px;
     @include laptop{
         margin-top: 15px;
+    }
+    @include tablet{
+        height: 45px;
+    }
+    @include mobile-horizontal{
+        font-size: 16px;
+    }
+    @include mobile{
+        height: 38px;
+        margin: 10px 0 10px;
+        font-size: 14px;
     }
     &:hover{
         color: #fff;
