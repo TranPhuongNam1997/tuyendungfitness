@@ -1480,17 +1480,17 @@ input:focus {
     @media only screen and (max-width: 991px) {
       .banner .slogan {
         font-size: 30px;
-        line-height: 32px; } }
+        line-height: 37px; } }
     @media only screen and (max-width: 767px) {
       .banner .slogan {
         font-weight: bold;
         font-size: 18px;
-        line-height: 22px;
+        line-height: 28px;
         text-transform: uppercase; } }
     @media only screen and (max-width: 576px) {
       .banner .slogan {
         font-size: 18px;
-        line-height: 20px; } }
+        line-height: 28px; } }
   .banner .sub-banner {
     text-align: center;
     font-size: 18px;
@@ -1574,7 +1574,8 @@ input:focus {
     @media only screen and (max-width: 991px) {
       .list-search .item-search {
         margin-right: 10px;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        width: 200px; }
         .list-search .item-search:last-child {
           margin-right: 0; } }
     .list-search .item-search > label {
@@ -1605,6 +1606,23 @@ input:focus {
         .list-search .item-search .field-search > input::placeholder {
           color: #666666;
           font-weight: 500; }
+
+.filter-btn {
+  width: 87px;
+  height: 84px;
+  margin-right: 22px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 8px 0 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 16px; }
+  @media only screen and (max-width: 991px) {
+    .filter-btn {
+      margin-bottom: 20px;
+      margin-right: 0; } }
 
 .popular-jobs {
   display: flex;
@@ -2251,7 +2269,8 @@ input:focus {
       top: 0;
       left: 0;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 50%; }
 
 .tag-new {
   color: #FF5C1D;
@@ -3813,7 +3832,7 @@ input:focus {
         margin-bottom: 0; } }
   .list-info-job li img {
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 11px; }
     @media only screen and (max-width: 1199px) {
       .list-info-job li img {

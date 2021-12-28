@@ -364,17 +364,17 @@
         }
         @include tablet{
             font-size: 30px;
-            line-height: 32px;
+            line-height: 37px;
         }
         @include mobile-horizontal{
             font-weight: bold;
             font-size: 18px;
-            line-height: 22px;
+            line-height: 28px;
             text-transform: uppercase;
         }
         @include mobile{
             font-size: 18px;
-            line-height: 20px;
+            line-height: 28px;
         }
     }
     .sub-banner{
@@ -470,6 +470,7 @@
         @include tablet{
             margin-right: 10px;
             margin-bottom: 20px;
+            width: 200px;
             &:last-child{
                 margin-right: 0;
             }
@@ -512,6 +513,23 @@
 
             }
         }
+    }
+}
+.filter-btn{
+    width: 87px;
+    height: 84px;
+    margin-right: 22px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    border-radius: 8px 0 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 16px;
+    @include tablet{
+        margin-bottom: 20px;
+        margin-right: 0;
     }
 }
 
