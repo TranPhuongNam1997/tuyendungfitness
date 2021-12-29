@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tuyendungfitness</title>
+
+    <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/multiple-select.css">
+    <link rel="stylesheet" href="libs/css/all.css">
+    <link rel="stylesheet" href="libs/css/swiper.css">
+    <link rel="stylesheet" href="libs/css/animate.css">
+    <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="scss/main.min.css">
+</head>
+<body>
+<div id="wrapper" class="wrap-violet">
+    <header class="header header-list header-info">
+        <div class="header-top">
+            <div class="container">
+                <div class="flex-head">
+                    <div class="info-contact">
+                        <div class="txt-contact">
+                            <img src="img/icon-sms.svg" alt="img">tuyendungfitness@gmail.com
+                        </div>
+                        <div class="txt-contact">
+                            <img src="img/icon-call.svg" alt="img">0981.980.980 - 0877.786.666
+                        </div>
+                    </div>
+                    <div class="block-user">
+                        <div class="notify">
+                            <div class="icon-notify">
+                                <img src="img/icon-notification.svg" alt="">
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="info-user">
+                            <a href="#" class="avt-user">
+                                <img src="img/avtpng.png" alt="img">
+                            </a>
+                            <div>
+                                <h3 class="name-user">
+                                    <a href="#">
+                                        Minh Lan<span class="icon-drop"><img src="img/icon-angledown.svg" alt="img"></span>
+                                    </a>
+                                </h3>
+                                <div class="name-position">Nhà tuyển dụng</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--    end header-top-->
+        <div class="bg-black">
+            <div class="navigation">
+                <div class="box-navigation">
+                    <div class="container">
+                        <div class="box-nav">
+                            <div class="navi-left">
+                                <h1 class="logo"><a href="#"><img src="img/icon-logo.svg" alt="img"></a></h1>
+                                <div class="nav">
+                                    <ul>
+                                        <li class="active"><a href="#">Trang chủ</a></li>
+                                        <li><a href="#">Việc làm <i class="fa fa-angle-down"></i></a></li>
+                                        <li><a href="#">Việc làm PT</a></li>
+                                        <li><a href="#">Tin tức</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-search-candi">tìm ứng viên</button>
+                            <a href="#" class="link-user"><img src="img/user.svg" alt="img"></a>
+                            <div class="menu-private">
+                                <button class="view-menu-mb">
+                                    <span class="line-main line-1"></span>
+                                    <span class="line-main line-2"></span>
+                                    <span class="line-main line-3"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner"></div>
+        </div>
+    </header>
+
+    <!-- end header-->
+    <!--begin main-->
+
+    <div class="info-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="box-profile">
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload">
+                                    <img src="img/icon-edit-profile.svg" alt="img">
+                                </label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url('img/img-profile.png');">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="name-profile">Lê Quang Linh</h3>
+                        <div class="txt-position">Ứng viên</div>
+                        <div class="nav nav-tabs nav-profile" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-profile1" role="tab" aria-controls="nav-home" aria-selected="true">
+                                <img src="img/user-pro.svg" alt="img">Thông tin tài khoản
+                            </a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile2" role="tab" aria-selected="false">
+                                <img src="img/clipboard-text-pro.svg" alt="img">Tạo hồ sơ
+                            </a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile3" role="tab" aria-selected="false">
+                                <img src="img/clipboard-text-pro.svg" alt="img">Việc làm đã lưu
+                            </a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile4" role="tab" aria-selected="false">
+                                <img src="img/Notification-pro.svg" alt="img">Thông báo
+                            </a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile5" role="tab" aria-selected="false">
+                                <img src="img/note-favorite-pro.svg" alt="img">Việc làm đã ứng tuyển
+                            </a>
+                        </div>
+                        <a href="#" class="btn-logout">Đăng xuất</a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="tab-content tab-content-profile" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-profile1" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="box-white">
+                                <h3 class="title-tab">Thông tin đăng ký</h3>
+                                <div class="block-info-tab">
+                                    <div class="info-tab">
+                                        <div class="tab-left">Địa chỉ email</div>
+                                        <div class="tab-right">
+                                            <span>linhql@gmail.com</span>
+                                            <button><img src="img/edit-2.svg" alt="img"></button>
+                                        </div>
+                                    </div>
+                                    <div class="info-tab">
+                                        <div class="tab-left">Số điện thoại</div>
+                                        <div class="tab-right">
+                                            <span>034 456 3232</span>
+                                            <button><img src="img/edit-2.svg" alt="img"></button>
+                                        </div>
+                                    </div>
+                                    <div class="info-tab">
+                                        <div class="tab-left">Mật khẩu</div>
+                                        <div class="tab-right">
+                                            <span>xxxxxxxx</span>
+                                            <button><img src="img/edit-2.svg" alt="img"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title-account">
+                                    <h3 class="title-tab">Thông tin tài khoản</h3>
+                                    <span>*Thông tin bắt buộc</span>
+                                </div>
+                                <div class="row row-10">
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Họ và tên <span class="cl-red">*</span></label>
+                                            <input type="text" placeholder="Lê Quang Linh">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Ngày sinh <span class="cl-red">*</span></label>
+                                            <input class="datepicker-fitness" type="text" placeholder="DD / MM / YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Địa chỉ <span class="cl-red">*</span></label>
+                                            <input type="text" placeholder="Số 22 phường Trung Phụng">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Tỉnh / Thành phố <span class="cl-red">*</span></label>
+                                            <select name="" >
+                                                <option value="">Hà Nội</option>
+                                                <option value="">TP HCM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="box-white">
+                                <h3 class="title-tab">Tạo hồ sơ</h3>
+                                <div class="row row-10">
+                                    <div class="col-lg-6 pd-10">
+                                        <div class="txt-cv">CV của bạn</div>
+                                        <div class="upload-file">
+                                            <input type="file" id="ip-file">
+                                            <label for="ip-file" class="lbl-upload">
+                                                <img src="img/document-upload.svg" alt="img">
+                                                Tải file
+                                            </label>
+                                            <span>
+                                                (Định dạng file .doc, .docx, .pdf <br> dung lượng <= 2 MB)
+                                            </span>
+                                        </div>
+                                        <div class="name-file"></div>
+                                    </div>
+                                    <div class="col-lg-6 p-10"></div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Vị trí ứng tuyển <span class="cl-red">*</span></label>
+                                            <select name="" >
+                                                <option value="">Huấn luyện viên</option>
+                                                <option value="">Huấn luyện viên 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Số năm kinh nghiệm <span class="cl-red">*</span></label>
+                                            <select name="" >
+                                                <option value="">4 năm</option>
+                                                <option value="">3 năm</option>
+                                                <option value="">2 năm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Mức lương mong muốn <span class="cl-red">*</span></label>
+                                            <select name="" >
+                                                <option value="">10 - 20 triệu đồng</option>
+                                                <option value="">20 - 30 triệu đồng</option>
+                                                <option value="">30 - 40 triệu đồng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Địa điểm làm việc <span class="cl-red">*</span></label>
+                                            <select name="" >
+                                                <option value="">Hà Nội</option>
+                                                <option value="">TP HCM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Bằng cấp</label>
+                                            <select name="" >
+                                                <option value="">Đại học</option>
+                                                <option value="">Cao đẳng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-10">
+                                        <div class="field-tab">
+                                            <label>Kỹ năng</label>
+                                            <select name="" >
+                                                <option value="">#tienganh</option>
+                                                <option value="">#thuyettrinh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 p-10">
+                                        <div class="field-tab">
+                                            <label>Kinh nghiệm làm việc</label>
+                                            <textarea placeholder="Giúp nhà tuyển dụng biết nhiều hơn về kinh nghiệm của bạn"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn-save">Lưu</button>
+                                <button class="btn-cancel">Hủy</button>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile3" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+                        <div class="tab-pane fade" id="nav-profile4" role="tabpanel" aria-labelledby="nav-contact-tab">4</div>
+                        <div class="tab-pane fade" id="nav-profile5" role="tabpanel" aria-labelledby="nav-contact-tab">5</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--end main-->
+
+
+    <!--end section-->
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo-foot">
+                        <a href="#"><img src="img/logo-footer.svg" alt="img"></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="sub-foot">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit
+                    </div>
+                    <ul class="list-connect">
+                        <li><a href="#"><img src="img/icon-fb.svg" alt="img"></a></li>
+                        <li><a href="#"><img src="img/icon-yt.svg" alt="img"></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="title-foot">Thông tin liên hệ</h4>
+                    <ul class="list-info-foot">
+                        <li>
+                            <img src="img/icon-map.svg" alt="img">Văn phòng đại diện: Số 304 Kim Mã, Ngọc Khánh, Ba
+                            Đình, Hà Nội
+                        </li>
+                        <li>
+                            <img src="img/icon-call.svg" alt="img">Hotline: 0981.980.980 0877.786.666
+                        </li>
+                        <li>
+                            <img src="img/icon-sms.svg" alt="img">Email: tuyendungfitness@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="title-foot">Nhóm việc làm</h4>
+                    <ul class="list-info-foot">
+                        <li><a href="#">Việc làm Fitness</a></li>
+                        <li><a href="#">Việc làm lễ tân</a></li>
+                        <li><a href="#">Huấn luyện viên</a></li>
+                        <li><a href="#">Nhân viên phòng vé</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h4 class="title-foot">Chính sách</h4>
+                    <ul class="list-info-foot list-info-bot">
+                        <li><a href="#">Báo giá dịch vụ</a></li>
+                        <li><a href="#">Thỏa thuận sử dụng</a></li>
+                        <li><a href="#">Quy định bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                Copyright by tuyendungfitness 2021. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+</div>
+
+<a href="#" id="back-to-top"><i class="fas fa-angle-up"></i></a>
+
+<script type="text/javascript" src="libs/js/jquery.min.js"></script>
+<script type="text/javascript" src="libs/js/jquery.multiple.select.js"></script>
+
+<script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="libs/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
+
+<script type="text/javascript" src="libs/js/script.js"></script>
+<script>
+    $('.datepicker-fitness').datetimepicker({
+        format: 'd/m/Y',
+        formatDate: 'd/m/Y',
+        timepicker: false,
+        mask: '39/19/9999',
+        validateOnBlur: false,
+        scrollInput: false
+    });
+
+    $(document).on('change','#ip-file', function(){
+        var names = [];
+        var length = $(this).get(0).files.length;
+        for (var i = 0; i < $(this).get(0).files.length; ++i) {
+            names.push($(this).get(0).files[i].name);
+        }
+        // $("input[name=file]").val(names);
+        if(length>2){
+            var fileName = names.join(', ');
+            $(this).closest('.upload-file').next('.name-file').text(length);
+        }
+        else{
+            $(this).closest('.upload-file').next('.name-file').text(names);
+        }
+    });
+</script>
+</body>
+</html>

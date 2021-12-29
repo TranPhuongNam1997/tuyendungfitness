@@ -685,6 +685,19 @@
             }
         }
     }
+    &.header-info{
+        .bg-black{
+            background: url("../img/banner-info.png") no-repeat bottom center;
+            background-size: cover;
+        }
+        .banner{
+            padding: 127px 0;
+            background: transparent;
+            @include mobile{
+                padding: 100px 0;
+            }
+        }
+    }
     .navigation{
         background: transparent;
         @include mobile-horizontal{

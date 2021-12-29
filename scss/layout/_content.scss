@@ -2395,3 +2395,354 @@
 
 //style Danh sách ứng viên
 //end style main
+
+//style thong tin nguoi tim viec
+
+
+.wrap-violet{
+    background: #FBFAFF;
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 138px;
+    margin: 0 auto 16px;
+    .avatar-edit {
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+        bottom: -4px;
+        input {
+            display: none;
+            + label {
+                display: inline-block;
+                width: 33px;
+                height: 33px;
+                margin-bottom: 0;
+                border-radius: 100%;
+                cursor: pointer;
+                font-weight: normal;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    background: #f1f1f1;
+                    border-color: #d6d6d6;
+                }
+                &:after {
+                    content: "\f040";
+                    font-family: 'Font Awesome 5 Free';
+                    color: #757575;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .avatar-preview {
+        width: 138px;
+        height: 138px;
+        position: relative;
+        border-radius: 100%;
+        > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+
+.info-block{
+    padding: 25px 0 118px;
+}
+.box-profile{
+    background: #424A59;
+    padding: 29px 0 22px;
+    border-radius: 15px 0 15px 0;
+    transform: translateY(-150px);
+}
+.name-profile{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.txt-position{
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.nav-profile{
+    display: block;
+    border: none;
+    margin-bottom: 152px;
+    .nav-item.show .nav-link,.nav-link.active{
+        background: #485572;
+        color: #FFFFFF;
+        border: none;
+        img{
+            filter: invert(0%) sepia(2%) saturate(8%) hue-rotate(-36deg) brightness(161%) contrast(100%);
+        }
+    }
+    .nav-item{
+        margin-bottom: 0;
+    }
+    .nav-link{
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        padding: 18px 25px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #CDCDCD;
+        border: none;
+        img{
+            margin-right: 11px;
+            min-width: 12px;
+        }
+        &:hover{
+            border: none;
+            background: #485572;
+
+        }
+    }
+}
+.btn-logout{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding-left: 27px;
+    &:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+//style tab
+
+.box-white{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
+    padding: 36px 43px;
+    border-radius: 15px 0 15px 0;
+}
+.title-tab{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 38px;
+}
+.block-info-tab{
+    margin-bottom: 31px;
+    .info-tab{
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        .tab-left{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            min-width: 199px;
+        }
+        .tab-right{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #666666;
+            padding-bottom: 3px;
+            border-bottom: 1px dashed #CDCDCD;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 257px;
+            button{
+                background: none;
+                border: none;
+                padding: 0;
+            }
+        }
+    }
+}
+.title-account{
+    margin-bottom: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title-tab{
+        margin-bottom: 0;
+    }
+    span{
+        color: #FF5C1D;
+    }
+}
+.field-tab{
+    margin-bottom: 32px;
+    label{
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+    input{
+        background: #F1F1F1;
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 0 15px;
+        width: 100%;
+        display: block;
+        height: 50px;
+        border: none;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #333333;
+        &:focus,&:focus-within{
+            border: 1px solid #FF5C1D;
+        }
+        &::placeholder{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #666;
+        }
+    }
+    select{
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        color: #333;
+        padding: 0 15px;
+        width: 100%;
+        display: block;
+        height: 50px;
+        border: none;
+        background: #F1F1F1 url("../img/Arrow-pro.svg") no-repeat top 23px right 15px;
+        -webkit-appearance: none;
+        &:focus,&:focus-within,&:focus-visible{
+            border: 1px solid #FF5C1D;
+        }
+    }
+
+    textarea{
+        background: #F1F1F1;
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 15px;
+        width: 100%;
+        display: block;
+        height: 207px;
+        border: none;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #333333;
+        &:focus,&:focus-within,&:focus-visible{
+            border: 1px solid #FF5C1D;
+            outline: none;
+        }
+        &::placeholder{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #666;
+        }
+    }
+}
+
+.txt-cv{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 19px;
+}
+.upload-file{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    input{
+        display: none;
+    }
+    .lbl-upload{
+        border: 1px solid #3299DC;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #3299DC;
+        width: 131px;
+        height: 45px;
+        margin-right: 19px;
+        justify-content: center;
+        margin-bottom: 0;
+        cursor: pointer;
+        &:hover{
+            background: #d9f0ff;
+        }
+        img{
+            margin-right: 4px;
+        }
+    }
+    span{
+        font-size: 14px;
+        line-height: 17px;
+        color: #666666;
+    }
+}
+.name-file{
+    min-height: 1px;
+    margin-bottom: 20px;
+}
+
+.btn-save{
+    background: #FF5C1D;
+    width: 120px;
+    height: 50px;
+
+    border-radius: 8px 0 8px 0 ;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-right: 4px;
+    border: 1px solid #FF5C1D;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color: #fff;
+        background: #fd7a47;
+        transition: all 0.2s ease-in-out;
+    }
+}
+.btn-cancel{
+    width: 78px;
+    height: 50px;
+    border-radius: 8px 0 8px 0 ;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    border: 1px solid #EEEEEE;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        opacity: 0.8;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+
+}
