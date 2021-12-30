@@ -6,21 +6,23 @@ $( document ).ready(function() {
     // });
 
 
-    function removeNoti() {
-        setTimeout(function() {
-            $('.notify-alert').removeClass('active')
-        }, 3000);
-    }
+    // function removeNoti() {
+    //     setTimeout(function() {
+    //         $('.notify-alert').removeClass('active')
+    //     }, 3000);
+    // }
 
 
 
      $(".flag").click(function () {
 
         if(!$(this).hasClass("active")){
-            $('.notify-alert').addClass('active');
+            // $('.notify-alert').addClass('active');
             $(this).addClass('active');
-            removeNoti();
-            clearTimeout(removeNoti);
+            // removeNoti();
+            // clearTimeout(removeNoti);
+
+            toastr.success(`<div class="notify-alert"><div><img src="img/check-circle-fill.svg" alt="img">Đã lưu vào danh sách việc làm</div><a href="#">Đến danh sách việc làm</a></div>`)
 
         }
         else
