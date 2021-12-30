@@ -52,3 +52,44 @@ input:focus{
     margin-bottom: 16px;
   }
 }
+
+.notify-alert{
+  max-width: 1172px;
+  width: 100%;
+  padding: 14px 43px 14px 13px;
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+  &.active{
+    transform: translateX(-50%) translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+
+  }
+  div{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  img{
+    margin-right: 8px;
+  }
+  a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FF5C1D;
+  }
+}

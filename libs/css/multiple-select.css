@@ -56,9 +56,12 @@
     top: 0;
     white-space: nowrap;
 }
-
+.ms-choice > span{
+    color: #fff;
+    font-weight: 500;
+}
         .ms-choice > span.placeholder {
-            color: #575D63;
+            color: #666666;
         }
 
     .ms-choice > div {

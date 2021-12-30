@@ -1,9 +1,36 @@
 $( document ).ready(function() {
 
 
-    $(".flag").click(function () {
-        $(this).toggleClass('active')
+    // $(".flag.active").click(function () {
+    //     $(this).removeClass('active')
+    // });
+
+
+    function removeNoti() {
+        setTimeout(function() {
+            $('.notify-alert').removeClass('active')
+        }, 3000);
+    }
+
+
+
+     $(".flag").click(function () {
+
+        if(!$(this).hasClass("active")){
+            $('.notify-alert').addClass('active');
+            $(this).addClass('active');
+            removeNoti();
+            clearTimeout(removeNoti);
+
+        }
+        else
+        {
+            $(this).removeClass('active')
+        }
     });
+
+
+
 
 
     //nut scroll top
@@ -24,7 +51,15 @@ $( document ).ready(function() {
     // });
 
     if(innerWidth < 992){
+
+        $('.menu-child').hide();
+
         var overlay = $("<div class='overlay'></div>");
+        $(".has-drop").click(function () {
+            $(this).toggleClass("active");
+            $(this).children('.menu-child').slideToggle();
+        });
+
         $("body").prepend(overlay);
         $(".view-menu-mb").click(function () {
             $(this).toggleClass("change-icon-mb");

@@ -23,14 +23,14 @@
         width: 100%;
         left: -100%;
     }
-    ul{
+    >ul{
 
         display: flex;
         @include tablet{
             display: block;
             width: 100%;
         }
-        li{
+        >li{
             position: relative;
             margin-right: 49px;
             transition: all 0.3s ease-in-out;
@@ -40,7 +40,7 @@
             @include tablet{
                 margin-right: 0;
             }
-            a{
+            >a{
                 display: block;
                 padding: 38px 5px;
                 position: relative;
@@ -62,6 +62,7 @@
 
                 i{
                     margin-left: 9px;
+                    transition: all 0.3s ease-in-out;
                 }
             }
             &:after{
@@ -87,11 +88,64 @@
                 transform: translateX(-50%) scaleX(1);
                 transition: all 0.3s ease-in-out;
             }
-            &.active{
-                &:after{
+            &.has-drop{
+                &.active{
+                    >a{
+                        >i{
+                            transform: rotate(180deg);
+                            @include tablet{
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu-child{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 300px;
+                background: rgba(54, 65, 85,1);
+                border-radius: 8px 0 8px 0;
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.22);
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(20px);
+                transition: all 0.3s ease-in-out;
+                @include tablet{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(00px);
+                    transition: all 0s;
+                    position: unset;
+                    width: 100%;
+                }
+                li{
+
+                    a{
+                        display: block;
+                        padding: 16px 20px;
+                        color: #fff;
+                        &:hover{
+                            background: rgba(73, 81, 96,0.5);
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .menu-child{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0px);
+                    transition: all 0.3s ease-in-out;
+                    @include tablet{
+                        transition: all 0s;
+                    }
 
                 }
             }
         }
     }
 }
+

@@ -72,6 +72,15 @@
         margin-left: 30px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        &:hover{
+            .block-log{
+                z-index: 10;
+                display: block;
+            }
+        }
 
         .avt-user{
             margin-right: 8px;
@@ -83,6 +92,7 @@
                 width: 100%;
             }
         }
+
         .name-user{
             margin-bottom: 1px;
             font-size: 14px;
@@ -108,6 +118,31 @@
     display: flex;
     padding: 5px 0;
 }
+.block-log{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: -5px;
+    background: #364055;
+    box-shadow: 4px -2px 4px rgba(126, 126, 126, 0.1);
+    padding: 19px 0;
+    width: 245px;
+    border-radius: 10px 0 10px 0;
+    a{
+        display: flex;
+        align-items: center;
+        padding: 14px 38px;
+        color: #DADADA;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background: #464e5d;
+            transition: all 0.3s ease-in-out;
+        }
+        img{
+            margin-right: 8px;
+        }
+    }
+}
 .link-login{
     position: relative;
     padding: 8px 0;
@@ -125,31 +160,7 @@
         line-height: 17px;
         color: #DADADA;
     }
-    .block-log{
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: -5px;
-        background: #364055;
-        box-shadow: 4px -2px 4px rgba(126, 126, 126, 0.1);
-        padding: 19px 0;
-        width: 245px;
-        border-radius: 10px 0 10px 0;
-        a{
-            display: flex;
-            align-items: center;
-            padding: 14px 38px;
-            color: #DADADA;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                background: #464e5d;
-                transition: all 0.3s ease-in-out;
-            }
-            img{
-                margin-right: 8px;
-            }
-        }
-    }
+
     &:hover{
         .block-log{
             display: block;
@@ -446,6 +457,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 9;
     @include laptop{
         margin-bottom: 20px;
     }
@@ -566,6 +579,7 @@
     }
 }
 .search-cadidate{
+    display: block;
     text-align: center;
     @include mobile-horizontal{
         display: none;

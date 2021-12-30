@@ -297,6 +297,7 @@
 }
 .list-job{
     margin-bottom: 8px;
+    padding-top: 3px;
     .item-job{
         position: relative;
         display: block;
@@ -637,6 +638,18 @@
    }
     &::-webkit-scrollbar-thumb:hover {
         background: #555;
+    }
+}
+.list-job-slide {
+    padding: 3px;
+    @include tablet{
+        .swiper-wrapper{
+            height: auto!important;
+            display: block;
+        }
+        .swiper-slide{
+            height: auto!important;
+        }
     }
 }
 
@@ -2296,12 +2309,12 @@
         }
     }
 }
-.frame-map{
-    width: 444px;
-    @include mobile-horizontal{
-        width: 100%;
-    }
-}
+//.frame-map{
+//    width: 444px;
+//    @include mobile-horizontal{
+//        width: 100%;
+//    }
+//}
 .mb-23{
     margin-bottom: 23px;
     @include mobile-horizontal{
