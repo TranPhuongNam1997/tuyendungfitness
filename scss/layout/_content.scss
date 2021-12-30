@@ -651,6 +651,13 @@
             height: auto!important;
         }
     }
+    .tag-new{
+        color: #ED0000;
+        background: #FFD4D8;
+    }
+    .item-job-hot{
+        height: auto!important;
+    }
 }
 
 //end style section job for you
@@ -1592,10 +1599,28 @@
     overflow-y: auto;
     max-height: calc(100vh - 149px);
     padding-bottom: 15px;
+    @media(max-width: 1440px){
+        margin-top: 75px;
+        max-height: unset;
+    }
 
     @media(max-width: 1366px){
-        margin-top: 90px;
-        max-height: calc(100vh - 90px);
+        margin-top: 30px;
+        max-height: unset;
+        .field-login{
+            margin-bottom: 10px;
+            input,select{
+                height: 37px;
+                border-radius: 5px;
+
+            }
+            select{
+                background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 15px right 15px;
+            }
+        }
+        .btn-registor{
+            height: 45px;
+        }
     }
     @include tablet{
         margin-top: 0;
@@ -1635,29 +1660,31 @@
     font-size: 16px;
     line-height: 20px;
     color: #FF5C1D;
-    margin-bottom: 25px;
-    @include tablet{
-        margin-bottom: 15px;
-    }
-    @include mobile{
-        margin-bottom: 10px;
-    }
+    //margin-bottom: 25px;
+    margin-bottom: 15px;
+    //@include tablet{
+    //    margin-bottom: 15px;
+    //}
+    //@include mobile{
+    //    margin-bottom: 10px;
+    //}
 }
 .group-field{
-    margin-bottom: 32px;
-    @include tablet{
-        margin-bottom: 25px;
-
-    }
-    @include mobile-horizontal{
-        margin-bottom: 20px;
-        &.group-field2{
-            margin-bottom: 0;
-        }
-    }
-    @include mobile{
-        margin-bottom: 17px;
-    }
+    //margin-bottom: 32px;
+    margin-bottom: 10px;
+    //@include tablet{
+    //    margin-bottom: 25px;
+    //
+    //}
+    //@include mobile-horizontal{
+    //    margin-bottom: 20px;
+    //    &.group-field2{
+    //        margin-bottom: 0;
+    //    }
+    //}
+    //@include mobile{
+    //    margin-bottom: 17px;
+    //}
 }
 
 .field-login{
@@ -1715,7 +1742,7 @@
         }
     }
     select{
-        background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 19px right 15px;
+        background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 22px right 15px;
         box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
         border-radius: 8px;
         height: 50px;
@@ -2079,6 +2106,7 @@
     background: #FBFAFF;
     border-radius: 8px;
     padding: 29px 40px 46px 24px;
+    margin-bottom: 23px;
     @include tablet-horizontal{
         padding: 29px 17px 46px 17px;
     }
@@ -2091,6 +2119,10 @@
     @include mobile{
         padding: 15px;
     }
+}
+.sticky-sidebar{
+    position: sticky;
+    top: 15px;
 }
 .title-orange{
     font-weight: 600;
@@ -2243,6 +2275,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 0;
     @include tablet-horizontal{
         padding: 29px 17px 29px 17px;
     }

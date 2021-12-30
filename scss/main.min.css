@@ -2605,6 +2605,11 @@ input:focus {
       display: block; }
     .list-job-slide .swiper-slide {
       height: auto !important; } }
+  .list-job-slide .tag-new {
+    color: #ED0000;
+    background: #FFD4D8; }
+  .list-job-slide .item-job-hot {
+    height: auto !important; }
 
 .sc-looking-candidates {
   padding: 137px 0 101px;
@@ -3433,10 +3438,23 @@ input:focus {
   overflow-y: auto;
   max-height: calc(100vh - 149px);
   padding-bottom: 15px; }
+  @media (max-width: 1440px) {
+    .box-register {
+      margin-top: 75px;
+      max-height: unset; } }
   @media (max-width: 1366px) {
     .box-register {
-      margin-top: 90px;
-      max-height: calc(100vh - 90px); } }
+      margin-top: 30px;
+      max-height: unset; }
+      .box-register .field-login {
+        margin-bottom: 10px; }
+        .box-register .field-login input, .box-register .field-login select {
+          height: 37px;
+          border-radius: 5px; }
+        .box-register .field-login select {
+          background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 15px right 15px; }
+      .box-register .btn-registor {
+        height: 45px; } }
   @media only screen and (max-width: 991px) {
     .box-register {
       margin-top: 0;
@@ -3465,27 +3483,10 @@ input:focus {
   font-size: 16px;
   line-height: 20px;
   color: #FF5C1D;
-  margin-bottom: 25px; }
-  @media only screen and (max-width: 991px) {
-    .txt-info-ac {
-      margin-bottom: 15px; } }
-  @media only screen and (max-width: 576px) {
-    .txt-info-ac {
-      margin-bottom: 10px; } }
+  margin-bottom: 15px; }
 
 .group-field {
-  margin-bottom: 32px; }
-  @media only screen and (max-width: 991px) {
-    .group-field {
-      margin-bottom: 25px; } }
-  @media only screen and (max-width: 767px) {
-    .group-field {
-      margin-bottom: 20px; }
-      .group-field.group-field2 {
-        margin-bottom: 0; } }
-  @media only screen and (max-width: 576px) {
-    .group-field {
-      margin-bottom: 17px; } }
+  margin-bottom: 10px; }
 
 .field-login {
   margin-bottom: 25px; }
@@ -3538,7 +3539,7 @@ input:focus {
         height: 35px;
         border-radius: 5px; } }
   .field-login select {
-    background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 19px right 15px;
+    background: #F1F1F1 url("../img/Arrow.svg") no-repeat top 22px right 15px;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     height: 50px;
@@ -3838,7 +3839,8 @@ input:focus {
 .box-violet {
   background: #FBFAFF;
   border-radius: 8px;
-  padding: 29px 40px 46px 24px; }
+  padding: 29px 40px 46px 24px;
+  margin-bottom: 23px; }
   @media only screen and (max-width: 1199px) {
     .box-violet {
       padding: 29px 17px 46px 17px; } }
@@ -3851,6 +3853,10 @@ input:focus {
   @media only screen and (max-width: 576px) {
     .box-violet {
       padding: 15px; } }
+
+.sticky-sidebar {
+  position: sticky;
+  top: 15px; }
 
 .title-orange {
   font-weight: 600;
@@ -3987,7 +3993,8 @@ input:focus {
   padding: 38px 34px 46px 24px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 0; }
   @media only screen and (max-width: 1199px) {
     .box-violet-company {
       padding: 29px 17px 29px 17px; } }
