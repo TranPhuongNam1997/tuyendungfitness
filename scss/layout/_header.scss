@@ -661,8 +661,9 @@
     height: 100%;
     z-index: 8;
 }
-
-.header-list{
+.bg-list{
+    background: url("../img/banner-ds.png") no-repeat bottom center;
+    background-size: cover;
     .banner{
         background: rgba(30, 40, 61, 0.8);
         padding: 91px 0 73px;
@@ -674,7 +675,7 @@
             padding: 49px 0 50px;
         }
         @include mobile{
-
+    
         }
         .slogan{
             margin-bottom: 66px;
@@ -683,7 +684,7 @@
             }
         }
     }
-    &.header-detail{
+    &.bg-detail{
         .banner{
             padding: 74px 0 40px;
             @include tablet{
@@ -697,11 +698,9 @@
             }
         }
     }
-    &.header-info{
-        .bg-black{
-            background: url("../img/banner-info.png") no-repeat bottom center;
-            background-size: cover;
-        }
+    &.bg-info{
+        background: url("../img/banner-info.png") no-repeat bottom center;
+        background-size: cover;
         .banner{
             padding: 127px 0;
             background: transparent;
@@ -710,16 +709,48 @@
             }
         }
     }
+}
+
+
+.header-list{
+    
+    // &.header-detail{
+    //     .banner{
+    //         padding: 74px 0 40px;
+    //         @include tablet{
+    //             padding: 92px 0 40px;
+    //         }
+    //         @include mobile-horizontal{
+    //             padding: 40px 0 40px;
+    //         }
+    //         @include mobile{
+    //             padding: 35px 0 35px;
+    //         }
+    //     }
+    // }
+    // &.header-info{
+    //     .bg-black{
+    //         background: url("../img/banner-info.png") no-repeat bottom center;
+    //         background-size: cover;
+    //     }
+    //     .banner{
+    //         padding: 127px 0;
+    //         background: transparent;
+    //         @include mobile{
+    //             padding: 100px 0;
+    //         }
+    //     }
+    // }
     .navigation{
         background: transparent;
         @include mobile-horizontal{
             background: #374156;
         }
     }
-    .bg-black{
-        background: url("../img/banner-ds.png") no-repeat bottom center;
-        background-size: cover;
-    }
+    // .bg-black{
+    //     background: url("../img/banner-ds.png") no-repeat bottom center;
+    //     background-size: cover;
+    // }
 }
 
 //style detail

@@ -1770,49 +1770,50 @@ input:focus {
   height: 100%;
   z-index: 8; }
 
-.header-list .banner {
-  background: rgba(30, 40, 61, 0.8);
-  padding: 91px 0 73px;
-  height: auto; }
-  @media only screen and (max-width: 991px) {
-    .header-list .banner {
-      padding: 105px 0 1px; } }
-  @media only screen and (max-width: 767px) {
-    .header-list .banner {
-      padding: 49px 0 50px; } }
-  .header-list .banner .slogan {
-    margin-bottom: 66px; }
-    @media only screen and (max-width: 991px) {
-      .header-list .banner .slogan {
-        margin-bottom: 30px; } }
-.header-list.header-detail .banner {
-  padding: 74px 0 40px; }
-  @media only screen and (max-width: 991px) {
-    .header-list.header-detail .banner {
-      padding: 92px 0 40px; } }
-  @media only screen and (max-width: 767px) {
-    .header-list.header-detail .banner {
-      padding: 40px 0 40px; } }
-  @media only screen and (max-width: 576px) {
-    .header-list.header-detail .banner {
-      padding: 35px 0 35px; } }
-.header-list.header-info .bg-black {
-  background: url("../img/banner-info.png") no-repeat bottom center;
+.bg-list {
+  background: url("../img/banner-ds.png") no-repeat bottom center;
   background-size: cover; }
-.header-list.header-info .banner {
-  padding: 127px 0;
-  background: transparent; }
-  @media only screen and (max-width: 576px) {
-    .header-list.header-info .banner {
-      padding: 100px 0; } }
+  .bg-list .banner {
+    background: rgba(30, 40, 61, 0.8);
+    padding: 91px 0 73px;
+    height: auto; }
+    @media only screen and (max-width: 991px) {
+      .bg-list .banner {
+        padding: 105px 0 1px; } }
+    @media only screen and (max-width: 767px) {
+      .bg-list .banner {
+        padding: 49px 0 50px; } }
+    .bg-list .banner .slogan {
+      margin-bottom: 66px; }
+      @media only screen and (max-width: 991px) {
+        .bg-list .banner .slogan {
+          margin-bottom: 30px; } }
+  .bg-list.bg-detail .banner {
+    padding: 74px 0 40px; }
+    @media only screen and (max-width: 991px) {
+      .bg-list.bg-detail .banner {
+        padding: 92px 0 40px; } }
+    @media only screen and (max-width: 767px) {
+      .bg-list.bg-detail .banner {
+        padding: 40px 0 40px; } }
+    @media only screen and (max-width: 576px) {
+      .bg-list.bg-detail .banner {
+        padding: 35px 0 35px; } }
+  .bg-list.bg-info {
+    background: url("../img/banner-info.png") no-repeat bottom center;
+    background-size: cover; }
+    .bg-list.bg-info .banner {
+      padding: 127px 0;
+      background: transparent; }
+      @media only screen and (max-width: 576px) {
+        .bg-list.bg-info .banner {
+          padding: 100px 0; } }
+
 .header-list .navigation {
   background: transparent; }
   @media only screen and (max-width: 767px) {
     .header-list .navigation {
       background: #374156; } }
-.header-list .bg-black {
-  background: url("../img/banner-ds.png") no-repeat bottom center;
-  background-size: cover; }
 
 .heading-detail {
   font-weight: bold;
@@ -3426,14 +3427,13 @@ input:focus {
       border-radius: 8px;
       padding: 20px 25px;
       overflow-y: auto;
-      max-height: calc(100vh - 354px); } }
+      max-height: unset; } }
   @media only screen and (max-width: 767px) {
     .box-login {
       padding: 20px 20px; } }
   @media only screen and (max-width: 576px) {
     .box-login {
-      padding: 15px;
-      max-height: calc(100vh - 290px); } }
+      padding: 15px; } }
 
 .box-register {
   top: 0;
