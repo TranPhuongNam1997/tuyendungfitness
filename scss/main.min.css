@@ -1438,7 +1438,8 @@ input:focus {
   padding: 15px 0 0px;
   background: url("../img/bg-menu.png") no-repeat center center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-size: cover; }
+  background-size: cover;
+  z-index: 9; }
   @media only screen and (max-width: 1439px) {
     .navigation {
       padding: 10px 0 0px; } }
@@ -3394,6 +3395,9 @@ input:focus {
       width: 240px;
       height: 40px;
       margin-bottom: 25px; } }
+  @media only screen and (max-width: 576px) {
+    .btn-question-ntd {
+      margin-bottom: 20px; } }
   .btn-question-ntd:hover {
     color: #fff;
     background: #FF5C1D;
@@ -3458,11 +3462,10 @@ input:focus {
   @media only screen and (max-width: 991px) {
     .box-register {
       margin-top: 0;
-      max-height: calc(100vh - 354px); } }
+      max-height: unset; } }
   @media only screen and (max-width: 576px) {
     .box-register {
-      padding: 15px;
-      max-height: calc(100vh - 290px); } }
+      padding: 15px; } }
   .box-register::-webkit-scrollbar {
     width: 0; }
   .box-register::-webkit-scrollbar-track {
@@ -3525,7 +3528,7 @@ input:focus {
     width: 100%;
     padding: 0 15px; }
     .field-login input:focus {
-      border: 1px solid #ff5c17; }
+      box-shadow: 0px 0px 3px #ff5c17; }
     .field-login input::placeholder {
       color: #CDCDCD; }
     @media only screen and (max-width: 1439px) {
@@ -3552,7 +3555,7 @@ input:focus {
     padding: 0 15px;
     -webkit-appearance: none; }
     .field-login select:focus, .field-login select:focus-within, .field-login select:focus-visible {
-      border: 1px solid #ff5c17; }
+      box-shadow: 0px 0px 3px #ff5c17; }
     @media only screen and (max-width: 1439px) {
       .field-login select {
         height: 45px; } }
@@ -3578,6 +3581,25 @@ input:focus {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 8px; }
+  @media only screen and (max-width: 576px) {
+    .col-login {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  .flex-titleregis {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+    .flex-titleregis .txt-register {
+      margin-bottom: 0; }
+    .flex-titleregis .title-login {
+      margin-bottom: 0;
+      font-size: 16px;
+      margin-left: 5px;
+      text-transform: lowercase; }
+      .flex-titleregis .title-login br {
+        display: none; } }
 
 .display-pass {
   position: relative; }
@@ -4316,7 +4338,7 @@ input:focus {
     line-height: 16px;
     color: #333333; }
     .field-tab input:focus, .field-tab input:focus-within {
-      border: 1px solid #FF5C1D; }
+      box-shadow: 0px 0px 3px #ff5c17; }
     .field-tab input::placeholder {
       font-weight: 500;
       font-size: 13px;
@@ -4334,7 +4356,7 @@ input:focus {
     background: #F1F1F1 url("../img/Arrow-pro.svg") no-repeat top 23px right 15px;
     -webkit-appearance: none; }
     .field-tab select:focus, .field-tab select:focus-within, .field-tab select:focus-visible {
-      border: 1px solid #FF5C1D; }
+      box-shadow: 0px 0px 3px #ff5c17; }
   .field-tab textarea {
     background: #F1F1F1;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
@@ -4349,7 +4371,7 @@ input:focus {
     line-height: 16px;
     color: #333333; }
     .field-tab textarea:focus, .field-tab textarea:focus-within, .field-tab textarea:focus-visible {
-      border: 1px solid #FF5C1D;
+      box-shadow: 0px 0px 3px #ff5c17;
       outline: none; }
     .field-tab textarea::placeholder {
       font-weight: 500;

@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project persional/fitness" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -76,6 +74,8 @@
       <workItem from="1640705997699" duration="1872000" />
       <workItem from="1640741861389" duration="15010000" />
       <workItem from="1640830027729" duration="25000000" />
+      <workItem from="1640880975268" duration="632000" />
+      <workItem from="1641191087014" duration="21000" />
     </task>
     <servers />
   </component>
@@ -99,6 +99,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2638" y="216" key="#SCSS/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1639981210685" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1641191105954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641191105954" />
     <state x="2587" y="255" width="585" height="530" key="find.popup" timestamp="1640833199379">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
