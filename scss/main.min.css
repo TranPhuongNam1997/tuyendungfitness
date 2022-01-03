@@ -1164,6 +1164,9 @@ input:focus {
     .mb-24 {
       margin-bottom: 16px; } }
 
+.pd-0 {
+  padding: 0; }
+
 .notify-alert {
   max-width: 1172px;
   width: 100%;
@@ -3016,7 +3019,7 @@ input:focus {
 
 .sc-news {
   position: relative;
-  padding: 55px 0 92px; }
+  padding: 55px 0 66px; }
   @media only screen and (max-width: 991px) {
     .sc-news {
       padding: 35px 0 50px; } }
@@ -3042,10 +3045,14 @@ input:focus {
         width: 218px; } }
 
 .box-news {
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-bottom: 26px; }
   @media only screen and (max-width: 991px) {
     .box-news {
       margin-bottom: 23px; } }
+  @media only screen and (max-width: 576px) {
+    .box-news {
+      margin-bottom: 20px; } }
   .box-news .img-news {
     overflow: hidden;
     position: relative;

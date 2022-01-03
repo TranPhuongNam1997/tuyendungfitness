@@ -1118,7 +1118,7 @@
 
 .sc-news{
     position: relative;
-    padding: 55px 0 92px;
+    padding: 55px 0 66px;
     //background: url("../img/bg-news.png") no-repeat bottom right;
     @include tablet{
         padding: 35px 0 50px;
@@ -1150,8 +1150,12 @@
 }
 .box-news{
     border-radius: 8px;
+    margin-bottom: 26px;
     @include tablet{
         margin-bottom: 23px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
     }
     .title-sc{
 
