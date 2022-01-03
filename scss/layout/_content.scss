@@ -2477,6 +2477,16 @@
 .wrap-violet{
     background: #FBFAFF;
 }
+.zone-profile{
+    @include gv{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    @include mobile{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
 .avatar-upload {
     position: relative;
@@ -2487,6 +2497,10 @@
         right: 12px;
         z-index: 1;
         bottom: -4px;
+        @include mobile{
+            right: 17px;
+            bottom: 6px;
+        }
         input {
             display: none;
             + label {
@@ -2498,6 +2512,10 @@
                 cursor: pointer;
                 font-weight: normal;
                 transition: all .2s ease-in-out;
+                @include mobile{
+                    width: 25px;
+                    height: 25px;
+                }
                 &:hover {
                     background: #f1f1f1;
                     border-color: #d6d6d6;
@@ -2521,6 +2539,15 @@
         height: 138px;
         position: relative;
         border-radius: 100%;
+        @include gx{
+            width: 110px;
+            height: 110px;
+            margin: 0 auto;
+        }
+        @include mobile{
+            width: 100px;
+            height: 100px;
+        }
         > div {
             width: 100%;
             height: 100%;
@@ -2534,13 +2561,22 @@
 
 
 .info-block{
-    padding: 25px 0 118px;
+    padding: 25px 0 50px;
 }
 .box-profile{
     background: #424A59;
     padding: 29px 0 22px;
     border-radius: 15px 0 15px 0;
     transform: translateY(-150px);
+    @include gv{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+        transform: none;
+        padding: 20px 0 20px;
+        margin-top: -150px;
+    }
+
 }
 .name-profile{
     font-weight: bold;
@@ -2549,6 +2585,10 @@
     color: #FFFFFF;
     margin-bottom: 8px;
     text-align: center;
+    @include gx{
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 .txt-position{
     font-size: 13px;
@@ -2556,12 +2596,29 @@
     color: #FFFFFF;
     margin-bottom: 32px;
     text-align: center;
+    @include mobile{
+        margin-bottom: 20px;
+    }
 }
 
 .nav-profile{
     display: block;
     border: none;
     margin-bottom: 152px;
+    @include tablet{
+        position: unset;
+        width: auto;
+        height: auto;
+        background: none;
+        flex: 0 0 60%;
+        max-width: 60%;
+
+        margin-bottom: 0;
+    }
+    @include mobile{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .nav-item.show .nav-link,.nav-link.active{
         background: #485572;
         color: #FFFFFF;
@@ -2583,6 +2640,10 @@
         line-height: 20px;
         color: #CDCDCD;
         border: none;
+        @include gx{
+            padding: 10px 10px;
+            font-size: 14px;
+        }
         img{
             margin-right: 11px;
             min-width: 12px;
@@ -2600,6 +2661,21 @@
     line-height: 20px;
     color: #fff;
     padding-left: 27px;
+    @include gv{
+        flex: 0 0 40%;
+        max-width: 40%;
+        padding-left: 0;
+        text-align: center;
+    }
+    @include gx{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    @include mobile{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
     &:hover{
         color: #fff;
         text-decoration: underline;
@@ -2613,24 +2689,70 @@
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
     padding: 36px 43px;
     border-radius: 15px 0 15px 0;
+    margin-bottom: 44px;
+    @include gv{
+        padding: 25px 25px;
+    }
+    
+    @include gx{
+        padding: 20px 20px;
+    }
+    @include mobile{
+        padding: 20px 15px;
+    }
+
 }
 .title-tab{
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 38px;
+    @include gx{
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    @include mobile{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
 }
 .block-info-tab{
     margin-bottom: 31px;
+    @include gx{
+        margin-bottom: 25px;
+    }
+    
+    @include mobile{
+        margin-bottom: 20px;
+    }
+
     .info-tab{
         margin-bottom: 25px;
         display: flex;
         align-items: center;
+        @include gx{
+            margin-bottom: 20px;
+        }
+        @include mobile{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
         .tab-left{
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             min-width: 199px;
+            @include gx{
+                font-size: 14px;
+                line-height: 17px;
+            }
+            @include mobile{
+                max-width: unset;
+                margin-bottom: 7px;
+            }
         }
         .tab-right{
             font-weight: 500;
@@ -2643,6 +2765,13 @@
             align-items: center;
             justify-content: space-between;
             min-width: 257px;
+            @include gx{
+                font-size: 14px;
+                line-height: 17px;
+            }
+            @include mobile{
+                min-width: 100%;
+            }
             button{
                 background: none;
                 border: none;
@@ -2656,8 +2785,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include gx{
+        margin-bottom: 25px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .title-tab{
         margin-bottom: 0;
+        @include mobile{
+            margin-bottom: 10px;
+        }
     }
     span{
         color: #FF5C1D;
@@ -2665,12 +2805,24 @@
 }
 .field-tab{
     margin-bottom: 32px;
+    @include gx{
+        margin-bottom: 20px;
+    }
+    @include mobile{
+        margin-bottom: 15px;
+
+    }
     label{
         display: block;
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 12px;
+        @include gx{
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 8px;
+        }
     }
     input{
         background: #F1F1F1;
@@ -2694,6 +2846,13 @@
             line-height: 16px;
             color: #666;
         }
+        @include gv{
+            height: 45px;
+        }
+        @include gx{
+            height: 35px;
+            border-radius: 5px;
+        }
     }
     select{
         box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
@@ -2708,6 +2867,17 @@
         -webkit-appearance: none;
         &:focus,&:focus-within,&:focus-visible{
                 box-shadow: 0px 0px 3px #ff5c17;
+        }
+        @include gv{
+            height: 45px;
+            background: #F1F1F1 url("../img/Arrow-pro.svg") no-repeat top 19px right 15px;
+
+        }
+        @include gx{
+            height: 35px;
+            background: #F1F1F1 url(../img/Arrow-pro.svg) no-repeat top 14px right 15px;
+            border-radius: 5px;
+            
         }
     }
 
@@ -2733,6 +2903,10 @@
             font-size: 13px;
             line-height: 16px;
             color: #666;
+        }
+        @include gx{
+            border-radius: 5px;
+            height: 150px;
         }
     }
 }
@@ -2767,6 +2941,11 @@
         justify-content: center;
         margin-bottom: 0;
         cursor: pointer;
+        @include gx{
+            width: 111px;
+            height: 35px;
+            border-radius: 5px;
+        }
         &:hover{
             background: #d9f0ff;
         }
@@ -2796,6 +2975,13 @@
     margin-right: 4px;
     border: 1px solid #FF5C1D;
     transition: all 0.2s ease-in-out;
+    @include gv{
+        height: 45px;
+    }
+    @include gx{
+        height: 35px;
+        width: 90px;
+    }
     &:hover{
         color: #fff;
         background: #fd7a47;
@@ -2818,6 +3004,38 @@
         transition: all 0.2s ease-in-out;
 
     }
+    @include gv{
+        height: 45px;
+    }
+    @include gx{
+        height: 35px;
+    }
+}
+.btn-viewbefore{
+    width: 149px;
+    height: 50px;
+    border-radius: 8px 0 8px 0 ;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #666666;
+    border: 1px solid #EEEEEE;
+    transition: all 0.2s ease-in-out;
+    background: transparent;
 
+    &:hover{
+        opacity: 0.8;
+        transition: all 0.2s ease-in-out;
 
+    }
+    @include gv{
+        height: 45px;
+    }
+    @include gx{
+        height: 35px;
+        width: 110px;
+    }
+}
+.btn-bot{
+    text-align: right;
 }
