@@ -1136,6 +1136,15 @@
         @include mobile{
             margin-bottom: 23px;
         }
+        &.title-cs{
+            margin-bottom: 22px;
+            @include tablet{
+                margin-bottom: 20px;
+            }
+            @include mobile{
+                margin-bottom: 10px;
+            }
+        }
     }
     .bg-new{
         position: absolute;
@@ -1148,6 +1157,20 @@
         }
     }
 }
+.block-news-cs{
+    margin-bottom: 40px;
+    @include tablet{
+        margin-bottom: 30px;
+    }
+    @include gx{
+        margin-bottom: 25px;
+
+    }
+    @include mobile{
+        margin-bottom: 15px;
+    }
+}
+
 .box-news{
     border-radius: 8px;
     margin-bottom: 26px;
@@ -1187,6 +1210,8 @@
     line-height: 21px;
     @include mobile{
         margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 17px;
     }
     img{
         margin-right: 11px;
@@ -1274,9 +1299,13 @@
             width: 124px;
             margin-right: 20px;
             height: 84px;
+            @include gx{
+                margin-right: 15px;
+            }
             @include mobile{
                 width: 105px;
                 height: 71px;
+                margin-right: 10px;
             }
             img{
                 width: 100%;
@@ -1887,14 +1916,14 @@
 .main{
     padding: 73px 0;
     @include tablet{
-        padding: 50px 0;
+        padding: 62px 0 50px;
     }
     @include mobile-horizontal{
-        padding: 40px 0;
+        padding: 62px 0 40px;
 
     }
     @include mobile{
-        padding: 30px 0;
+        padding: 60px 0 30px;
 
     }
 }
@@ -1907,6 +1936,10 @@
         margin-bottom: 25px;
 
     }
+    @include mobile{
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
     a{
         transition: all 0.2s ease-in-out;
     }
@@ -1918,6 +1951,9 @@
         font-size: 16px;
         line-height: 122%;
         color: #161616;
+        @include mobile{
+            font-size: 14px;
+        }
         &:last-child{
             color: #666;
         }
@@ -2048,6 +2084,7 @@
 
         font-size: 14px;
         margin-bottom: 25px;
+        margin-top: 15px;
 
     }
     @include mobile{
@@ -3042,4 +3079,63 @@
 }
 .btn-bot{
     text-align: right;
+}
+
+// style danh sach tin tuc 
+
+.img-qc{
+    display: block;
+    margin-bottom: 55px;
+    @include tablet{
+        margin-bottom: 35px;
+    }
+    @include gx{
+        margin-bottom: 25px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+
+.box-key{
+    padding: 19px 22px;
+    min-height: 153px;
+    background: #FBFAFF;
+    border-radius: 8px;
+    @include mobile{
+        padding: 15px;
+        min-height: auto;
+    }
+    li{
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 13px;
+        a{
+            color: #333333;
+            font-weight: 500;
+            
+            &:hover{
+                text-decoration: underline;
+                color: #333333;
+            }
+            &.cl-or{
+                color: #FF5C1D;
+                &:hover{
+                    color: #FF5C1D;
+
+                }
+            }
+        }
+    }
+}
+
+.pd-0{
+    padding: 0;
 }
