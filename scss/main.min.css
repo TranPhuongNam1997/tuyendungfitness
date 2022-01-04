@@ -4954,6 +4954,13 @@ input:focus {
   transform: translateY(-2px);
   margin-left: 6px; }
 
+.forgot-password {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 14px; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;

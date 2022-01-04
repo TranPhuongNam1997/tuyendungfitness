@@ -31,13 +31,9 @@
                     </div>
                     <div class="block-user">
                         <div class="link-login-regis">
-                            <div class="link-login">
+                            <div class="link-login" data-toggle="modal" data-target="#popuploginemployer">
                                 <img src="img/user.svg" alt="img">
                                 <span>Đăng nhập</span>
-                                <div class="block-log">
-                                    <a href="javascript:0;" data-toggle="modal" data-target="#popuploginemployer"><img src="img/user-add.svg" alt="img" >Nhà tuyển dụng</a>
-                                    <a href="javascript:0;" data-toggle="modal" data-target="#popuplogincandidate"><img src="img/user1.svg" alt="img" >Ứng viên</a>
-                                </div>
                             </div>
                             <div class="link-login">
                                 <img src="img/lock.svg" alt="img">
@@ -1081,7 +1077,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="wrap-login">
-                <button class="btn-close"><img src="img/Delete.svg" alt="img"></button>
+                <button class="btn-close" data-dismiss="modal" aria-label="Close"><img src="img/Delete.svg" alt="img"></button>
                 <div class="block-login">
                     <div class="flex-login-left">
                         <div>
@@ -1089,12 +1085,12 @@
                                 <img src="img/icon-logo.svg" alt="img">
                             </div>
                             <div class="flex-titleregis">
-                                <div class="txt-register">Đăng ký</div>
-                                <h2 class="title-login">Tài khoản <br> người tìm việc </h2>
+                                <div class="txt-register">Đăng nhập</div>
+                                <h2 class="title-login">Chào mừng bạn <br> quay lại </h2>
                             </div>
-                            <div class="question-regis">Bạn đã có tài khoản người tìm việc? <a href="#">Đăng nhập</a></div>
+                            <div class="question-regis">Bạn là thành viên mới? <a href="#">Đăng ký</a></div>
                         </div>
-                        <a href="#" class="btn-question-ntd">Bạn là nhà tuyển dụng?</a>
+                        <!-- <a href="#" class="btn-question-ntd">Bạn là nhà tuyển dụng?</a> -->
                     </div>
                     <div class="box-login">
                         <form action="" class="block-form">
@@ -1127,20 +1123,13 @@
 
                             </div>
                         </form>
-                        <div class="txt-suggest">Bằng việc nhấn nút đăng ký, bạn đã đồng ý với <a href="#">Điều khoản sử dụng</a> của Tuyển dụng Fitness</div>
+                        <div class="text-center">
+                            <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                        </div>
                     </div>
 
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- popup login employer-->
-<div class="modal fade popup-login" id="popuplogincandidate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-
         </div>
     </div>
 </div>
