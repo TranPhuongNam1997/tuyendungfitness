@@ -4862,7 +4862,7 @@ input:focus {
       border-radius: 50%;
       background: #333333; }
 
-.modal-open .modal {
+.popup-login.show {
   display: flex !important;
   align-items: center; }
 
