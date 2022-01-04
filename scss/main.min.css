@@ -4862,6 +4862,98 @@ input:focus {
       border-radius: 50%;
       background: #333333; }
 
+.modal-open .modal {
+  display: flex !important;
+  align-items: center; }
+
+.popup-login .modal-dialog {
+  max-width: 1281px;
+  width: 100%;
+  max-height: 709px;
+  height: 100%;
+  min-height: auto; }
+.popup-login .modal-content {
+  display: block;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  height: 100%; }
+.popup-login .wrap-login {
+  padding: 127px 123px 65px 89px;
+  border-radius: 15px 0 15px 0;
+  height: 100%;
+  position: relative;
+  background: url("../img/banner-right-login.png") no-repeat right top/63% 100%, url("../img/banner-left-login.png") no-repeat left top; }
+  .popup-login .wrap-login .btn-close {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    border: none;
+    background: none; }
+    .popup-login .wrap-login .btn-close:hover img {
+      filter: invert(0%) sepia(0%) saturate(18%) hue-rotate(83deg) brightness(102%) contrast(64%); }
+.popup-login .block-login {
+  max-width: unset;
+  padding: 0; }
+.popup-login .flex-login-left {
+  position: unset;
+  padding-top: 0; }
+.popup-login .box-login {
+  position: unset;
+  transform: none; }
+.popup-login .txt-info-ac {
+  margin-bottom: 24px; }
+
+.remember-login input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: -2px;
+  flex: 1 18px; }
+
+.remember-login input[type="checkbox"]:checked:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  display: table;
+  width: 8px;
+  height: 13px;
+  border: 2px solid #fff;
+  border-top-width: 0px;
+  border-left-width: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.remember-login input[type="checkbox"]:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #3299DC;
+  -webkit-transition: 240ms;
+  transition: 240ms;
+  border-radius: 5px;
+  background: #fff; }
+
+.remember-login input[type="checkbox"]:checked:after {
+  background-color: #3299DC;
+  border-color: #3299DC; }
+
+.remember-login input[type="checkbox"] ~ label {
+  cursor: pointer; }
+
+.remember-login span {
+  font-weight: 600;
+  display: inline-block;
+  transform: translateY(-2px);
+  margin-left: 6px; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;

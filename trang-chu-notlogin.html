@@ -35,8 +35,8 @@
                                 <img src="img/user.svg" alt="img">
                                 <span>Đăng nhập</span>
                                 <div class="block-log">
-                                    <a href="#"><img src="img/user-add.svg" alt="img">Nhà tuyển dụng</a>
-                                    <a href="#"><img src="img/user1.svg" alt="img">Ứng viên</a>
+                                    <a href="javascript:0;" data-toggle="modal" data-target="#popuploginemployer"><img src="img/user-add.svg" alt="img" >Nhà tuyển dụng</a>
+                                    <a href="javascript:0;" data-toggle="modal" data-target="#popuplogincandidate"><img src="img/user1.svg" alt="img" >Ứng viên</a>
                                 </div>
                             </div>
                             <div class="link-login">
@@ -1074,6 +1074,78 @@
     </footer>
     <!--end footer-->
 </div>
+
+
+<!-- popup login employer-->
+<div class="modal fade popup-login" id="popuploginemployer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="wrap-login">
+                <button class="btn-close"><img src="img/Delete.svg" alt="img"></button>
+                <div class="block-login">
+                    <div class="flex-login-left">
+                        <div>
+                            <div class="logo-login">
+                                <img src="img/icon-logo.svg" alt="img">
+                            </div>
+                            <div class="flex-titleregis">
+                                <div class="txt-register">Đăng ký</div>
+                                <h2 class="title-login">Tài khoản <br> người tìm việc </h2>
+                            </div>
+                            <div class="question-regis">Bạn đã có tài khoản người tìm việc? <a href="#">Đăng nhập</a></div>
+                        </div>
+                        <a href="#" class="btn-question-ntd">Bạn là nhà tuyển dụng?</a>
+                    </div>
+                    <div class="box-login">
+                        <form action="" class="block-form">
+                            <div class="form-login">
+                                <div class="txt-info-ac">Thông tin tài khoản</div>
+                                <div class="field-login">
+                                    <label for="">Địa chỉ email<span class="cl-red">*</span></label>
+                                    <input type="text" placeholder="email@gmail.com">
+                                </div>
+
+
+                                <div class="field-login">
+                                    <label for="">Mật khẩu<span class="cl-red">*</span></label>
+                                    <div class="display-pass">
+                                        <input type="password" class="txtpassword" placeholder="Ít nhất 6 ký tự">
+
+                                        <button class="show-pass" type="button">
+                                            <img class="img-eye" src="img/eye.svg" alt="img">
+                                            <img class="img-eyeslash" src="img/eye-slash.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="remember-login">
+                                    <input type="checkbox">
+                                    <span>Lưu đăng nhập</span>
+                                </div>
+
+                                <button class="btn-registor" type="submit">Đăng nhập</button>
+
+
+                            </div>
+                        </form>
+                        <div class="txt-suggest">Bằng việc nhấn nút đăng ký, bạn đã đồng ý với <a href="#">Điều khoản sử dụng</a> của Tuyển dụng Fitness</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- popup login employer-->
+<div class="modal fade popup-login" id="popuplogincandidate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+        </div>
+    </div>
+</div>
+
+
 
 <div class="notify-alert">
     <div>
