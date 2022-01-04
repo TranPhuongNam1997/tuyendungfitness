@@ -2502,9 +2502,7 @@ input:focus {
       padding: 12px 14px 20px 14px; } }
   @media only screen and (max-width: 576px) {
     .item-job-hot {
-      width: 295px;
-      margin-bottom: 0;
-      margin-right: 16px;
+      margin-bottom: 16px;
       padding: 15px 16px 57px 16px; } }
   .item-job-hot:hover {
     background: #fff;

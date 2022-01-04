@@ -509,9 +509,10 @@
         padding: 12px 14px 20px 14px;
     }
     @include mobile{
-        width: 295px;
-        margin-bottom: 0;
-        margin-right: 16px;
+        //width: 295px;
+        //margin-bottom: 0;
+        //margin-right: 16px;
+        margin-bottom: 16px;
         padding: 15px 16px 57px 16px;
     }
     &:hover{
