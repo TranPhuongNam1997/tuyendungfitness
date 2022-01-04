@@ -3706,14 +3706,17 @@ input:focus {
   margin-bottom: 33px; }
   @media only screen and (max-width: 991px) {
     .bread-crumb {
-      margin-bottom: 27px; } }
+      margin-bottom: 27px;
+      padding-top: 25px; } }
   @media only screen and (max-width: 767px) {
     .bread-crumb {
-      margin-bottom: 25px; } }
+      margin-bottom: 25px;
+      padding-top: 15px; } }
   @media only screen and (max-width: 576px) {
     .bread-crumb {
       margin-bottom: 20px;
-      margin-top: 15px; } }
+      margin-top: 15px;
+      padding-top: 0; } }
   .bread-crumb a {
     transition: all 0.2s ease-in-out; }
   .bread-crumb a:hover {
@@ -4742,6 +4745,124 @@ input:focus {
 
 .pd-0 {
   padding: 0; }
+
+.title-post {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #161616;
+  margin-bottom: 16px; }
+  @media only screen and (max-width: 991px) {
+    .title-post {
+      font-size: 20px;
+      line-height: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .title-post {
+      font-size: 18px;
+      line-height: 22px; } }
+  @media only screen and (max-width: 576px) {
+    .title-post {
+      font-size: 16px;
+      margin-bottom: 15px; } }
+
+.box-head-post {
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #CDCDCD;
+  margin-bottom: 36px; }
+  @media only screen and (max-width: 991px) {
+    .box-head-post {
+      padding-bottom: 20px;
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .box-head-post {
+      padding-bottom: 15px;
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 576px) {
+    .box-head-post {
+      margin-bottom: 20px; } }
+  .box-head-post .time-post .time-news {
+    margin-bottom: 0; }
+    .box-head-post .time-post .time-news .divider-line {
+      margin: 0 16px; }
+    @media only screen and (max-width: 767px) {
+      .box-head-post .time-post .time-news {
+        font-size: 14px; } }
+
+.content-post {
+  font-size: 16px;
+  color: #333333; }
+  @media only screen and (max-width: 991px) {
+    .content-post {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .content-post {
+      font-size: 14px; } }
+  @media only screen and (max-width: 576px) {
+    .content-post {
+      margin-bottom: 20px; } }
+  .content-post p {
+    margin-bottom: 24px;
+    line-height: 22px; }
+    @media only screen and (max-width: 991px) {
+      .content-post p {
+        margin-bottom: 20px;
+        line-height: 22px; } }
+    @media only screen and (max-width: 767px) {
+      .content-post p {
+        margin-bottom: 15px; } }
+  .content-post img {
+    margin-bottom: 30px;
+    border-radius: 8px; }
+    @media only screen and (max-width: 991px) {
+      .content-post img {
+        margin-bottom: 25px; } }
+    @media only screen and (max-width: 767px) {
+      .content-post img {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 576px) {
+      .content-post img {
+        margin-bottom: 15px; } }
+  .content-post .highlight {
+    padding-left: 14px;
+    border-left: 1px solid #000;
+    color: #161616;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 26px; }
+    @media only screen and (max-width: 991px) {
+      .content-post .highlight {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 767px) {
+      .content-post .highlight {
+        font-size: 16px;
+        line-height: 20px; } }
+    @media only screen and (max-width: 576px) {
+      .content-post .highlight {
+        margin-bottom: 15px; } }
+  .content-post .list-post li {
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 22px; }
+    @media only screen and (max-width: 991px) {
+      .content-post .list-post li {
+        margin-bottom: 17px; } }
+    @media only screen and (max-width: 767px) {
+      .content-post .list-post li {
+        margin-bottom: 15px; } }
+    @media only screen and (max-width: 576px) {
+      .content-post .list-post li {
+        margin-bottom: 10px; } }
+    .content-post .list-post li:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #333333; }
 
 #back-to-top {
   position: fixed;

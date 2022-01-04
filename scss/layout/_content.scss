@@ -1208,6 +1208,7 @@
     margin-bottom: 17px;
     font-size: 16px;
     line-height: 21px;
+
     @include mobile{
         margin-bottom: 8px;
         font-size: 14px;
@@ -1931,14 +1932,17 @@
     margin-bottom: 33px;
     @include tablet{
         margin-bottom: 27px;
+        padding-top: 25px;
     }
     @include mobile-horizontal{
         margin-bottom: 25px;
+        padding-top: 15px;
 
     }
     @include mobile{
         margin-bottom: 20px;
         margin-top: 15px;
+        padding-top: 0;
     }
     a{
         transition: all 0.2s ease-in-out;
@@ -3138,4 +3142,139 @@
 
 .pd-0{
     padding: 0;
+}
+
+
+//style detail post
+.title-post{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #161616;
+    margin-bottom: 16px;
+    @include tablet{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @include mobile-horizontal{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    @include mobile{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+.box-head-post{
+    padding-bottom: 24px;
+    border-bottom: 1px dashed #CDCDCD;
+    margin-bottom: 36px;
+    @include tablet{
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    @include mobile-horizontal{
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
+    }
+    .time-post{
+        .time-news{
+            .divider-line{
+                margin: 0 16px;
+            }
+            margin-bottom: 0;
+
+            @include mobile-horizontal{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.content-post{
+    font-size: 16px;
+    color: #333333;
+
+    @include tablet{
+        margin-bottom: 30px;
+    }
+    @include mobile-horizontal{
+        font-size: 14px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 24px;
+        line-height: 22px;
+        @include tablet{
+            margin-bottom: 20px;
+            line-height: 22px;
+        }
+        @include mobile-horizontal{
+            margin-bottom: 15px;
+        }
+    }
+    img{
+        margin-bottom: 30px;
+        border-radius: 8px;
+        @include tablet{
+            margin-bottom: 25px;
+        }
+        @include mobile-horizontal{
+            margin-bottom: 20px;
+        }
+        @include mobile{
+            margin-bottom: 15px;
+        }
+    }
+    .highlight{
+        padding-left: 14px;
+        border-left: 1px solid #000;
+        color: #161616;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 26px;
+        @include tablet{
+            margin-bottom: 20px;
+        }
+        @include mobile-horizontal{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @include mobile{
+            margin-bottom: 15px;
+        }
+    }
+    .list-post{
+        li{
+            padding-left: 15px;
+            position: relative;
+            margin-bottom: 20px;
+            line-height: 22px;
+            @include tablet{
+                margin-bottom: 17px;
+            }
+            @include mobile-horizontal{
+                margin-bottom: 15px;
+            }
+            @include mobile{
+                margin-bottom: 10px;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #333333;
+            }
+        }
+    }
 }
