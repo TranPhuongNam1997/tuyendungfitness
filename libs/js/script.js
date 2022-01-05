@@ -84,6 +84,11 @@ $( document ).ready(function() {
         $(this).next('.img-eyeslash').show();
         $(this).hide();
     });
+    $(".notify").click(function () {
+        $(this).next('.list-notify').slideToggle();
+
+    });
+
 
 
 

@@ -11,7 +11,19 @@
 .header-top{
     background: rgba(32, 44, 67, 0.9);
     @include tablet{
-        display: none;
+        .flex-head{
+            padding: 0;
+            .info-contact{
+                display: none;
+            }
+            .link-login-regis{
+                padding: 0;
+                position: fixed;
+                top: 15px;
+                right: 45px;
+                z-index: 99;
+            }
+        }
     }
 }
 .flex-head{
@@ -57,6 +69,7 @@
         }
         .icon-notify{
             position: relative;
+
             .dot{
                 position: absolute;
                 top: 1px;
@@ -74,6 +87,13 @@
         align-items: center;
         cursor: pointer;
         position: relative;
+        @include tablet{
+            position: fixed;
+            right: 39px;
+            z-index: 99;
+            top: 13px;
+            margin-left: 0;
+        }
 
         &:hover{
             .block-log{
@@ -97,6 +117,9 @@
             margin-bottom: 1px;
             font-size: 14px;
             line-height: 17px;
+            @include tablet{
+                display: none;
+            }
             a{
                 font-weight: 600;
                 color: #EEEEEE;
@@ -110,6 +133,69 @@
             font-size: 10px;
             line-height: 12px;
             color: #DADADA;
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+}
+.block-notify{
+    position: relative;
+    @include tablet{
+        position: fixed;
+        right: 98px;
+        top: 12px;
+        z-index: 99;
+    }
+    .list-notify{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 48px;
+        background: #fff;
+        width: 300px;
+        box-shadow: 1px 3px 9px rgba(0, 0, 0 ,0.24);
+        z-index: 99;
+        border-radius: 5px;
+        padding: 15px;
+        @include mobile{
+            position: fixed;
+            left: 50%;
+            width: calc(100% - 30px);
+            transform: translateX(-50%);
+            top: 58px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        &:after{
+            position: absolute;
+            top: -10px;
+            right: 8px;
+            content: '';
+            border-bottom: 10px solid #fff;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            @include mobile{
+                display: none;
+            }
+        }
+        li{
+            border-bottom: 1px dashed #666;
+            &:last-child{
+                border-bottom: none;
+            }
+            a{
+                display: block;
+                padding: 15px;
+                transition:  all 0.3s ease-in-out;
+                @include mobile{
+                    padding: 10px 15px;
+                }
+                &:hover{
+                    color: #FF5C1D;
+                    transition:  all 0.3s ease-in-out;
+                }
+            }
         }
     }
 }
@@ -148,17 +234,28 @@
     padding: 8px 0;
     margin-left: 23px;
     cursor: pointer;
+
+    @include mobile{
+        margin-left: 14px;
+    }
     &:first-child{
         margin-left: 0;
     }
     img{
         margin-right: 7px;
+        @include mobile{
+            margin-right: 0;
+        }
     }
     >span{
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
         color: #DADADA;
+        @include mobile{
+            font-size: 13px;
+            line-height: 17px;
+        }
     }
 
     &:hover{

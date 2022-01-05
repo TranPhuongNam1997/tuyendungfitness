@@ -3285,6 +3285,9 @@
 .popup-login.show{
     display: flex!important;
     align-items: center;
+    @include tablet-horizontal{
+        padding-right: 0!important;
+    }
 }
 .popup-login{
     .modal-dialog{
@@ -3293,6 +3296,23 @@
         max-height: 709px;
         height: 100%;
         min-height: auto;
+        @media (max-width: 1559px){
+            max-height: 80vh;
+        }
+        @media (max-width: 1366px) {
+            max-width: 1190px;
+        }
+        @include tablet-horizontal{
+            padding: 0 15px;
+        }
+        @include tablet{
+            max-height: 90vh;
+        }
+        @include mobile{
+            max-height: 100vh;
+            margin: 0;
+            padding: 15px;
+        }
     }
     .modal-content{
         display: block;
@@ -3307,6 +3327,21 @@
         height: 100%;
         position: relative;
         background: url("../img/banner-right-login.png") no-repeat right top/63% 100%, url("../img/banner-left-login.png") no-repeat left top;
+        @media (max-width: 1100px) {
+            padding: 127px 65px 65px 89px;
+        }
+        @include tablet{
+            background: url("../img/banner-left-login.png") no-repeat left top;
+            padding: 49px 49px 62px 49px;
+            background-size: cover;
+        }
+        @include mobile-horizontal{
+            padding: 40px 40px 60px 40px;
+        }
+        @include mobile{
+            padding: 34px 15px 20px 15px;
+            min-height: unset;
+        }
         .btn-close{
             position: absolute;
             top: 9px;
@@ -3316,6 +3351,17 @@
             &:hover{
                 img{
                     filter: invert(0%) sepia(0%) saturate(18%) hue-rotate(83deg) brightness(102%) contrast(64%);
+                }
+            }
+            @include mobile-horizontal{
+                img{
+                    width: 30px;
+                }
+            }
+            @include mobile{
+                right: 4px;
+                img{
+                    width: 25px;
                 }
             }
         }
@@ -3331,9 +3377,15 @@
     .box-login{
         position: unset;
         transform: none;
+        @include mobile{
+            padding: 35px 15px;
+        }
     }
     .txt-info-ac{
         margin-bottom: 24px;
+        @include mobile{
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -3363,6 +3415,12 @@
     border-left-width: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    @include mobile{
+        top: 3px;
+        left: 8px;
+        width: 6px;
+        height: 12px;
+    }
 }
 
 .remember-login input[type="checkbox"]:after {
@@ -3375,6 +3433,10 @@
     transition: 240ms;
     border-radius: 5px;
     background: #fff;
+    @include mobile{
+        width: 22px;
+        height: 22px;
+    }
 }
 
 .remember-login input[type="checkbox"]:checked:after {
@@ -3401,4 +3463,13 @@
     font-size: 18px;
     line-height: 22px;
     margin-top: 14px;
+    @include mobile-horizontal{
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    @include mobile{
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
