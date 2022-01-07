@@ -65,6 +65,12 @@ button:focus{
     height: 84px;
     width: 69px;
     border: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        background: #fd7a47;
+        transition: all 0.2s ease-in-out;
+    }
     @include tablet{
         height: 59px;
         width: 90px;

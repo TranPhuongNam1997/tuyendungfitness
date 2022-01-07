@@ -624,6 +624,8 @@
         }
     }
 }
+
+
 .filter-btn{
     width: 87px;
     height: 84px;
@@ -641,7 +643,54 @@
         margin-right: 0;
     }
 }
+.row-5{
+    margin: 0 -5px;
+}
+.pd-5{
+    padding: 0 5px;
+}
 
+
+.zone-banner{
+    max-width: 1116px;
+    width: 100%;
+    padding: 0 15px;
+    .search-banner{
+        padding: 28px 58px 24px;
+        background: rgba(22, 25, 29, 0.4);
+        backdrop-filter: blur(5px);
+        border-radius: 15px 0 15px 0;
+        display: block;
+    }
+    .list-search{
+        display: block;
+    }
+    .item-search{
+        width: 100%;
+        margin-bottom: 14px;
+        border-radius: 8px;
+        margin-right: 0;
+        padding: 13px 11px 13px 30px;
+    }
+}
+.btn-search-zone{
+    background: #FF5C1D;
+    border-radius: 8px;
+    height: 58px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        color: #fff;
+        background: #fd7a47;
+        transition: all 0.2s ease-in-out;
+    }
+}
 .popular-jobs{
     display: flex;
     align-items: center;
