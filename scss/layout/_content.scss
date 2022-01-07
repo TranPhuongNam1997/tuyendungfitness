@@ -2643,7 +2643,26 @@
     margin-bottom: 32px;
     text-align: center;
     @include mobile{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+}
+.btn-show-tab{
+    display: none;
+    font-weight: 900;
+    font-size: 18px;
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    background: #4f5c72;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: none;
+    @include mobile{
+        display: flex;
     }
 }
 
@@ -2664,6 +2683,41 @@
     @include mobile{
         flex: 0 0 100%;
         max-width: 100%;
+        position: fixed;
+        right: -209px;
+        left: auto;
+        top: 68px;
+        z-index: 99;
+        background: #4f5c72;
+        transition: all 0.3s ease-in-out;
+        width: 209px;
+        &.active{
+            transition: all 0.3s ease-in-out;
+            right: 0;
+            .btn-show-tab{
+                i{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        //&:after{
+        //    content: "\f100";
+        //    font-family: "Font Awesome 5 Free";
+        //    font-weight: 900;
+        //    font-size: 18px;
+        //    position: absolute;
+        //    left: -35px;
+        //    top: 0;
+        //    width: 35px;
+        //    height: 35px;
+        //    border-radius: 5px 0 0 5px;
+        //    background: #4f5c72;
+        //    display: flex;
+        //    align-items: center;
+        //    justify-content: center;
+        //    color: #fff;
+        ////    \f105
+        //}
     }
     .nav-item.show .nav-link,.nav-link.active{
         background: #485572;

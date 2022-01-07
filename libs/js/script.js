@@ -89,6 +89,11 @@ $( document ).ready(function() {
 
     });
 
+    $(".btn-show-tab").click(function () {
+        $(".nav-profile").toggleClass('active');
+    });
+
+
 
 
 

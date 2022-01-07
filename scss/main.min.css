@@ -1165,22 +1165,19 @@ input:focus {
       margin-bottom: 16px; } }
 
 .notify-alert {
-  max-width: 1172px;
-  width: 100%;
   padding: 14px 43px 14px 13px;
   background: #FFFFFF;
   border: 1px solid #DADADA;
-  position: fixed;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%) translateY(-20px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 9999999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  color: #333; }
+  @media only screen and (max-width: 576px) {
+    .notify-alert {
+      flex-direction: column;
+      align-items: flex-start; } }
   .notify-alert.active {
     transform: translateX(-50%) translateY(0px);
     opacity: 1;
@@ -1190,6 +1187,13 @@ input:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px; }
+    @media only screen and (max-width: 767px) {
+      .notify-alert div {
+        font-size: 14px;
+        line-height: 17px; } }
+    @media only screen and (max-width: 576px) {
+      .notify-alert div {
+        margin-bottom: 10px; } }
   .notify-alert img {
     margin-right: 8px; }
   .notify-alert a {
@@ -1197,6 +1201,16 @@ input:focus {
     font-size: 16px;
     line-height: 20px;
     color: #FF5C1D; }
+    .notify-alert a:hover {
+      color: #FF5C1D;
+      text-decoration: underline; }
+    @media only screen and (max-width: 767px) {
+      .notify-alert a {
+        font-size: 14px;
+        line-height: 17px; } }
+    @media only screen and (max-width: 576px) {
+      .notify-alert a {
+        padding-left: 24px; } }
 
 .cl-or {
   color: #FF5C1D; }
@@ -2040,6 +2054,11 @@ input:focus {
     border-top: 1px solid #797979; }
     .nav.open-mb {
       left: 0;
+      transition: all 0.3s;
+      z-index: 9; }
+    .nav.nav-profile.open-mb {
+      right: -209px;
+      left: auto;
       transition: all 0.3s; } }
 @media only screen and (max-width: 576px) {
   .nav {
@@ -4394,7 +4413,26 @@ input:focus {
   text-align: center; }
   @media only screen and (max-width: 576px) {
     .txt-position {
-      margin-bottom: 20px; } }
+      margin-bottom: 10px; } }
+
+.btn-show-tab {
+  display: none;
+  font-weight: 900;
+  font-size: 18px;
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  background: #4f5c72;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: none; }
+  @media only screen and (max-width: 576px) {
+    .btn-show-tab {
+      display: flex; } }
 
 .nav-profile {
   display: block;
@@ -4412,7 +4450,20 @@ input:focus {
   @media only screen and (max-width: 576px) {
     .nav-profile {
       flex: 0 0 100%;
-      max-width: 100%; } }
+      max-width: 100%;
+      position: fixed;
+      right: -209px;
+      left: auto;
+      top: 68px;
+      z-index: 99;
+      background: #4f5c72;
+      transition: all 0.3s ease-in-out;
+      width: 209px; }
+      .nav-profile.active {
+        transition: all 0.3s ease-in-out;
+        right: 0; }
+        .nav-profile.active .btn-show-tab i {
+          transform: rotate(180deg); } }
   .nav-profile .nav-item.show .nav-link, .nav-profile .nav-link.active {
     background: #485572;
     color: #FFFFFF;

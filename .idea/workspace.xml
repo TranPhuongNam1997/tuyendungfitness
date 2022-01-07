@@ -21,11 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/toastr.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/css/toastr.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tai-khoan-nha-tuyen-dung.html" beforeDir="false" afterPath="$PROJECT_DIR$/tai-khoan-nha-tuyen-dung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thong-tin-nguoi-tim-viẹc.html" beforeDir="false" afterPath="$PROJECT_DIR$/thong-tin-nguoi-tim-viẹc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trang-chu-notlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu-notlogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
     </list>
@@ -83,7 +88,9 @@
       <workItem from="1640830027729" duration="25000000" />
       <workItem from="1640880975268" duration="632000" />
       <workItem from="1641191087014" duration="21000" />
-      <workItem from="1641379606301" duration="1676000" />
+      <workItem from="1641379606301" duration="1961000" />
+      <workItem from="1641462375330" duration="1140000" />
+      <workItem from="1641538978539" duration="5681000" />
     </task>
     <servers />
   </component>
@@ -111,18 +118,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641191105954" />
-    <state x="2587" y="255" width="585" height="530" key="find.popup" timestamp="1641287153969">
+    <state x="2587" y="255" width="585" height="530" key="find.popup" timestamp="1641543505382">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2587" y="255" width="585" height="530" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641287153969" />
+    <state x="2587" y="255" width="585" height="530" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641543505382" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1640407197333">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1640407197333" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1640686324959">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641539723275">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1640686324959" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1641539723275" />
     <state x="2602" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1640164033002">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

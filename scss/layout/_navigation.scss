@@ -16,6 +16,14 @@
         &.open-mb{
             left: 0;
             transition: all 0.3s;
+            z-index: 9;
+        }
+        &.nav-profile{
+            &.open-mb{
+                right: -209px;
+                left: auto;
+                transition: all 0.3s;
+            }
         }
 
     }
