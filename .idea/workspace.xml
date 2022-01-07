@@ -21,18 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7eb3ec21-8661-4f42-aff9-0d20ddc90217" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/css/toastr.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/css/toastr.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layout/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tai-khoan-nha-tuyen-dung.html" beforeDir="false" afterPath="$PROJECT_DIR$/tai-khoan-nha-tuyen-dung.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thong-tin-nguoi-tim-viẹc.html" beforeDir="false" afterPath="$PROJECT_DIR$/thong-tin-nguoi-tim-viẹc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trang-chu-notlogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu-notlogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trang-chu.html" beforeDir="false" afterPath="$PROJECT_DIR$/trang-chu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +79,7 @@
       <workItem from="1641191087014" duration="21000" />
       <workItem from="1641379606301" duration="1961000" />
       <workItem from="1641462375330" duration="1140000" />
-      <workItem from="1641538978539" duration="5681000" />
+      <workItem from="1641538978539" duration="7098000" />
     </task>
     <servers />
   </component>

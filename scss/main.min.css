@@ -4526,13 +4526,16 @@ input:focus {
   margin-bottom: 44px; }
   @media only screen and (max-width: 991px) {
     .box-white {
-      padding: 25px 25px; } }
+      padding: 25px 25px;
+      margin-bottom: 35px; } }
   @media only screen and (max-width: 767px) {
     .box-white {
-      padding: 20px 20px; } }
+      padding: 20px 20px;
+      margin-bottom: 25px; } }
   @media only screen and (max-width: 576px) {
     .box-white {
-      padding: 20px 15px; } }
+      padding: 20px 15px;
+      margin-bottom: 20px; } }
 
 .title-tab {
   font-weight: 600;
