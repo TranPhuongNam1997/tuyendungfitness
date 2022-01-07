@@ -85,6 +85,8 @@ input:focus{
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    padding-left: 24px;
+    background: url("../img/check-circle-fill.svg") no-repeat left center;
     @include mobile-horizontal{
       font-size: 14px;
       line-height: 17px;

@@ -1186,7 +1186,9 @@ input:focus {
   .notify-alert div {
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px; }
+    line-height: 20px;
+    padding-left: 24px;
+    background: url("../img/check-circle-fill.svg") no-repeat left center; }
     @media only screen and (max-width: 767px) {
       .notify-alert div {
         font-size: 14px;

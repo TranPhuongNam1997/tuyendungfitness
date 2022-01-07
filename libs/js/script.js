@@ -22,7 +22,7 @@ $( document ).ready(function() {
             // removeNoti();
             // clearTimeout(removeNoti);
 
-            toastr.success(`<div class="notify-alert"><div><img src="img/check-circle-fill.svg" alt="img">Đã lưu vào danh sách việc làm</div><a href="#">Đến danh sách việc làm</a></div>`)
+            toastr.success(`<div class="notify-alert"><div>Đã lưu vào danh sách việc làm</div><a href="#">Đến danh sách việc làm</a></div>`)
 
         }
         else
