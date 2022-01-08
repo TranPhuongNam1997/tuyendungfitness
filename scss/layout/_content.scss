@@ -2807,6 +2807,173 @@
     }
 
 }
+.title-ntv{
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title-tab{
+        margin-bottom: 0;
+    }
+    @include gx{
+        margin-bottom: 25px;
+    }
+    @include mobile{
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.edit-user {
+    background: #FF5C1D;
+    border-radius: 8px 0 8px 0;
+    height: 40px;
+    border: none;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        color: #fff;
+        background: #fd7a47;
+        transition: all 0.2s ease-in-out;
+    }
+}
+.modal-edit{
+    .modal-content{
+        background: none;
+    }
+    .modal-dialog{
+        max-width: 550px;
+    }
+}
+.mdl-header{
+    background: #FF5C1D;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        color: #fff;
+        @include mobile{
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    button{
+        background: none;
+        border: none;
+        color: #fff;
+    }
+}
+.mdl-body{
+    padding: 20px 30px;
+    background: #fff;
+    @include mobile{
+        padding: 20px 15px;
+    }
+    .field-popup{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        @include mobile{
+            flex-direction: column;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        label{
+            font-size: 14px;
+            width: 100px;
+            margin-right: 10px;
+            margin-bottom: 0;
+            @include mobile{
+                width: 100%;
+                margin-bottom: 8px;
+                margin-right: 0;
+            }
+        }
+        input{
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            background: #F1F1F1;
+            box-shadow: inset 0px 1px 4px rgba(0, 0, 0 ,0.06);
+            padding: 0 15px;
+            display: block;
+            border: none;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: #333333;
+            width: calc(100% - 110px);
+            @include mobile{
+                width: 100%;
+                height: 37px;
+
+            }
+
+        }
+
+    }
+}
+
+.mdl-footer{
+    padding: 15px 15px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px dashed #d5d5d5;
+    text-align: right;
+    @include mobile{
+        padding: 10px 15px;
+    }
+    button{
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        height: 40px;
+        width: 118px;
+        font-weight: 600;
+        margin-left: 7px;
+        transition: all 0.2s ease-in-out;
+        @include mobile{
+            height: 37px;
+            width: 100px;
+        }
+        &.btn-edit{
+            background: #FF5C1D;
+            &:hover{
+                color: #fff;
+                background: #fd7a47;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+        &.btn-reject{
+            background: #ededed;
+            color: #333;
+            &:hover{
+                background: #ccc;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 .title-tab{
     font-weight: 600;
     font-size: 22px;
@@ -2818,8 +2985,6 @@
         margin-bottom: 25px;
     }
     @include mobile{
-        font-size: 18px;
-        line-height: 22px;
         margin-bottom: 20px;
     }
 }

@@ -4580,6 +4580,147 @@ input:focus {
       padding: 20px 15px;
       margin-bottom: 20px; } }
 
+.title-ntv {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .title-ntv .title-tab {
+    margin-bottom: 0; }
+  @media only screen and (max-width: 767px) {
+    .title-ntv {
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 576px) {
+    .title-ntv {
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: flex-start; } }
+
+.edit-user {
+  background: #FF5C1D;
+  border-radius: 8px 0 8px 0;
+  height: 40px;
+  border: none;
+  padding: 0 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out; }
+  .edit-user:hover {
+    color: #fff;
+    background: #fd7a47;
+    transition: all 0.2s ease-in-out; }
+
+.modal-edit .modal-content {
+  background: none; }
+.modal-edit .modal-dialog {
+  max-width: 550px; }
+
+.mdl-header {
+  background: #FF5C1D;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .mdl-header h1 {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #fff; }
+    @media only screen and (max-width: 576px) {
+      .mdl-header h1 {
+        font-size: 16px;
+        line-height: 22px; } }
+  .mdl-header button {
+    background: none;
+    border: none;
+    color: #fff; }
+
+.mdl-body {
+  padding: 20px 30px;
+  background: #fff; }
+  @media only screen and (max-width: 576px) {
+    .mdl-body {
+      padding: 20px 15px; } }
+  .mdl-body .field-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; }
+    @media only screen and (max-width: 576px) {
+      .mdl-body .field-popup {
+        flex-direction: column; } }
+    .mdl-body .field-popup:last-child {
+      margin-bottom: 0; }
+    .mdl-body .field-popup label {
+      font-size: 14px;
+      width: 100px;
+      margin-right: 10px;
+      margin-bottom: 0; }
+      @media only screen and (max-width: 576px) {
+        .mdl-body .field-popup label {
+          width: 100%;
+          margin-bottom: 8px;
+          margin-right: 0; } }
+    .mdl-body .field-popup input {
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      background: #F1F1F1;
+      box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+      padding: 0 15px;
+      display: block;
+      border: none;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: #333333;
+      width: calc(100% - 110px); }
+      @media only screen and (max-width: 576px) {
+        .mdl-body .field-popup input {
+          width: 100%;
+          height: 37px; } }
+
+.mdl-footer {
+  padding: 15px 15px;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  border-top: 1px dashed #d5d5d5;
+  text-align: right; }
+  @media only screen and (max-width: 576px) {
+    .mdl-footer {
+      padding: 10px 15px; } }
+  .mdl-footer button {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+    height: 40px;
+    width: 118px;
+    font-weight: 600;
+    margin-left: 7px;
+    transition: all 0.2s ease-in-out; }
+    @media only screen and (max-width: 576px) {
+      .mdl-footer button {
+        height: 37px;
+        width: 100px; } }
+    .mdl-footer button.btn-edit {
+      background: #FF5C1D; }
+      .mdl-footer button.btn-edit:hover {
+        color: #fff;
+        background: #fd7a47;
+        transition: all 0.2s ease-in-out; }
+    .mdl-footer button.btn-reject {
+      background: #ededed;
+      color: #333; }
+      .mdl-footer button.btn-reject:hover {
+        background: #ccc;
+        transition: all 0.2s ease-in-out; }
+
 .title-tab {
   font-weight: 600;
   font-size: 22px;
@@ -4592,8 +4733,6 @@ input:focus {
       margin-bottom: 25px; } }
   @media only screen and (max-width: 576px) {
     .title-tab {
-      font-size: 18px;
-      line-height: 22px;
       margin-bottom: 20px; } }
 
 .block-info-tab {
