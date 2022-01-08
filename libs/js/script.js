@@ -30,7 +30,11 @@ $( document ).ready(function() {
             $(this).removeClass('active')
         }
     });
-
+    // select2-multiple
+    $(".select2-multiple").select2({
+        placeholder: "Select a programming language",
+        allowClear: true
+    });
 
 
 

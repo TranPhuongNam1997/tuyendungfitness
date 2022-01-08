@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="libs/css/swiper.css">
     <link rel="stylesheet" href="libs/css/animate.css">
     <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="libs/css/select2.min.css">
     <link rel="stylesheet" href="scss/main.min.css">
 </head>
 <body>
@@ -225,9 +226,9 @@
                                     <div class="col-md-6 p-10">
                                         <div class="field-tab">
                                             <label>Tỉnh / Thành phố <span class="cl-red">*</span></label>
-                                            <select name="" >
-                                                <option value="">Hà Nội</option>
-                                                <option value="">TP HCM</option>
+                                            <select name="" class="select2-multiple">
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="TP HCM">TP HCM</option>
                                             </select>
                                         </div>
                                     </div>
@@ -244,7 +245,7 @@
                                     <div class="col-md-6 p-10">
                                         <div class="field-tab">
                                             <label>Vị trí tuyển dụng <span class="cl-red">*</span></label>
-                                            <select name="" >
+                                            <select name="" class="select2-multiple">
                                                 <option value="">Huấn luyện viên</option>
                                                 <option value="">Huấn luyện viên 2</option>
                                             </select>
@@ -253,7 +254,7 @@
                                     <div class="col-md-6 p-10">
                                         <div class="field-tab">
                                             <label>Ngành nghề <span class="cl-red">*</span></label>
-                                            <select name="" >
+                                            <select name="" class="select2-multiple">
                                                 <option value="">4 năm</option>
                                                 <option value="">3 năm</option>
                                                 <option value="">2 năm</option>
@@ -264,7 +265,7 @@
                                     <div class="col-md-4 p-10">
                                         <div class="field-tab">
                                             <label>Cấp bậc <span class="cl-red">*</span></label>
-                                            <select name="" >
+                                            <select name="" class="select2-multiple">
                                                 <option value="">10 - 20 triệu đồng</option>
                                                 <option value="">20 - 30 triệu đồng</option>
                                                 <option value="">30 - 40 triệu đồng</option>
@@ -274,7 +275,7 @@
                                     <div class="col-md-4 p-10">
                                         <div class="field-tab">
                                             <label>Kinh nghiệm <span class="cl-red">*</span></label>
-                                            <select name="" >
+                                            <select name="" class="select2-multiple">
                                                 <option value="">Hà Nội</option>
                                                 <option value="">TP HCM</option>
                                             </select>
@@ -558,7 +559,7 @@
     new WOW().init();
 </script>
 <script type="text/javascript" src="libs/js/jquery.datetimepicker.full.min.js"></script>
-
+<script type="text/javascript" src="libs/js/select2.min.js"></script>
 <script type="text/javascript" src="libs/js/script.js"></script>
 <script>
     $('.datepicker-fitness').datetimepicker({

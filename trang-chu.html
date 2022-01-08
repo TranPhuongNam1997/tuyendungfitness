@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="libs/css/animate.css">
     <link rel="stylesheet" href="libs/css/toastr.min.css">
 
+    <link rel="stylesheet" href="libs/css/select2.min.css">
     <link rel="stylesheet" href="scss/main.min.css">
 </head>
 <body>
@@ -145,9 +146,9 @@
                         <div class="item-search">
                             <label>Từ khóa</label>
                             <div class="field-search">
-                                <select class="sl-multiple">
-                                    <option value="">IT Phần mềm</option>
-                                    <option value="">IT Phần cứng</option>
+                                <select class="select2-multiple">
+                                    <option value="IT Phần mềm">IT Phần mềm</option>
+                                    <option value="IT Phần cứng">IT Phần cứng</option>
                                 </select>
                                 <img src="img/icon-edit.svg" alt="img">
                             </div>
@@ -155,10 +156,10 @@
                         <div class="item-search">
                             <label>Từ khóa</label>
                             <div class="field-search">
-                                <select  class="sl-multiple2">
-                                    <option value="">Hà Nội</option>
-                                    <option value="">TP HCM</option>
-                                    <option value="">Đà Nẵng</option>
+                                <select class="select2-multiple">
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="TP HCM">TP HCM</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
                                 </select>
                                 <img src="img/icon-edit.svg" alt="img">
                             </div>
@@ -1098,22 +1099,22 @@
     new WOW().init();
 </script>
 <script type="text/javascript" src="libs/js/toastr.min.js"></script>
-
+<script type="text/javascript" src="libs/js/select2.min.js"></script>
 <script type="text/javascript" src="libs/js/script.js"></script>
 <script>
 
-    $('.sl-multiple').multipleSelect({
-        width: '100%',
-        single: false,
-        filter: true,
-        placeholder: "Tất cả việc làm",
-    }).multipleSelect('refresh');
-    $('.sl-multiple2').multipleSelect({
-        width: '100%',
-        single: false,
-        filter: true,
-        placeholder: "Tất cả tỉnh thành",
-    }).multipleSelect('refresh');
+    // $('.sl-multiple').multipleSelect({
+    //     width: '100%',
+    //     single: false,
+    //     filter: true,
+    //     placeholder: "Tất cả việc làm",
+    // }).multipleSelect('refresh');
+    // $('.sl-multiple2').multipleSelect({
+    //     width: '100%',
+    //     single: false,
+    //     filter: true,
+    //     placeholder: "Tất cả tỉnh thành",
+    // }).multipleSelect('refresh');
 
 
 

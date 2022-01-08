@@ -1738,6 +1738,33 @@ input:focus {
       margin-bottom: 7px; }
     .list-search .item-search .field-search {
       position: relative; }
+      .list-search .item-search .field-search .select2-container .select2-selection--single {
+        padding: 0 10px 0 24px;
+        background: transparent;
+        width: 100%;
+        display: block;
+        height: 31px;
+        border: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff; }
+      .list-search .item-search .field-search .select2-container {
+        width: 100% !important; }
+      .list-search .item-search .field-search .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        border: none; }
+      .list-search .item-search .field-search .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-left: 0;
+        padding-right: 0;
+        height: 31px;
+        line-height: 31px;
+        color: #fff; }
+      .list-search .item-search .field-search .select2-selection__clear {
+        display: none; }
+      .list-search .item-search .field-search .select2-container--default .select2-selection--single .select2-selection__arrow {
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent url("../img/icon-agd.svg") no-repeat center;
+        right: -3px; }
       .list-search .item-search .field-search img {
         position: absolute;
         top: 50%;
@@ -2083,6 +2110,9 @@ input:focus {
 .clr-or {
   color: #fd7a47;
   font-weight: 600; }
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #666; }
 
 @media only screen and (max-width: 991px) {
   .nav {
@@ -4880,6 +4910,51 @@ input:focus {
         height: 35px;
         background: #F1F1F1 url(../img/Arrow-pro.svg) no-repeat top 14px right 15px;
         border-radius: 5px; } }
+  .field-tab .select2-container .select2-selection--single {
+    padding: 0 15px;
+    background: #F1F1F1;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 0 15px;
+    width: 100%;
+    display: block;
+    height: 50px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333; }
+    @media only screen and (max-width: 991px) {
+      .field-tab .select2-container .select2-selection--single {
+        height: 45px; } }
+    @media only screen and (max-width: 767px) {
+      .field-tab .select2-container .select2-selection--single {
+        height: 35px;
+        border-radius: 5px; } }
+  .field-tab .select2-container {
+    width: 100% !important; }
+  .field-tab .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none; }
+  .field-tab .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+    padding-right: 0;
+    height: 50px;
+    line-height: 50px; }
+    @media only screen and (max-width: 991px) {
+      .field-tab .select2-container--default .select2-selection--single .select2-selection__rendered {
+        height: 45px;
+        line-height: 45px; } }
+    @media only screen and (max-width: 767px) {
+      .field-tab .select2-container--default .select2-selection--single .select2-selection__rendered {
+        height: 35px;
+        line-height: 35px; } }
+  .field-tab .select2-selection__clear {
+    display: none; }
+  .field-tab .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent url("../img/Arrow-pro.svg") no-repeat center;
+    right: 9px; }
   .field-tab textarea {
     background: #F1F1F1;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);

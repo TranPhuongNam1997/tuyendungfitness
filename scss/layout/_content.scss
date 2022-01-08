@@ -3150,6 +3150,59 @@
             
         }
     }
+    .select2-container .select2-selection--single{
+        padding: 0 15px;
+        background: #F1F1F1;
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 0 15px;
+        width: 100%;
+        display: block;
+        height: 50px;
+        border: none;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #333333;
+        @include tablet{
+            height: 45px;
+        }
+        @include gx{
+            height: 35px;
+            border-radius: 5px;
+
+        }
+    }
+    .select2-container{
+        width: 100%!important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        border: none;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        padding-left: 0;
+        padding-right: 0;
+        height: 50px;
+        line-height: 50px;
+        @include tablet{
+            height: 45px;
+            line-height: 45px;
+        }
+        @include gx{
+            height: 35px;
+            line-height: 35px;
+
+        }
+    }
+    .select2-selection__clear{
+        display: none;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent url('../img/Arrow-pro.svg') no-repeat center;
+        right: 9px;
+    }
 
     textarea{
         background: #F1F1F1;
