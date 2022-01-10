@@ -29,12 +29,28 @@ $( document ).ready(function() {
         {
             $(this).removeClass('active')
         }
+
     });
+    $(".input-position").focus(function () {
+
+        $('.list-position').slideDown();
+
+    });
+    
+    $(".input-position").focusout(function () {
+
+        $('.list-position').slideUp();
+
+    });
+
+
+
     // select2-multiple
     $(".select2-multiple").select2({
-        placeholder: "Select a programming language",
+        placeholder: "Chọn giá trị",
         allowClear: true
     });
+
 
 
 

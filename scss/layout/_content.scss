@@ -3337,14 +3337,14 @@
 .btn-viewbefore{
     width: 149px;
     height: 50px;
-    border-radius: 8px 0 8px 0 ;
+    border-radius: 8px 0 8px 0;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #666666;
-    border: 1px solid #EEEEEE;
+    color: #fff;
+    border: none;
     transition: all 0.2s ease-in-out;
-    background: transparent;
+    background: #4e4e4e;
 
     &:hover{
         opacity: 0.8;
@@ -3749,4 +3749,87 @@
         font-size: 14px;
         line-height: 17px;
     }
+}
+
+.enter-position{
+    position: relative;
+    .list-position{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        background: #000;
+        background: #cfcfcf;
+        border-radius: 5px;
+        overflow-y: auto;
+        display: none;
+        max-height: 200px;
+        /* width */
+        &::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 10px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+            border-radius: 10px;
+
+        }
+
+        li{
+            color: #333;
+            padding: 10px 15px;
+            border-bottom: 1px dashed #b2b2b2;
+            &:first-child{
+                border-radius: 5px 5px 0 0;
+            }
+            &:last-child{
+                border-radius: 0 0 5px 5px;
+
+            }
+            &:hover{
+                background: #b5b5b5;
+            }
+        }
+    }
+}
+
+.button-save{
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px 0 8px 0;
+    transition: all 0.2s ease-in-out;
+    background: #FF5C1D;
+    margin-right: 15px;
+    width: 115px;
+    height: 45px;
+    border: none;
+}
+
+.button-edit{
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px 0 8px 0;
+    transition: all 0.2s ease-in-out;
+    background: #4e4e4e;
+    width: 115px;
+    height: 45px;
+    border: none;
+    margin-right: 15px;
 }

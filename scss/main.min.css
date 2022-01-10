@@ -1820,6 +1820,17 @@ input:focus {
     backdrop-filter: blur(5px);
     border-radius: 15px 0 15px 0;
     display: block; }
+    @media only screen and (max-width: 991px) {
+      .zone-banner .search-banner {
+        padding: 28px 30px 24px;
+        margin-bottom: 40px; } }
+    @media only screen and (max-width: 767px) {
+      .zone-banner .search-banner {
+        padding: 20px 20px 20px;
+        margin-bottom: 0; } }
+    @media only screen and (max-width: 576px) {
+      .zone-banner .search-banner {
+        padding: 15px; } }
   .zone-banner .list-search {
     display: block; }
   .zone-banner .item-search {
@@ -1827,7 +1838,13 @@ input:focus {
     margin-bottom: 14px;
     border-radius: 8px;
     margin-right: 0;
-    padding: 13px 11px 13px 30px; }
+    padding: 13px 11px 13px 10px; }
+    @media only screen and (max-width: 767px) {
+      .zone-banner .item-search {
+        padding: 8px 11px 8px 10px; } }
+    @media only screen and (max-width: 576px) {
+      .zone-banner .item-search {
+        padding: 5px 11px 5px 10px; } }
 
 .btn-search-zone {
   background: #FF5C1D;
@@ -1840,6 +1857,12 @@ input:focus {
   border: none;
   width: 100%;
   transition: all 0.2s ease-in-out; }
+  @media only screen and (max-width: 767px) {
+    .btn-search-zone {
+      height: 46px; } }
+  @media only screen and (max-width: 576px) {
+    .btn-search-zone {
+      height: 40px; } }
   .btn-search-zone:hover {
     color: #fff;
     background: #fd7a47;
@@ -5077,10 +5100,10 @@ input:focus {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #666666;
-  border: 1px solid #EEEEEE;
+  color: #fff;
+  border: none;
   transition: all 0.2s ease-in-out;
-  background: transparent; }
+  background: #4e4e4e; }
   .btn-viewbefore:hover {
     opacity: 0.8;
     transition: all 0.2s ease-in-out; }
@@ -5424,6 +5447,69 @@ input:focus {
     .forgot-password {
       font-size: 14px;
       line-height: 17px; } }
+
+.enter-position {
+  position: relative; }
+  .enter-position .list-position {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: #000;
+    background: #cfcfcf;
+    border-radius: 5px;
+    overflow-y: auto;
+    display: none;
+    max-height: 200px;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .enter-position .list-position::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 10px; }
+    .enter-position .list-position::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px; }
+    .enter-position .list-position::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px; }
+    .enter-position .list-position::-webkit-scrollbar-thumb:hover {
+      background: #555;
+      border-radius: 10px; }
+    .enter-position .list-position li {
+      color: #333;
+      padding: 10px 15px;
+      border-bottom: 1px dashed #b2b2b2; }
+      .enter-position .list-position li:first-child {
+        border-radius: 5px 5px 0 0; }
+      .enter-position .list-position li:last-child {
+        border-radius: 0 0 5px 5px; }
+      .enter-position .list-position li:hover {
+        background: #b5b5b5; }
+
+.button-save {
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px 0 8px 0;
+  transition: all 0.2s ease-in-out;
+  background: #FF5C1D;
+  margin-right: 15px;
+  width: 115px;
+  height: 45px;
+  border: none; }
+
+.button-edit {
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px 0 8px 0;
+  transition: all 0.2s ease-in-out;
+  background: #4e4e4e;
+  width: 115px;
+  height: 45px;
+  border: none;
+  margin-right: 15px; }
 
 #back-to-top {
   position: fixed;

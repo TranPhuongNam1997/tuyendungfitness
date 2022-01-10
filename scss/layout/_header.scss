@@ -713,6 +713,17 @@
         backdrop-filter: blur(5px);
         border-radius: 15px 0 15px 0;
         display: block;
+        @include tablet{
+            padding: 28px 30px 24px;
+            margin-bottom: 40px;
+        }
+        @include gx{
+            padding: 20px 20px 20px;
+            margin-bottom: 0;
+        }
+        @include mobile{
+            padding: 15px;
+        }
     }
     .list-search{
         display: block;
@@ -722,7 +733,13 @@
         margin-bottom: 14px;
         border-radius: 8px;
         margin-right: 0;
-        padding: 13px 11px 13px 30px;
+        padding: 13px 11px 13px 10px;
+        @include gx{
+            padding: 8px 11px 8px 10px;
+        }
+        @include mobile{
+            padding: 5px 11px 5px 10px;
+        }
     }
 }
 .btn-search-zone{
@@ -736,6 +753,13 @@
     border: none;
     width: 100%;
     transition: all 0.2s ease-in-out;
+    @include gx{
+        height: 46px;
+    }
+    @include mobile{
+        height: 40px;
+
+    }
 
     &:hover{
         color: #fff;

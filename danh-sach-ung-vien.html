@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="libs/css/all.css">
     <link rel="stylesheet" href="libs/css/swiper.css">
     <link rel="stylesheet" href="libs/css/animate.css">
+    <link rel="stylesheet" href="libs/css/select2.min.css">
     <link rel="stylesheet" href="scss/main.min.css">
 </head>
 <body>
@@ -102,11 +103,6 @@
         <div class="banner">
             <div class="container">
                 <h2 class="slogan">TÌM KIẾM ỨNG VIÊN <br> <span>TIỀM NĂNG</span></h2>
-                <div class="search-mb">
-                    <input type="text" placeholder="Tìm kiếm cơ hội việc làm">
-                    <div class="icon-search"><img src="img/search.svg" alt="img"></div>
-                    <button class="btn-search-mb"><img src="img/filter.svg" alt="img"></button>
-                </div>
                 <div class="zone-banner">
                     <div class="search-banner">
                         <div class="list-search">
@@ -115,86 +111,75 @@
                                     <div class="item-search">
                                         <div class="field-search">
                                             <input type="text" placeholder="Nghề nghiệp, công ty...">
-                                            <img src="img/icon-edit.svg" alt="img">
+                                            <img src="img/search1.svg" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 pd-5">
+                                <div class="col-lg-3 pd-5 col-md-6">
                                     <div class="item-search">
                                         <div class="field-search">
-                                            <select class="sl-multiple">
-                                                <option value="">IT Phần mềm</option>
-                                                <option value="">IT Phần cứng</option>
+                                            <select class="select2-multiple">
+                                                <option value="IT Phần mềm">IT Phần mềm</option>
+                                                <option value="IT Phần cứng">IT Phần cứng</option>
                                             </select>
-                                            <img src="img/icon-edit.svg" alt="img">
+                                            <img src="img/search2.svg" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 pd-5">
+                                <div class="col-lg-3 pd-5 col-md-6">
                                     <div class="item-search">
                                         <div class="field-search">
-                                            <select  class="sl-multiple2">
-                                                <option value="">Hà Nội</option>
-                                                <option value="">TP HCM</option>
-                                                <option value="">Đà Nẵng</option>
+                                            <select  class="select2-multiple">
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="TP HCM">TP HCM</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
                                             </select>
-                                            <img src="img/icon-edit.svg" alt="img">
+                                            <img src="img/search2.svg" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 pd-5">
+                                <div class="col-lg-3 pd-5 col-md-6">
                                     <div class="item-search">
                                         <div class="field-search">
-                                            <select  class="sl-multiple2">
-                                                <option value="">Hà Nội</option>
-                                                <option value="">TP HCM</option>
-                                                <option value="">Đà Nẵng</option>
+                                            <select  class="select2-multiple">
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="TP HCM">TP HCM</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
                                             </select>
-                                            <img src="img/icon-edit.svg" alt="img">
+                                            <img src="img/search3.svg" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 pd-5">
+                                <div class="col-lg-3 pd-5 col-md-6">
                                     <div class="item-search">
                                         <div class="field-search">
-                                            <select  class="sl-multiple2">
-                                                <option value="">Hà Nội</option>
-                                                <option value="">TP HCM</option>
-                                                <option value="">Đà Nẵng</option>
+                                            <select  class="select2-multiple">
+                                                <option value="Hà Nội">Hà Nội</option>
+                                                <option value="TP HCM">TP HCM</option>
+                                                <option value="Đà Nẵng">Đà Nẵng</option>
                                             </select>
-                                            <img src="img/icon-edit.svg" alt="img">
+                                            <img src="img/search4.svg" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 pd-5">
+                                <div class="col-lg-3 pd-5 col-md-6">
                                     <div class="item-search">
                                         <div class="field-search">
-                                            <select class="sl-multiple">
-                                                <option value="">IT Phần mềm</option>
-                                                <option value="">IT Phần cứng</option>
+                                            <select class="select2-multiple">
+                                                <option value="IT Phần mềm">IT Phần mềm</option>
+                                                <option value="IT Phần cứng">IT Phần cứng</option>
                                             </select>
-                                            <img src="img/icon-edit.svg" alt="img">
+                                            <img src="img/search5.svg" alt="img">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 pd-5">
+                                <div class="col-lg-3 pd-5 col-md-6">
                                     <button class="btn-search-zone">Tìm ứng viên</button>
                                 </div>
-
-                                </div>
                             </div>
-
-
-
-
-
-
-
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -527,6 +512,8 @@
 <script>
     new WOW().init();
 </script>
+<script type="text/javascript" src="libs/js/select2.min.js"></script>
+
 <script type="text/javascript" src="libs/js/script.js"></script>
 <script>
     $('.sl-multiple').multipleSelect({
